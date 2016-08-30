@@ -13,7 +13,7 @@ app.controller('menuController',function($scope, $http, $location){
     $http.get("client/json/nav-menu.json").then(function(res) {
          $scope.navmenu = res.data;
     });
-    $scope.baseurl = $location.absUrl();
+//    $scope.baseurl = $location.absUrl();
 //    console.log($scope.baseurl);
 });
 

@@ -1,1 +1,1 @@
-[{"name":"PRODUCTS","href":"products","css_id":"products"},{"name":"BRANDS","href":"brands","css_id":"brands"},{"name":"OUR PROMISE","href":"promise","css_id":"promise"},{"name":"SUPPORT","href":"help","css_id":"help"}]
+[{"name":"PRODUCTS","id":"products"},{"name":"BRANDS","id":"brands"},{"name":"OUR PROMISE","id":"promise"},{"name":"SUPPORT","id":"help"}]
