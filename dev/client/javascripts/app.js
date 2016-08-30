@@ -9,7 +9,10 @@ app.controller('socialMediaController',function($scope, $http){
 });
 
 app.controller('menuController',function($scope, $http){
-    $scope.menu = {};
+    $scope.navmenu = {};
+    $http.get("client/json/nav-menu.json").then(function(res) {
+         $scope.navmenu = res.data;
+    });
 });
 
 /*
