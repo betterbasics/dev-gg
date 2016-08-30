@@ -8,11 +8,13 @@ app.controller('socialMediaController',function($scope, $http){
 //    console.log($scope.accounts);
 });
 
-app.controller('menuController',function($scope, $http){
+app.controller('menuController',function($scope, $http, $location){
     $scope.navmenu = {};
     $http.get("client/json/nav-menu.json").then(function(res) {
          $scope.navmenu = res.data;
     });
+    $scope.baseurl = $location.absUrl();
+//    console.log($scope.baseurl);
 });
 
 /*
