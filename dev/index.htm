@@ -1,1 +1,162 @@
-<h1>Hello World!</h1>
+<html>
+	<head>
+		<title>Greater Goods - RISE | BALANCE | NOURISH | WEIGHTGURUS</title>
+		<!---->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+        <!---->
+		<script src="client/javascripts/app.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="client/assets/fontello/css/fontello.css">
+
+        <link rel="stylesheet" href="client/lib/fontawesome/css/font-awesome.css">
+        <link rel="stylesheet" href="client/lib/flag-icon-css/css/flag-icon.min.css">
+        <link rel="stylesheet" href="client/lib/bootstrap-select/dist/css/bootstrap-select.css">
+        <link rel="stylesheet" href="client/lib/lity/dist/lity.min.css">
+        <link rel="stylesheet" href="client/lib/textAngular/dist/textAngular.css">
+
+
+		<link rel="stylesheet" href="client/stylesheets/style.css">
+		<link rel="stylesheet" href="client/stylesheets/app.css">
+
+        <!----
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!---->
+	</head>
+	<body ng-app="devggApp">
+		<div id='main'>
+			<nav class="navbar-fluid navbar-default navbar-fixed-top">
+                <div id="theHeader" ui-scrollfix="36" ng-hide="hideHeader" class="header container-fluid transitionActive">
+                    <div id="top-nav" class="top-nav row brandBackgroundColor brandTransition">
+                        <div class="container-fluid">
+                            <div class="container-fluid fullContentWidth">
+                                <div class="row top-nav-content">
+                                    <div id="lead" class="col-xs-9 hidden-xs">WELCOME TO GREATER GOODS<sup>®</sup> MAKE THINGS BETTER.™</div>
+                                    <div class="hidden-xs col-sm-3 pull-right noBorder">
+                                        <div class="container-fluid">
+                                            <div class="row header-social-links" ng-controller="socialMediaController">
+                                                <div class="col-xs-2"></div>
+                                                <div class="col-xs-2 text-center">
+                                                    <a ng-click="getHelpModal.open()" class="fa fa-phone"></a>
+                                                </div>
+                                                <div class="col-xs-2 text-center" ng-repeat="account in accounts">
+                                                    <a target="_blank" ng-href="{{account.url}}" class="fa fa-{{account.name}}"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-nav row">
+                        <div class="container-fluid brandBorderColor brandTransition">
+                            <div class="container-fluid fullContentWidth">
+                                <div class="row">
+                                    <div class="main-nav-header noBorder brandBorderColor">
+                                        <div class="hamburgerContainer row brandBorderColor">
+                                            <div id="hamburger" ng-click="navActive = !navActive" class="col-xs-2 hidden-sm hidden-md hidden-lg text-center header-button">
+                                                <i class="fa fa-bars"></i>
+                                            </div>
+                                            <a href="/" class="text-center icon-container pull-right">
+                                                <img src="https://greatergoods.com/client/assets/favicons/ms-icon-144x144.png" id="icon-logo" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="nav" ng-class="{'active':navActive}" class="main-nav-content">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="row text-center links">
+                                                    <div id="links-wrapper" ng-controller="menuController">
+                                                        <a id="{{item.css_id}}" ng-href="#{{item.href}}" class="header-button brandActiveColor" ng-repeat="item in menu" ng-class="{active: isActive('{{item.href}}')}">
+                                                            <span class="menu-text">{{item.name}}</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</nav>
+			<div class="mainContent">
+				<div ng-view>
+				</div>
+			</div>
+            <footer id="footer" ng-hide="hideFooter" class="clearfix">
+                <div id="footer-widgets">
+                    <div class="container">
+                        <div class="row text-center-sm text-center-xs">
+                            <div class="col-md-4 col-sm-4">
+                                <h4>CONTACT</h4><a href="tel:8669918494">866.991.8494</a>
+                                <br><a href="mailto:info@greatergoods.com">INFO@GREATERGOODS.COM</a>
+                                <br><a href="/careers" class="careers">CAREERS</a></div>
+                            <div class="col-md-4 col-sm-4">
+                                <h4>ADDRESS</h4><a href="https://www.google.com/maps/place/125+N+Main+St,+St+Charles,+MO+63301" target="_blank">125 N MAIN ST.<br>STE 202<br>ST. CHARLES, MO 63301</a></div>
+                            <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-2 col-xs-4 col-xs-offset-4 text-center"><img id="logo" src="https://media.greatergoods.com/greatergoods.gif" class="img-responsive ng-isolate-scope" style="opacity: 1; transition: opacity 400ms;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sub-floor">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 copyright">© 2015 Greater Goods.</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+		</div>
+
+		<script src="client/lib/jquery/dist/jquery.js"></script>
+		<script src="client/lib/bootstrap/dist/js/bootstrap.js"></script>
+		<!-- bower:js --
+		<script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="lib/angular/angular.js"></script>
+		<script src="lib/moment/moment.js"></script>
+		<script src="lib/lodash/lodash.js"></script>
+		<script src="lib/angular-route/angular-route.js"></script>
+		<script src="lib/angular-resource/angular-resource.js"></script>
+		<script src="lib/slug/slug.js"></script>
+		<script src="lib/angular-ui-utils/ui-utils.js"></script>
+		<script src="lib/bluebird/js/browser/bluebird.js"></script>
+		<script src="lib/angular-cookie/angular-cookie.js"></script>
+		<script src="lib/angular-sanitize/angular-sanitize.js"></script>
+		<script src="lib/select2/dist/js/select2.js"></script>
+		<script src="lib/bootstrap-select/dist/js/bootstrap-select.js"></script>
+		<script src="lib/jwt-decode/build/jwt-decode.js"></script>
+		<script src="lib/angular-youtube-mb/src/angular-youtube-embed.js"></script>
+		<script src="lib/angular-touch/angular-touch.js"></script>
+		<script src="lib/angular-scroll/angular-scroll.js"></script>
+		<script src="lib/angular-amazon-login/build/angular-amazon-login.js"></script>
+		<script src="lib/rangy/rangy-core.js"></script>
+		<script src="lib/rangy/rangy-classapplier.js"></script>
+		<script src="lib/rangy/rangy-highlighter.js"></script>
+		<script src="lib/rangy/rangy-selectionsaverestore.js"></script>
+		<script src="lib/rangy/rangy-serializer.js"></script>
+		<script src="lib/rangy/rangy-textrange.js"></script>
+		<script src="lib/jquery.stellar/jquery.stellar.js"></script>
+		<script src="lib/angular-parallex-scroll/dist/angular-parallax-scroll.min.js"></script>
+		<script src="lib/parallax.js/parallax.min.js"></script>
+		<script src="lib/angular-bind-html-compile/angular-bind-html-compile.js"></script>
+		<script src="lib/angular-parallax/scripts/angular-parallax.js"></script>
+		<script src="lib/lity/dist/lity.min.js"></script>
+		<script src="lib/ng-file-upload/ng-file-upload.js"></script>
+		<script src="lib/ngUpload/ng-upload.js"></script>
+		<script src="lib/angular-file-upload/dist/angular-file-upload.min.js"></script>
+		<script src="lib/ngMask/dist/ngMask.js"></script>
+		<script src="lib/textAngular/dist/textAngular-rangy.min.js"></script>
+		<script src="lib/textAngular/dist/textAngular.js"></script>
+		<script src="lib/textAngular/dist/textAngular-sanitize.js"></script>
+		<script src="lib/textAngular/dist/textAngularSetup.js"></script>
+		<!-- endinject -->
+		<!-- app:js --
+		<script src="app.js"></script>
+		<!-- endinject -->
+	</body>
+</html>
