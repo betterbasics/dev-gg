@@ -71,7 +71,7 @@
                                             <div class="col-xs-12">
                                                 <div class="row text-center links">
                                                     <div id="links-wrapper" ng-controller="menuController">
-                                                        <a id="{{menu.css_id}}" ng-href=".{{menu.href}}" class="header-button brandActiveColor" ng-repeat="menu in navmenu" ng-class="{active: isActive('{{menu.href}}')}">
+                                                        <a id="{{menu.css_id}}" ng-href="{{baseurl}}{{menu.href}}" class="header-button brandActiveColor" ng-repeat="menu in navmenu" ng-class="{active: isActive('{{menu.href}}')}">
                                                             <span class="menu-text">{{menu.name}}</span>
                                                         </a>
                                                     </div>
