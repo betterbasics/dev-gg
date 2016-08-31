@@ -1,18 +1,32 @@
-var app = angular.module('devggApp', ['ngRoute', 'ngResource']);
+var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination']);
 
-//var app = angular.module('bookapp', ['ui.router','angular-loading-bar','angularUtils.directives.dirPagination']);
+app.config(['$stateProvider','$urlRouterProvider',
+	function ($stateProvider,$urlRouterProvider) {
+		$urlRouterProvider.otherwise('/home');
+		$stateProvider
+			.state('home', {
+				url: "/home",
+				templateUrl: "templates/main.html"
+			})
+			.state('Products', {
+				url: "/products",
+				templateUrl: "templates/products.html"
+			})
+	}
+]);
 
-app.config(function($routeProvider){
-	$routeProvider
-		//homepage
-		.when('/dev', {
-			templateUrl: 'templates/main.html',
-		})
-		//products
-		.when('/dev/abc', {
-			templateUrl: 'templates/products',
-		});
-});
+
+//app.config(function($routeProvider){
+//	$routeProvider
+//		//homepage
+//		.when('/dev', {
+//			templateUrl: 'templates/main.html',
+//		})
+//		//products
+//		.when('/dev/abc', {
+//			templateUrl: 'templates/products',
+//		});
+//});
 
 //app.config(['$stateProvider','$urlRouterProvider',
 //	function ($stateProvider,$urlRouterProvider) {
