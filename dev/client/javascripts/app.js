@@ -1,5 +1,7 @@
 var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination']);
 
+//app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
+//	function ($stateProvider,$urlRouterProvider,$locationProvider) {
 app.config(['$stateProvider','$urlRouterProvider',
 	function ($stateProvider,$urlRouterProvider) {
 		$urlRouterProvider.otherwise('/home');
@@ -12,40 +14,22 @@ app.config(['$stateProvider','$urlRouterProvider',
 				url: "/products",
 				templateUrl: "templates/products.html"
 			})
+			.state('Brands', {
+				url: "/brands",
+				templateUrl: "templates/brands.html"
+			})
+			.state('Promise', {
+				url: "/promise",
+				templateUrl: "templates/promise.html"
+			})
+			.state('Support', {
+				url: "/help",
+				templateUrl: "templates/support.html"
+			})
+        // use the HTML5 History API
+//        $locationProvider.html5Mode(true);
 	}
 ]);
-
-
-//app.config(function($routeProvider){
-//	$routeProvider
-//		//homepage
-//		.when('/dev', {
-//			templateUrl: 'templates/main.html',
-//		})
-//		//products
-//		.when('/dev/abc', {
-//			templateUrl: 'templates/products',
-//		});
-//});
-
-//app.config(['$stateProvider','$urlRouterProvider',
-//	function ($stateProvider,$urlRouterProvider) {
-//		$urlRouterProvider.otherwise('/home');
-//		$stateProvider
-//			.state('home', {
-//				url: "/home",
-//				templateUrl: "templates/home.html"
-//			})
-//			.state('Products', {
-//				url: "/product",
-//				templateUrl: "templates/products.html"
-//			})
-//			.state('Editbook', {
-//				url: "/editbook",
-//				templateUrl: "templates/editbook.html"
-//			})
-//	}
-//]);
 
 app.controller('socialMediaController',function($scope, $http){
     $scope.accounts = {};
