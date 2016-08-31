@@ -4,10 +4,10 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 	function ($stateProvider,$urlRouterProvider,$locationProvider) {
 //app.config(['$stateProvider','$urlRouterProvider',
 //	function ($stateProvider,$urlRouterProvider) {
-		$urlRouterProvider.otherwise('/home');
+		$urlRouterProvider.otherwise('/');
 		$stateProvider
 			.state('home', {
-				url: "/home",
+				url: "/",
 				templateUrl: "templates/main.html"
 			})
 			.state('Products', {
