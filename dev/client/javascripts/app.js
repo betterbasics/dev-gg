@@ -1,5 +1,38 @@
 var app = angular.module('devggApp', ['ngRoute', 'ngResource']);
 
+//var app = angular.module('bookapp', ['ui.router','angular-loading-bar','angularUtils.directives.dirPagination']);
+
+app.config(function($routeProvider){
+	$routeProvider
+		//homepage
+		.when('/dev', {
+			templateUrl: 'templates/main.html',
+		})
+		//products
+		.when('/dev/abc', {
+			templateUrl: 'templates/products',
+		});
+});
+
+//app.config(['$stateProvider','$urlRouterProvider',
+//	function ($stateProvider,$urlRouterProvider) {
+//		$urlRouterProvider.otherwise('/home');
+//		$stateProvider
+//			.state('home', {
+//				url: "/home",
+//				templateUrl: "templates/home.html"
+//			})
+//			.state('Products', {
+//				url: "/product",
+//				templateUrl: "templates/products.html"
+//			})
+//			.state('Editbook', {
+//				url: "/editbook",
+//				templateUrl: "templates/editbook.html"
+//			})
+//	}
+//]);
+
 app.controller('socialMediaController',function($scope, $http){
     $scope.accounts = {};
     $http.get("client/json/social-media.json").then(function(res) {
@@ -16,14 +49,3 @@ app.controller('menuController',function($scope, $http, $location){
 //    $scope.baseurl = $location.absUrl();
 //    console.log($scope.baseurl);
 });
-
-/*
-app.controller('socialMediaController',function(socialAccountService, $scope, $rootScope){
-	$scope.accounts = socialAccountService.query();
-    console.log($scope.accounts);
-//    $scope.accounts = ["twitter","facebook","instagram","youtube"];
-});
-*/
-
-
-
