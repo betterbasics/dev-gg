@@ -6,7 +6,9 @@ var _ = require('lodash');
 
 //initialize mongoose schemas
 require('./models/books');
+require('./models/products');
 var Book = mongoose.model('Book');
+var Product = mongoose.model('Product');
 
 // Create the application.
 var app = express();
@@ -62,6 +64,58 @@ app.get(baseurl+'/server/api/book',function(req,res){
 			res.json(data);
 		}
       }
+    });
+});
+
+//products api
+app.get(baseurl+'/server/api/products', function(req, res){
+    Product.find(function(err, products){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(products);
+    });
+});
+
+app.get(baseurl+'/server/api/products/:_id', function(req, res){
+    Product.findById(req.params._id, function(err, product){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(product);
+    });
+});
+
+app.post(baseurl+'/server/api/products', function(req, res){
+    var product = req.body;
+    Product.create(product, function(err, product){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(product);
+    });
+});
+
+app.put(baseurl+'/server/api/products/:_id', function(req, res){
+    var id = req.params._id;
+    var query = { _id:  req.params._id };
+    var product = req.body;
+    Product.findOneAndUpdate(query, product, {}, function(err, product){
+        if(err){
+           res.send(500, err);
+        }
+        res.json(product);
+    });
+});
+
+app.delete(baseurl+'/server/api/products/:_id', function(req, res){
+    var id = req.params._id;
+    var query = { _id: id };
+    Product.remove(query, function(err, product){
+        if(err){
+           return res.send(500, err);
+        }
+        res.json(product);
     });
 });
 
