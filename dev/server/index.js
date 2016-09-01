@@ -68,7 +68,7 @@ app.get(baseurl+'/server/api/book',function(req,res){
 });
 
 //products api
-app.get(baseurl+'/server/api/products', function(req, res){
+app.get(baseurl+'/server/api/product', function(req, res){
     Product.find(function(err, products){
         if(err){
             return res.send(500, err);
@@ -77,7 +77,7 @@ app.get(baseurl+'/server/api/products', function(req, res){
     });
 });
 
-app.get(baseurl+'/server/api/products/:_id', function(req, res){
+app.get(baseurl+'/server/api/product/:_id', function(req, res){
     Product.findById(req.params._id, function(err, product){
         if(err){
             return res.send(500, err);
@@ -86,7 +86,7 @@ app.get(baseurl+'/server/api/products/:_id', function(req, res){
     });
 });
 
-app.post(baseurl+'/server/api/products', function(req, res){
+app.post(baseurl+'/server/api/product', function(req, res){
     var product = req.body;
     Product.create(product, function(err, product){
         if(err){
@@ -96,7 +96,7 @@ app.post(baseurl+'/server/api/products', function(req, res){
     });
 });
 
-app.put(baseurl+'/server/api/products/:_id', function(req, res){
+app.put(baseurl+'/server/api/product/:_id', function(req, res){
     var id = req.params._id;
     var query = { _id:  req.params._id };
     var product = req.body;
@@ -108,7 +108,7 @@ app.put(baseurl+'/server/api/products/:_id', function(req, res){
     });
 });
 
-app.delete(baseurl+'/server/api/products/:_id', function(req, res){
+app.delete(baseurl+'/server/api/product/:_id', function(req, res){
     var id = req.params._id;
     var query = { _id: id };
     Product.remove(query, function(err, product){
