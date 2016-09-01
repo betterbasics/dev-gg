@@ -1,8 +1,0 @@
-Application has thrown an uncaught exception and is terminated:
-ReferenceError: movies is not defined
-    at D:\betterbasicsdev\dev\server\index.js:41:19
-    at Query.<anonymous> (D:\betterbasicsdev\dev\server\node_modules\mongoose\lib\model.js:3327:16)
-    at D:\betterbasicsdev\dev\server\node_modules\mongoose\node_modules\kareem\index.js:259:21
-    at D:\betterbasicsdev\dev\server\node_modules\mongoose\node_modules\kareem\index.js:127:16
-    at nextTickCallbackWith0Args (node.js:420:9)
-    at process._tickCallback (node.js:349:13)
