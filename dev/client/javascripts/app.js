@@ -1,13 +1,13 @@
 var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination']);
 
-//app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
-//	function ($stateProvider,$urlRouterProvider,$locationProvider) {
-app.config(['$stateProvider','$urlRouterProvider',
-	function ($stateProvider,$urlRouterProvider) {
-		$urlRouterProvider.otherwise('/home');
+app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
+	function ($stateProvider,$urlRouterProvider,$locationProvider) {
+//app.config(['$stateProvider','$urlRouterProvider',
+//	function ($stateProvider,$urlRouterProvider) {
+		$urlRouterProvider.otherwise('/');
 		$stateProvider
-			.state('home', {
-				url: "/home",
+			.state('Home', {
+				url: "/",
 				templateUrl: "templates/main.html"
 			})
 			.state('Products', {
@@ -27,7 +27,7 @@ app.config(['$stateProvider','$urlRouterProvider',
 				templateUrl: "templates/support.html"
 			})
         // use the HTML5 History API
-//        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(true);
 	}
 ]);
 

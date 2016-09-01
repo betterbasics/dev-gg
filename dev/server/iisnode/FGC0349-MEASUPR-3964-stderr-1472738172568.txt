@@ -1,0 +1,5 @@
+Application has thrown an uncaught exception and is terminated:
+Error: connect ECONNREFUSED 127.0.0.1:27017
+    at Object.exports._errnoException (util.js:907:11)
+    at exports._exceptionWithHostPort (util.js:930:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1077:14)
