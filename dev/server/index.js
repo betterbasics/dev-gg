@@ -33,7 +33,8 @@ mongoose.connection.once('open', function() {
   app.listen(process.env.PORT);
 });
 
-app.get('/bbdev/server/',function(req,res){
+var baseurl = '/dev';
+app.get(baseurl+'/server',function(req,res){
 	var data = {
 		"Data":""
 	};
@@ -41,7 +42,7 @@ app.get('/bbdev/server/',function(req,res){
 	res.json(data);
 });
 
-app.get('/bbdev/server/api/book',function(req,res){
+app.get(baseurl+'/server/api/book',function(req,res){
 	var data = {
 		"Data":""
 	};
