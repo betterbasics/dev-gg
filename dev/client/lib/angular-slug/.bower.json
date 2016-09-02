@@ -1,0 +1,39 @@
+{
+  "name": "angular-slug",
+  "main": "angular-slug.js",
+  "version": "0.0.4",
+  "authors": [
+    "Lucas Constantino Silva"
+  ],
+  "description": "An AngularJS wrapper arround the slug library",
+  "keywords": [
+    "angular",
+    "AngularJS",
+    "slug",
+    "slugify",
+    "filter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slug": "~0.9.1",
+    "angular": "~1.5.7"
+  },
+  "homepage": "https://github.com/lucasconstantino/angular-slug",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "67256526e39c8aafdca4f89153a827c6ea219e67"
+  },
+  "_source": "https://github.com/lucasconstantino/angular-slug.git",
+  "_target": "^0.0.4",
+  "_originalSource": "angular-slug",
+  "_direct": true
+}

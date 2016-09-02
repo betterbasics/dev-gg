@@ -1,0 +1,28 @@
+{
+  "name": "angular-slug",
+  "main": "angular-slug.js",
+  "version": "0.0.4",
+  "authors": [
+    "Lucas Constantino Silva"
+  ],
+  "description": "An AngularJS wrapper arround the slug library",
+  "keywords": [
+    "angular",
+    "AngularJS",
+    "slug",
+    "slugify",
+    "filter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slug": "~0.9.1",
+    "angular": "~1.5.7"
+  }
+}

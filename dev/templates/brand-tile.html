@@ -1,0 +1,11 @@
+<div ng-class="brandClass" class="brandTile tile brandOverride">
+    <div class="dimmer"></div>
+    <back-img ng-src="brand.tileImage.image" ng-show="brand.tileImage"></back-img>
+    <div class="border brandBackgroundColor"></div>
+    <div class="description">
+        <div class="textContainer">
+            <div class="brandIcon"><i ng-class="iconClass" class="brandColor"></i></div>
+            <p ng-bind-html="brand.tileDescription"></p>
+        </div>
+    </div>
+</div>

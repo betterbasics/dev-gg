@@ -1,13 +1,13 @@
-<div class="brandSlider">
+<div class="brandSlider" ng-controller="brandsController">
     <div class="hidden-xs hidden-sm">
         <div class="row theBrandArea">
-            <div class="col-xs-10 col-xs-offset-1 text-center shopOurBrands"><a ng-href="/brands" class="btn btn-header grayBorder">SEE OUR BRANDS</a></div>
+            <div class="col-xs-10 col-xs-offset-1 text-center shopOurBrands"><a ng-href="./brands" class="btn btn-header grayBorder">SEE OUR BRANDS</a></div>
         </div>
         <div class="row brandSlider vertical-align">
             <div style="text-align:center;" class="col-xs-1 leftControl"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left leftArrow disabled"></span></div>
             <div style="overflow-x:hidden; overflow-y:hidden; white-space:nowrap;" class="col-xs-10 innerWrapper">
                 <div ng-repeat="brand in brands" style="display:inline-block; float:none; white-space:normal; vertical-align:top;" class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 tile-link">
-                    <a href="href" ng-href="/{{brand.slug}}">
+                    <a href="href" ng-href="./{{brand.slug}}">
                         <brand-tile brand="brand"></brand-tile>
                     </a>
                 </div>
@@ -16,11 +16,11 @@
         </div>
     </div>
     <div class="row theBrandArea hidden-md hidden-lg">
-        <div class="col-xs-10 col-xs-offset-1 text-center shopOurBrands"><a ng-href="/brands" class="btn btn-header grayBorder">SEE OUR BRANDS</a></div>
+        <div class="col-xs-10 col-xs-offset-1 text-center shopOurBrands"><a ng-href="./brands" class="btn btn-header grayBorder">SEE OUR BRANDS</a></div>
         <div class="col-xs-12">
             <div class="row brand-list">
                 <div ng-repeat="brand in brands" class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 tile-link">
-                    <a href="href" ng-href="/{{brand.slug}}">
+                    <a href="href" ng-href="./{{brand.slug}}">
                         <brand-tile brand="brand"></brand-tile>
                     </a>
                 </div>

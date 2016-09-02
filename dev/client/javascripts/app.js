@@ -1,4 +1,4 @@
-var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination']);
+var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier']);
 
 app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 	function ($stateProvider,$urlRouterProvider,$locationProvider) {
@@ -41,7 +41,7 @@ app.directive('testTemp', function(){
 app.directive('homePage', function(){
     return{
         restrict: 'E',
-        templateUrl: 'templates/home-page.html'
+        templateUrl: 'templates/home-page.html',
     }
 });
 
@@ -55,7 +55,21 @@ app.directive('variationTile', function(){
         replace: !0,
         link: function(e, t) {
             var r, n;
-            return (null != (r = e.variation) && null != (n = r.brand) ? n.name : void 0) ? t.addClass("brand-" + e.variation.brand.name, "brandOverride") : void 0
+            return (null != (r = e.variation) && null != (n = r.brand) ? n.name : void 0) ? t.addClass("brand-" + slug(e.variation.brand.name.toLowerCase()), "brandOverride") : void 0
+        }
+   }
+});
+
+app.directive('brandTile', function(){
+   return{
+        restrict: 'E',
+        templateUrl: 'templates/brand-tile.html',
+        scope: {
+            brand: "="
+        },
+        replace: !0,
+        link: function(e) {
+            return e.iconClass = "icon-" + slug(e.brand.name.toLowerCase()), e.brandClass = "brand-" + slug(e.brand.name.toLowerCase())
         }
    }
 });
@@ -97,50 +111,10 @@ app.directive("backImg", function() {
 app.directive('brandSlider', function(){
     return{
         restrict: 'E',
-        templateUrl: 'templates/brand-slider.html'
-    }
-});
-
-app.controller('socialMediaController',function($scope, $http){
-    $scope.accounts = {};
-    $http.get("client/json/social-media.json").then(function(res) {
-        $scope.accounts = res.data;
-    });
-//    console.log($scope.accounts);
-});
-
-app.controller('menuController',function($scope, $http, $location){
-    $scope.navmenu = {};
-    $http.get("client/json/nav-menu.json").then(function(res) {
-         $scope.navmenu = res.data;
-    });
-//    $scope.baseurl = $location.absUrl();
-//    console.log($scope.baseurl);
-});
-
-app.controller('featuredVariationsController',function($scope, $http){
-    $scope.featuredVariations = {};
-    $http.get("client/json/featured-variations.json").then(function(res) {
-         $scope.featuredVariations = res.data;
-    });
-});
-
-
-/*
-app.directive("brandSlider", ["Brand", "$location", "$rootScope", function(e) {
-    return {
-        templateUrl: "templates/brand-slider.html",
-        restrict: "E",
-        scope: {
-            brand: "="
-        },
+        templateUrl: 'templates/brand-slider.html',
         replace: !0,
         link: function(t) {
-            return t.brands = e.query(function() {
-                var e, r, n, o, a;
-                for (o = t.brands, a = [], r = 0, n = o.length; n > r; r++) e = o[r], a.push(e.slug = slug(e.name.toLowerCase()));
-                return a
-            }), setInterval(function() {
+            return setInterval(function() {
                 return t.posLeft = $(".innerWrapper").scrollLeft(), t.posRight = $(".innerWrapper").outerWidth(!0), t.tileSize = $(".brandTile").outerWidth(!0)
             }, 100), t.checkPos = function() {
                 return setTimeout(function() {
@@ -161,5 +135,41 @@ app.directive("brandSlider", ["Brand", "$location", "$rootScope", function(e) {
             })
         }
     }
-}])
-*/
+});
+
+app.controller('socialMediaController',function($scope, $http){
+    $scope.accounts = {};
+    $http.get("client/json/social-media.json").then(function(res) {
+        $scope.accounts = res.data;
+    });
+//    console.log($scope.accounts);
+});
+
+app.controller('menuController',function($scope, $http, $location){
+    $scope.navmenu = {};
+    $http.get("client/json/nav-menu.json").then(function(res) {
+        $scope.navmenu = res.data;
+    });
+//    $scope.baseurl = $location.absUrl();
+//    console.log($scope.baseurl);
+});
+
+app.controller('featuredVariationsController',function($scope, $http){
+    $scope.featuredVariations = {};
+    $http.get("client/json/featured-variations.json").then(function(res) {
+        $scope.featuredVariations = res.data;
+        for (x in $scope.featuredVariations)
+            $scope.featuredVariations[x].slug = slug($scope.featuredVariations[x].name.toLowerCase());
+    });
+});
+
+app.controller('brandsController',function($scope, $http){
+    $scope.brands = {};
+    $http.get("client/json/brands.json").then(function(res) {
+        $scope.brands = res.data;
+//        console.log($scope.brands);
+        for (x in $scope.brands)
+            $scope.brands[x].slug = slug($scope.brands[x].name.toLowerCase());
+//        console.log($scope.brands);
+    });
+});

@@ -11,13 +11,13 @@
             <div class="item active"><img src="client/assets/images/header1.jpg" class="headerImage">
                 <div class="carousel-caption"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><img src="client/assets/images/gg_logo_white.png" class="gg-white-logo"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span>
                     <h2>MAKE THINGS BETTER.</h2>
-                    <p style="letter-spacing: 1px;"><a href="/products" class="headerLinks"> PRODUCTS</a><span class="divider">&nbsp;|</span><a href="/help" class="headerLinks"> SERVICE</a><span class="divider">&nbsp;|</span><a href="/brands" class="headerLinks"> COMMUNITY</a></p>
+                    <p style="letter-spacing: 1px;"><a href="./products" class="headerLinks"> PRODUCTS</a><span class="divider">&nbsp;|</span><a href="./help" class="headerLinks"> SERVICE</a><span class="divider">&nbsp;|</span><a href="./brands" class="headerLinks"> COMMUNITY</a></p>
                 </div>
             </div>
             <div class="item"><img src="client/assets/images/header2.jpg" class="headerImage">
                 <div class="carousel-caption"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><img src="client/assets/images/gg_logo_white.png" class="gg-white-logo"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span>
                     <h2>MAKE THINGS BETTER.</h2>
-                    <p><a href="/products" class="headerLinks">THOUGHTFUL PURCHASES</a><span class="divider">&nbsp;&nbsp;|</span><a href="/brands" class="headerLinks"> COLLECTIVE GIVING</a><span class="divider">&nbsp;&nbsp;|</span><a href="/promise" class="headerLinks"> REAL CHANGES</a></p>
+                    <p><a href="./products" class="headerLinks">THOUGHTFUL PURCHASES</a><span class="divider">&nbsp;&nbsp;|</span><a href="./brands" class="headerLinks"> COLLECTIVE GIVING</a><span class="divider">&nbsp;&nbsp;|</span><a href="./promise" class="headerLinks"> REAL CHANGES</a></p>
                 </div>
             </div>
             <div class="item"><img src="client/assets/images/header3.jpg" class="headerImage">
@@ -34,7 +34,7 @@
         <div class="row top">
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                 <h2>THE GREATER GOODS PROMISE</h2>
-                <p>We collaborate with charities and responsible makers to produce great products for good. Learn how we’re partnering with these passionate people.</p><a href="href" ng-href="/promise" class="btn grayBorder">LEARN MORE</a></div>
+                <p>We collaborate with charities and responsible makers to produce great products for good. Learn how we’re partnering with these passionate people.</p><a href="href" ng-href="./promise" class="btn grayBorder">LEARN MORE</a></div>
         </div>
         <div class="row">
             <div class="col-md-12 col-md-offset-0 col-xs-10 col-xs-offset-1">
@@ -46,7 +46,7 @@
             <div class="col-xs-12">
                 <div class="row variation-list" ng-controller="featuredVariationsController">
                     <div ng-repeat="variation in featuredVariations" class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 tile-link">
-                        <a ng-if="!variation.comingSoon" href="href" ng-href="/{{variation.brand.name}}/product/{{variation.sku}}/{{variation.slug}}">
+                        <a ng-if="!variation.comingSoon" href="href" ng-href="./{{variation.brand.name | slugify}}/product/{{variation.sku}}/{{variation.slug}}">
                             <variation-tile variation="variation"></variation-tile>
                         </a>
                         <div ng-if="variation.comingSoon">

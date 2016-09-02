@@ -1,0 +1,20 @@
+{
+  "name": "angular-slug",
+  "version": "0.0.4",
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/lucasconstantino/angular-slug.git"
+  },
+  "description": "An AngularJS wrapper arround the slug library",
+  "main": "angular-slug.js",
+  "homepage": "https://github.com/lucasconstantino/angular-slug",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Constantino Silva",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "slug": "^0.9.1"
+  }
+}
