@@ -1,0 +1,13 @@
+<div class="variation tile">
+    <div class="dimmer"></div>
+    <div class="tile-container">
+        <back-img ng-src="variation.image.image" ng-show="variation.image"></back-img>
+        <div class="border brandBackgroundColor"></div>
+        <div class="description">
+            <div class="textContainer">
+                <h3>{{variation.name | uppercase}}</h3>
+                <div class="price"><span ng-show="variation.msrp" class="msrp">{{variation.msrp | currency}}  </span><span ng-show="variation.providers.amazon.price" class="amazon">{{variation.providers.amazon.price | currency}}</span><span ng-show="variation.providers.bbb.price &amp;&amp; !variation.providers.amazon.price" class="bbb">{{variation.providers.bbb.price | currency}}</span><span ng-show="variation.providers.target.price &amp;&amp; !variation.providers.amazon.price &amp;&amp; !variation.providers.bbb.price" class="target">{{variation.providers.target.price | currency}}</span></div>
+            </div>
+        </div>
+    </div>
+</div>

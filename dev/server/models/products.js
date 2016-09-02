@@ -20,8 +20,8 @@ var productSchema = mongoose.Schema({
         type : Number
     },
     providers : {
-        amazon :  [{price:Number, link:String}],
-        bbb : [{price:Number, link:String}],
+        amazon :  {price:Number, link:String},
+        bbb : {price:Number, link:String},
         target : [{price:Number, link:String}]
     },
     image : {
