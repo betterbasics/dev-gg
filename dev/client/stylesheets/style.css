@@ -40,8 +40,8 @@ a {
 
 /*add-ons*/
 a.text-center.icon-container.pull-right{
-    padding: 25px 0px 5px;
-    line-height: 1em;
+    /*padding: 25px 0px 5px;*/
+    /*line-height: 1em;*/
 }
 #icon-logo{
     max-width: 100%;

@@ -1,1 +1,53 @@
-[{"name":"Bluetooth Smart Scale","sku":"0375","msrp":99.99,"providers":{"amazon":{"price":59.99}},"image":{"image":"http://media.greatergoods.com/images/standard/8arywhrnhe.jpg"},"brand":{"name":"Weight Gurus"},"comingSoon":false},{"name":"Wrist Blood Pressure Monitor","sku":"0605","msrp":69.99,"providers":{"amazon":{"price":34.95}},"image":{"image":"http://media.greatergoods.com/images/standard/aj8moln2nz.jpg"},"brand":{"name":"balance"},"comingSoon":false},{"name":"Vista Blend","sku":"0657","msrp":44.99,"providers":{"amazon":{"price":35.63}},"image":{"image":"http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg"},"brand":{"name":"rise"},"comingSoon":false}]
+[
+   {
+      "name": "Bluetooth Smart Scale",
+      "sku": "0375",
+      "msrp": 99.99,
+      "providers": {
+         "amazon": {
+            "price": 59.99
+         }
+      },
+      "image": {
+         "image": "http://media.greatergoods.com/images/standard/8arywhrnhe.jpg"
+      },
+      "brand": {
+         "name": "Weight Gurus"
+      },
+      "comingSoon": false
+   },
+   {
+      "name": "Wrist Blood Pressure Monitor",
+      "sku": "0605",
+      "msrp": 69.99,
+      "providers": {
+         "amazon": {
+            "price": 34.95
+         }
+      },
+      "image": {
+         "image": "http://media.greatergoods.com/images/standard/aj8moln2nz.jpg"
+      },
+      "brand": {
+         "name": "balance"
+      },
+      "comingSoon": false
+   },
+   {
+      "name": "Vista Blend",
+      "sku": "0657",
+      "msrp": 44.99,
+      "providers": {
+         "amazon": {
+            "price": 35.63
+         }
+      },
+      "image": {
+         "image": "http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg"
+      },
+      "brand": {
+         "name": "rise"
+      },
+      "comingSoon": false
+   }
+]

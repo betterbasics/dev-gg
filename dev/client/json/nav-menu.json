@@ -1,1 +1,18 @@
-[{"name":"PRODUCTS","id":"products"},{"name":"BRANDS","id":"brands"},{"name":"OUR PROMISE","id":"promise"},{"name":"SUPPORT","id":"help"}]
+[
+   {
+      "name": "PRODUCTS",
+      "id": "products"
+   },
+   {
+      "name": "BRANDS",
+      "id": "brands"
+   },
+   {
+      "name": "OUR PROMISE",
+      "id": "promise"
+   },
+   {
+      "name": "SUPPORT",
+      "id": "help"
+   }
+]

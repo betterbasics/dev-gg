@@ -1,0 +1,49 @@
+<div id="theHeader" ui-scrollfix="36" ng-hide="hideHeader" class="header container-fluid">
+    <div id="top-nav" class="top-nav row brandBackgroundColor brandTransition">
+        <div class="container-fluid">
+            <div class="container-fluid fullContentWidth">
+                <div class="row top-nav-content">
+                    <div id="lead" class="col-xs-9 hidden-xs">WELCOME TO GREATER GOODS<sup>®</sup> MAKE THINGS BETTER.™</div>
+                    <div class="hidden-xs col-sm-3 pull-right noBorder">
+                        <div class="container-fluid">
+                            <div class="row header-social-links" ng-controller="socialMediaController">
+                                <div class="col-xs-2"></div>
+                                <div class="col-xs-2 text-center">
+                                    <a ng-click="getHelpModal.open()" class="fa fa-phone"></a>
+                                </div>
+                                <div class="col-xs-2 text-center" ng-repeat="account in accounts">
+                                    <a target="_blank" ng-href="{{account.url}}" class="fa fa-{{account.name}}"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-nav row">
+        <div class="container-fluid brandBorderColor brandTransition">
+            <div class="container-fluid fullContentWidth">
+                <div class="row">
+                    <div class="main-nav-header noBorder brandBorderColor">
+                        <div class="hamburgerContainer row brandBorderColor">
+                            <div id="hamburger" ng-click="navActive = !navActive" class="col-xs-2 hidden-sm hidden-md hidden-lg text-center header-button"><i class="fa fa-bars"></i></div><a href="./" class="text-center icon-container pull-right"><span class="icon-logo brandColor brandTransition"></span></a></div>
+                    </div>
+                    <div id="nav" ng-class="{'active':navActive}" class="main-nav-content" ng-controller="menuController">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="row text-center links">
+                                    <div id="links-wrapper">
+                                        <a id="{{menu.id}}" ng-href="./{{menu.id}}" class="header-button brandActiveColor" ng-repeat="menu in navmenu" ng-class="{active: isActive('/{{menu.id}}')}">
+                                            <span class="menu-text">{{menu.name}}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

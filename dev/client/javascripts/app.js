@@ -26,7 +26,7 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 				url: "/help",
 				templateUrl: "templates/support.html"
 			})
-        // use the HTML5 History API
+        //use the HTML5 History API
         $locationProvider.html5Mode(true);
 	}
 ]);
@@ -35,6 +35,28 @@ app.directive('testTemp', function(){
     return{
         restrict: 'E',
         templateUrl: 'templates/test-temp.html'
+    }
+});
+
+app.directive('theHeader', function(){
+    return{
+        restrict: 'EA',
+        templateUrl: 'templates/the-header.html',
+        replace: !0,
+        link: function(scope, element) {
+            document.addEventListener("scroll",function (event) {
+                var body = document.body.scrollTop;
+                //console.log(body);
+                if (body > 36){
+                    element.addClass("ui-scrollfix");
+                } else{
+                    element.removeClass("ui-scrollfix");
+                }
+            });
+            return setTimeout(function() {
+                return element.addClass("transitionActive")
+            }, 0)
+        }
     }
 });
 
@@ -142,7 +164,7 @@ app.controller('socialMediaController',function($scope, $http){
     $http.get("client/json/social-media.json").then(function(res) {
         $scope.accounts = res.data;
     });
-//    console.log($scope.accounts);
+    //console.log($scope.accounts);
 });
 
 app.controller('menuController',function($scope, $http, $location){
@@ -150,8 +172,12 @@ app.controller('menuController',function($scope, $http, $location){
     $http.get("client/json/nav-menu.json").then(function(res) {
         $scope.navmenu = res.data;
     });
-//    $scope.baseurl = $location.absUrl();
-//    console.log($scope.baseurl);
+    //$scope.baseurl = $location.absUrl();
+    //console.log($scope.baseurl);
+    //console.log($location.path());
+    $scope.isActive = function(destination){
+        return destination === $location.path();
+    }
 });
 
 app.controller('featuredVariationsController',function($scope, $http){
@@ -167,9 +193,9 @@ app.controller('brandsController',function($scope, $http){
     $scope.brands = {};
     $http.get("client/json/brands.json").then(function(res) {
         $scope.brands = res.data;
-//        console.log($scope.brands);
+        //console.log($scope.brands);
         for (x in $scope.brands)
             $scope.brands[x].slug = slug($scope.brands[x].name.toLowerCase());
-//        console.log($scope.brands);
+        //console.log($scope.brands);
     });
 });
