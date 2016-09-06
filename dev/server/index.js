@@ -119,3 +119,26 @@ app.delete(baseurl+'/server/api/product/:_id', function(req, res){
     });
 });
 
+/*brands api*/
+var fs = require("fs");
+var path = require("path");
+
+app.get(baseurl+'/server/api/brands', function(req, res){
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
+        var brands;
+        brands = JSON.parse(data);
+        res.json(brands);
+    });
+});
+
+app.get(baseurl+'/server/api/brands/:_id', function(req, res){
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
+        var brands;
+        brands = JSON.parse(data);
+        var brand = _.find(brands, {_id:req.params._id});
+        res.json(brand);
+    });
+});
+

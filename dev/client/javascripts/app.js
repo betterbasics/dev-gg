@@ -2,8 +2,6 @@ var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'ang
 
 app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 	function ($stateProvider,$urlRouterProvider,$locationProvider) {
-//app.config(['$stateProvider','$urlRouterProvider',
-//	function ($stateProvider,$urlRouterProvider) {
 		$urlRouterProvider.otherwise('/');
 		$stateProvider
 			.state('Home', {
@@ -159,6 +157,29 @@ app.directive('brandSlider', function(){
     }
 });
 
+app.directive('brandsPage', ["$routeParams", "$location", "Brand", function(e, t, r){
+    return{
+        restrict: 'E',
+        templateUrl: 'templates/brands-page.html',
+        replace: !0,
+        link: function(e) {
+            return e.brands = r.query({
+                scope: "name shortDescription image hidden"
+            }, function() {
+                var t, r, n, o, a;
+                for (o = e.brands, a = [], r = 0, n = o.length; n > r; r++) t = o[r], t.slug = slug(t.name.toLowerCase()), t.iconClass = "icon-" + slug(t.name.toLowerCase()), a.push(t.brandClass = "brand-" + slug(t.name.toLowerCase()));
+                return a
+            })
+        }
+    }
+}]);
+
+app.factory("Brand", ["$resource", function(e) {
+    return e("server/api/brands/:_id", {
+        _id: "@_id"
+    })
+}]);
+
 app.controller('socialMediaController',function($scope, $http){
     $scope.accounts = {};
     $http.get("client/json/social-media.json").then(function(res) {
@@ -198,4 +219,13 @@ app.controller('brandsController',function($scope, $http){
             $scope.brands[x].slug = slug($scope.brands[x].name.toLowerCase());
         //console.log($scope.brands);
     });
+});
+
+app.filter("titlecase", function() {
+    return function(e) {
+        var t, r;
+        return null == e && (e = ""), r = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i, e = e.toLowerCase(), t = function(e, t) {
+            return t === !0 && r.test(e) ? e : e[0] ? e[0].toUpperCase() + e.slice(1).toLowerCase() : ""
+        }, e.toLowerCase().split(" ").map(t).join(" ")
+    }
 });

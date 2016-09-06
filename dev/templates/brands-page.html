@@ -1,0 +1,28 @@
+<div class="brandsPage" ng-controller="brandsController">
+    <div style="margin: 0 auto;" ng-repeat="brand in brands" class="container-fluid brands-page">
+        <div ng-if="!brand.hidden && $odd" ng-class="brand.brandClass" class="rowMod odd desktopOnly">
+            <div class="brandInfo">
+                <div class="brandIcon"><i ng-class="brand.iconClass" class="brandColor"></i><span class="hidden">{{brand.name | titlecase}}</span></div>
+                <p>{{brand.shortDescription}}</p>
+                <div class="contentButtons left"><a ng-href="./{{brand.slug}}" class="btn brandBorderColorHover brandColorHover">LEARN MORE</a><a ng-href="./{{brand.slug}}/products" class="btn brandBorderColorHover brandColorHover">SHOP</a></div>
+            </div>
+            <div style="background-image:url({{brand.image.large}}); background-size:cover; background-position: center; " class="brandImage"></div>
+        </div>
+        <div ng-if="!brand.hidden && $even" ng-class="brand.brandClass" class="rowMod brand even desktopOnly">
+            <div style="background-image:url({{brand.image.large}}); background-size:cover; background-position: center; " class="brandImage"></div>
+            <div class="brandInfo">
+                <div class="brandIcon"><i ng-class="brand.iconClass" class="brandColor"></i><span class="hidden">{{brand.name | titlecase}}</span></div>
+                <p>{{brand.shortDescription}}</p>
+                <div class="contentButtons left"><a ng-href="./{{brand.slug}}" class="btn brandBorderColorHover brandColorHover">LEARN MORE</a><a ng-href="./{{brand.slug}}/products" class="btn brandBorderColorHover brandColorHover">SHOP</a></div>
+            </div>
+        </div>
+        <div ng-class="brand.brandClass" class="rowMod brand mobileOnly">
+            <div style="background-image:url({{brand.image.large}}); background-size:cover; background-position: center; " class="brandImage"></div>
+            <div class="brandInfo">
+                <div class="brandIcon"><i ng-class="brand.iconClass" class="brandColor"></i><span class="hidden">{{brand.name | titlecase}}</span></div>
+                <p>{{brand.shortDescription}}</p>
+                <div class="contentButtons left"><a ng-href="./{{brand.slug}}" class="btn brandBorderColorHover brandColorHover">LEARN MORE</a><a ng-href="./{{brand.slug}}/products" class="btn brandBorderColorHover brandColorHover">SHOP</a></div>
+            </div>
+        </div>
+    </div>
+</div>
