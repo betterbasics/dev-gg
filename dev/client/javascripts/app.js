@@ -1,4 +1,7 @@
-var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier']);
+var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile']);
+
+//, 'ui.utils', 'util', 'filters', 'angular-bind-html-compile', 'brands'
+//'variations', 'charities', 'reviewTeam', 'brands', 'blogPosts', 'products', 'customers', 'careers', 'ipCookie', 'duScroll', 'angular-amazon-login', 'angular-parallax',
 
 app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 	function ($stateProvider,$urlRouterProvider,$locationProvider) {
@@ -24,10 +27,15 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 				url: "/help",
 				templateUrl: "templates/support.html"
 			})
+			.state('Brand', {
+				url: "/:brand",
+				templateUrl: "templates/brand.html"
+			})
         //use the HTML5 History API
         $locationProvider.html5Mode(true);
 	}
 ]);
+
 
 app.directive('testTemp', function(){
     return{
@@ -173,6 +181,57 @@ app.directive('brandsPage', ["$routeParams", "$location", "Brand", function(e, t
         }
     }
 }]);
+
+app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", function(e, t, r, n) {
+    return{
+        restrict: 'E',
+        templateUrl: 'templates/brand-page.html',
+        controller: 'brandController',
+        replace: !0,
+        /*
+        link: function(o) {
+
+
+            o.brands = t.query({
+                populate: "charity"
+            }, function() {
+                //n.path("/dev/");
+                console.log(n.path());
+                var t, a, i, u, s, l, c;
+                for (i = null, l = o.brands, a = u = 0, s = l.length; s > u; a = ++u) t = l[a], t.slug = slug(t.name.toLowerCase()), t.description = r.trustAsHtml(null != (c = t.description) ? c : ""), e.brand === t.slug && (i = a, _.assign(o.brand, t), o.brand.iconClass = "icon-" + t.slug);
+
+                //console.log(o.brands.splice(i, 1), o.brands.splice(3));
+                //console.log(o.brands);
+
+                //return o.brands.splice(i, 1), o.brands.splice(3), null == i ? n.path("/").search("fsfsdferror", "1") : void 0
+                //return void 0
+            }), o.brand = {
+                $promise: o.brands.$promise
+            },  //console.log(o.brand);
+                o.displayVideo = function() {
+                var e;
+                return e = o.$watch("videoPlayer.playVideo", function(t) {
+                    return t ? (o.videoDisplay = !0, o.videoPlayer.playVideo(), e()) : void 0
+                })
+            }, o.$on("youtube.player.buffering", function() {
+                return o.posterWasClicked = !0
+            }), o.$on("youtube.player.playing", function() {
+                return o.posterWasClicked = !0
+            }), o.thisIsMattsFault = function() {
+                return $("body").animate({
+                    scrollTop: $(window).height() - 64
+                }, 800)
+            }
+            //console.log(o.brands);
+        }
+        */
+    }
+}]);
+
+app.controller('brandController',function($scope, $http){
+    $scope.brand = {slug: "test-onlyou"}
+});
+
 
 app.factory("Brand", ["$resource", function(e) {
     return e("server/api/brands/:_id", {

@@ -1,0 +1,18 @@
+<div class="brands-page">
+    <div ng-class="{'videoDisplay':videoDisplay, 'videoHeader':brand.headerVideo}" class="contentHeader">
+        <div class="videoContainer">
+            <youtube-video player="videoPlayer" video-id="brand.headerVideo" player-vars="$root.playerVars" class="video"></youtube-video>
+        </div>
+        <back-img ng-hide="posterWasClicked" style="background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) ), url({{brand.image.large}}); background-size:cover; position:relative; background-position: center; pointer-events:none;" class="poster backImg">
+            <div ng-click="displayVideo()" style="cursor:pointer" class="font-white centerVertical"><span class="posterText"><span ng-class="brand.iconClass" class="brandIcon"></span>
+                <h1 ng-bind-html="brand.tagline"></h1><span ng-show="brand.headerVideo" class="icon-play"></span></span>
+            </div>
+        </back-img>
+    </div>
+    <div class="container-fluid">
+        <div bind-html-compile="brand.description" class="htmlContent contentBody"></div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 contentButtons"><a ng-href="./brands" class="btn">OUR BRANDS</a><a ng-href="./{{brand.slug}}/products" class="btn">SHOP {{brand.name | uppercase}}</a></div>
+        </div>
+    </div>
+</div>

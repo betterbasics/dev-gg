@@ -123,12 +123,11 @@ app.delete(baseurl+'/server/api/product/:_id', function(req, res){
 var fs = require("fs");
 var path = require("path");
 
-app.get(baseurl+'/server/api/brands', function(req, res){
+app.get(baseurl+'/server/api/brands/:id', function(req, res){
     /*using json file*/
     fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
         var brands;
         brands = JSON.parse(data);
-        res.json(brands);
     });
 });
 
