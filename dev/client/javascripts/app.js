@@ -1,4 +1,4 @@
-var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile']);
+var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed']);
 
 //, 'ui.utils', 'util', 'filters', 'angular-bind-html-compile', 'brands'
 //'variations', 'charities', 'reviewTeam', 'brands', 'blogPosts', 'products', 'customers', 'careers', 'ipCookie', 'duScroll', 'angular-amazon-login', 'angular-parallax',
@@ -188,10 +188,23 @@ app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", functi
         templateUrl: 'templates/brand-page.html',
         controller: 'brandController',
         replace: !0,
-        /*
         link: function(o) {
+            return o.displayVideo = function() {
+                var e;
+                return e = o.$watch("videoPlayer.playVideo", function(t) {
+                    return t ? (o.videoDisplay = !0, o.videoPlayer.playVideo(), e()) : void 0
+                })
+            }, o.$on("youtube.player.buffering", function() {
+                return o.posterWasClicked = !0
+            }), o.$on("youtube.player.playing", function() {
+                return o.posterWasClicked = !0
+            }), o.thisIsMattsFault = function() {
+                return $("body").animate({
+                    scrollTop: $(window).height() - 64
+                }, 800)
+            }
 
-
+            /*
             o.brands = t.query({
                 populate: "charity"
             }, function() {
@@ -223,13 +236,18 @@ app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", functi
                 }, 800)
             }
             //console.log(o.brands);
+            */
         }
-        */
     }
 }]);
 
 app.controller('brandController',function($scope, $http){
-    $scope.brand = {slug: "test-onlyou"}
+    $scope.brand = {};
+    $http.get("client/json/brands.json").then(function(res) {
+        $scope.brand = res.data[0];
+        console.log($scope.brand);
+        $scope.brand.slug = slug($scope.brand.name.toLowerCase());
+    });
 });
 
 
