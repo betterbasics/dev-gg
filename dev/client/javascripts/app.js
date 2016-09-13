@@ -1,5 +1,15 @@
 var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed']);
 
+app.config(["$routeProvider", "$locationProvider", "$httpProvider", function(e, t, r) {
+        return e.when = _.wrap(e.when, function(e, t, r) {
+            return _.defaults(r, {
+                caseInsensitiveMatch: !0
+            }), e(t, r)
+        }), e.otherwise({
+            redirectTo: "/"
+        })
+}]);
+
 //, 'ui.utils', 'util', 'filters', 'angular-bind-html-compile', 'brands'
 //'variations', 'charities', 'reviewTeam', 'brands', 'blogPosts', 'products', 'customers', 'careers', 'ipCookie', 'duScroll', 'angular-amazon-login', 'angular-parallax',
 
@@ -35,6 +45,16 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
         $locationProvider.html5Mode(true);
 	}
 ]);
+
+
+app.run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
+    $rootScope.$on("$locationChangeSuccess", function() {
+        //console.log("AnchorScroll");
+        $anchorScroll();
+        //window.scrollTo(500, 0);
+        $('html, body').animate({ scrollTop: -10000 }, 100);
+    });
+}]);
 
 
 app.directive('testTemp', function(){
@@ -136,13 +156,18 @@ app.directive("backImg", function() {
     }
 });
 
-app.directive('brandSlider', function(){
+app.directive('brandSlider', ["Brand", "$location", "$rootScope", function(e) {
     return{
         restrict: 'E',
         templateUrl: 'templates/brand-slider.html',
         replace: !0,
         link: function(t) {
-            return setInterval(function() {
+            //console.log(t);
+            return t.brands = e.query(function() {
+                var e, r, n, o, a;
+                for (o = t.brands, a = [], r = 0, n = o.length; n > r; r++) e = o[r], a.push(e.slug = slug(e.name.toLowerCase()));
+                return a
+            }), setInterval(function() {
                 return t.posLeft = $(".innerWrapper").scrollLeft(), t.posRight = $(".innerWrapper").outerWidth(!0), t.tileSize = $(".brandTile").outerWidth(!0)
             }, 100), t.checkPos = function() {
                 return setTimeout(function() {
@@ -163,7 +188,7 @@ app.directive('brandSlider', function(){
             })
         }
     }
-});
+}]);
 
 app.directive('brandsPage', ["$routeParams", "$location", "Brand", function(e, t, r){
     return{
@@ -189,39 +214,17 @@ app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", functi
         controller: 'brandController',
         replace: !0,
         link: function(o) {
-            return o.displayVideo = function() {
-                var e;
-                return e = o.$watch("videoPlayer.playVideo", function(t) {
-                    return t ? (o.videoDisplay = !0, o.videoPlayer.playVideo(), e()) : void 0
-                })
-            }, o.$on("youtube.player.buffering", function() {
-                return o.posterWasClicked = !0
-            }), o.$on("youtube.player.playing", function() {
-                return o.posterWasClicked = !0
-            }), o.thisIsMattsFault = function() {
-                return $("body").animate({
-                    scrollTop: $(window).height() - 64
-                }, 800)
-            }
-
-            /*
-            o.brands = t.query({
+            //console.log(o);
+            return o.brands = t.query({
                 populate: "charity"
             }, function() {
-                //n.path("/dev/");
-                console.log(n.path());
                 var t, a, i, u, s, l, c;
                 for (i = null, l = o.brands, a = u = 0, s = l.length; s > u; a = ++u) t = l[a], t.slug = slug(t.name.toLowerCase()), t.description = r.trustAsHtml(null != (c = t.description) ? c : ""), e.brand === t.slug && (i = a, _.assign(o.brand, t), o.brand.iconClass = "icon-" + t.slug);
-
-                //console.log(o.brands.splice(i, 1), o.brands.splice(3));
-                //console.log(o.brands);
-
-                //return o.brands.splice(i, 1), o.brands.splice(3), null == i ? n.path("/").search("fsfsdferror", "1") : void 0
-                //return void 0
+                //console.log(_);
+                //return o.brands.splice(i, 1), o.brands.splice(3), null == i ? n.path("/").search("error", "1") : void 0
             }), o.brand = {
                 $promise: o.brands.$promise
-            },  //console.log(o.brand);
-                o.displayVideo = function() {
+            }, o.displayVideo = function() {
                 var e;
                 return e = o.$watch("videoPlayer.playVideo", function(t) {
                     return t ? (o.videoDisplay = !0, o.videoPlayer.playVideo(), e()) : void 0
@@ -235,19 +238,43 @@ app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", functi
                     scrollTop: $(window).height() - 64
                 }, 800)
             }
-            //console.log(o.brands);
-            */
         }
     }
 }]);
 
-app.controller('brandController',function($scope, $http){
+app.controller('brandController',function($stateParams, $scope, $http, $location){
+    //console.log($stateParams.brand);
     $scope.brand = {};
-    $http.get("client/json/brands.json").then(function(res) {
-        $scope.brand = res.data[0];
-        console.log($scope.brand);
-        $scope.brand.slug = slug($scope.brand.name.toLowerCase());
+
+    /**/
+    $http.get("server/api/brands").then(function(res){
+        //console.log(res);
+        var brands = res.data;
+        for (x in brands)
+            brands[x].slug = slug(brands[x].name.toLowerCase());
+        $scope.brand = _.find(brands, {slug:$stateParams.brand});
+        //console.log($scope.brand);
+        if ($scope.brand == null){
+            $location.path("/").search("error", "1");
+        }
+	}, function(res){
+        //console.log('Error status: ' + res.status);
+        $scope.brand = {};
     });
+    /**/
+
+    /**
+    $http.get("client/json/brands.json").then(function(res) {
+        var brands = res.data;
+        for (x in brands)
+            brands[x].slug = slug(brands[x].name.toLowerCase());
+        $scope.brand = _.find(brands, {slug:$stateParams.brand});
+        //console.log($scope.brand);
+        if ($scope.brand == null){
+            $location.path("/").search("error", "1");
+        }
+    });
+    /**/
 });
 
 
@@ -289,13 +316,25 @@ app.controller('featuredVariationsController',function($scope, $http){
 
 app.controller('brandsController',function($scope, $http){
     $scope.brands = {};
+    /**/
+    $http.get("server/api/brands").then(function(res){
+        //console.log(res);
+        $scope.brands = res.data;
+	}, function(res){
+        //console.log('Error status: ' + res.status);
+        $scope.brands = {};
+    });
+    /**/
+
+    /**
     $http.get("client/json/brands.json").then(function(res) {
         $scope.brands = res.data;
         //console.log($scope.brands);
-        for (x in $scope.brands)
-            $scope.brands[x].slug = slug($scope.brands[x].name.toLowerCase());
+        //for (x in $scope.brands)
+        //    $scope.brands[x].slug = slug($scope.brands[x].name.toLowerCase());
         //console.log($scope.brands);
     });
+    /**/
 });
 
 app.filter("titlecase", function() {

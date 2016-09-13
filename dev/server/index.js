@@ -7,8 +7,10 @@ var _ = require('lodash');
 //initialize mongoose schemas
 require('./models/books');
 require('./models/products');
+require('./models/brands');
 var Book = mongoose.model('Book');
 var Product = mongoose.model('Product');
+var Brand = mongoose.model('Brand');
 
 // Create the application.
 var app = express();
@@ -124,21 +126,48 @@ var fs = require("fs");
 var path = require("path");
 
 app.get(baseurl+'/server/api/brands', function(req, res){
-    /*using json file*/
+    Brand.find(function(err, brands){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(brands);
+    }).sort({'_id': 1});
+
+    /*using json file*
     fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
         var brands;
         brands = JSON.parse(data);
         res.json(brands);
     });
+    /**/
 });
 
 app.get(baseurl+'/server/api/brands/:_id', function(req, res){
-    /*using json file*/
+    Brand.findById(req.params._id, function(err, brand){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(brand);
+    });
+
+    /*using json file*
     fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
         var brands;
         brands = JSON.parse(data);
         var brand = _.find(brands, {_id:req.params._id});
         res.json(brand);
     });
+    /**/
 });
+
+app.post(baseurl+'/server/api/brands', function(req, res){
+    var brand = req.body;
+    Brand.create(brand, function(err, brand){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(brand);
+    });
+});
+
 

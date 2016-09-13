@@ -1,0 +1,211 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: 'Merriweather', serif !important;
+    color: #767F82 !important;
+    text-align: center;
+}
+
+.demo {
+    margin: 0 auto;
+    padding-top: 64px;
+    max-width: 640px;
+    width: 94%;
+}
+
+.demo h1 {
+    margin-top: 0;
+}
+
+.wrapper{
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.abovebanner{
+    background: url(../images/bckground3.jpg) center top no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header{
+    width: 100%;
+    float: left;
+    display: table-cell;
+    margin: 60px 0 50px 0;
+}
+
+img {
+    height: auto;
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+p.line1 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.countdown {
+    list-style: none;
+    margin: 40px 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+.countdown li{
+    display: inline-block;
+}
+
+.countdown li span {
+    font-size: 75px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.countdown li.seperator {
+    font-size: 75px;
+    margin-top: 12px;
+    line-height: 1em;
+    vertical-align: top;
+}
+
+.countdown li p {
+    color: #767F82;
+    font-size: 1em;
+}
+
+.mc-label {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    font-size: 0.9em;
+}
+
+#mc_embed_signup {
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    width: 100%
+}
+
+#mc_embed_signup_scroll {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 40px;
+}
+
+input#mce-EMAIL {
+    float: left;
+    width: 300px;
+    margin: -1px 5px 0px 0px;
+    border-radius: 0px !important;
+}
+
+.clear {
+    float: left;
+}
+
+input#mc-embedded-subscribe {
+    background-color: #1b4f55 !important;
+    border-radius: 0px !important;
+    line-height: 0px !important;
+    letter-spacing: 0.15em !important;
+    margin-left: 5px !important;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.logo-b img {
+    height: auto;
+    max-width: 2.5em;
+    /*padding-top: 1em;*/
+}
+
+.email-us {
+    border-right: 1px solid #d3d1cf;
+}
+
+.footer h2 {
+    font-size: 0.8em;
+    color: #1b4f55;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.email-us a {
+    color: #1b4f55;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.social {
+    border-right: 1px solid #d3d1cf;
+}
+
+.social a {
+    margin: 0 15px;
+    color: #1b4f55;
+    text-decoration: none;
+}
+
+.call p {
+    color: #1b4f55;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.portrait {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 768px){
+    .landscape {
+        display: none;
+    }
+
+    .portrait {
+        display: block;
+    }
+
+    input#mc-embedded-subscribe {
+        margin-left: 0px !important;
+    }
+
+}
