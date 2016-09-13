@@ -51,6 +51,7 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 ]);
 
 
+/**/
 app.run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
     $rootScope.$on("$locationChangeSuccess", function() {
         //console.log("AnchorScroll");
@@ -59,6 +60,26 @@ app.run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
         $('html, body').animate({ scrollTop: -10000 }, 100);
     });
 }]);
+/**/
+/**
+app.run(["$rootScope", "$location", "$route", "ipCookie", function(e, t, r, n) {
+    var o, a, i, u, s;
+    return i = t.path, a = 0, e.$on("$locationChangeStart", function() {
+        return a = document.body.scrollTop || document.documentElement.scrollTop
+    }), t.path = function(n, o) {
+        var u, s;
+        return o === !1 ? (u = r.current, s = e.$on("$locationChangeSuccess", function() {
+            return r.current.$$route = u.$$route, s()
+        }), i.apply(t, [n]).replace()) : (s = e.$on("$locationChangeSuccess", function() {
+            return setTimeout(function() {
+                return document.body.scrollTop = document.documentElement.scrollTop = a > 36 ? 37 : 0
+            }, 0), s()
+        }), i.apply(t, [n]))
+    }, e.$on("$locationChangeSuccess", function() {
+        return t.path() !== t.path().toLowerCase() ? t.path(t.path().toLowerCase(), !1) : void 0
+    })
+}]);
+/**/
 
 
 app.directive('testTemp', function(){
@@ -74,23 +95,32 @@ app.directive('theHeader', ["$location", "$rootScope", "Brand", function(e, r, n
         restrict: 'EA',
         replace: !0,
         link: function(a, i) {
-            /*
-            link: function(scope, element) {
+            /**
+            //link: function(scope, element) {
             document.addEventListener("scroll",function (event) {
                 var body = document.body.scrollTop;
                 //console.log(body);
                 if (body > 36){
-                    element.addClass("ui-scrollfix");
+                    i.addClass("ui-scrollfix");
                 } else{
-                    element.removeClass("ui-scrollfix");
+                    i.removeClass("ui-scrollfix");
                 }
             });
             return setTimeout(function() {
-                return element.addClass("transitionActive")
+                return i.addClass("transitionActive")
             }, 0)
-            */
+            /**/
             var u, s, l, c;
-            return "1" === e.search().a && (a.hideHeader = !0, $("body").css("padding-top", "0px")), e.search().help && a.getHelpModal.open(), c = document.body.scrollTop || document.documentElement.scrollTop, c > 36 && i.addClass("ui-scrollfix"), setTimeout(function() {
+            //console.log(s);
+            return document.addEventListener("scroll",function (event) {
+                var body = document.body.scrollTop;
+                //console.log(body);
+                if (body > 36){
+                    i.addClass("ui-scrollfix");
+                } else{
+                    i.removeClass("ui-scrollfix");
+                }
+            }), setTimeout(function() {
                 return i.addClass("transitionActive")
             }, 0), s = $("#links-wrapper a"), l = {
                 "/[^/]*/product.*/getting-started": "#help",
