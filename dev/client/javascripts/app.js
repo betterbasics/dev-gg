@@ -37,6 +37,10 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 				url: "/help",
 				templateUrl: "templates/support.html"
 			})
+			.state('Admin', {
+				url: "/admin",
+				templateUrl: "templates/admin.html"
+			})
 			.state('Brand', {
 				url: "/:brand",
 				templateUrl: "templates/brand.html"
@@ -64,12 +68,14 @@ app.directive('testTemp', function(){
     }
 });
 
-app.directive('theHeader', function(){
+app.directive('theHeader', ["$location", "$rootScope", "Brand", function(e, r, n) {
     return{
-        restrict: 'EA',
         templateUrl: 'templates/the-header.html',
+        restrict: 'EA',
         replace: !0,
-        link: function(scope, element) {
+        link: function(a, i) {
+            /*
+            link: function(scope, element) {
             document.addEventListener("scroll",function (event) {
                 var body = document.body.scrollTop;
                 //console.log(body);
@@ -82,9 +88,46 @@ app.directive('theHeader', function(){
             return setTimeout(function() {
                 return element.addClass("transitionActive")
             }, 0)
+            */
+            var u, s, l, c;
+            return "1" === e.search().a && (a.hideHeader = !0, $("body").css("padding-top", "0px")), e.search().help && a.getHelpModal.open(), c = document.body.scrollTop || document.documentElement.scrollTop, c > 36 && i.addClass("ui-scrollfix"), setTimeout(function() {
+                return i.addClass("transitionActive")
+            }, 0), s = $("#links-wrapper a"), l = {
+                "/[^/]*/product.*/getting-started": "#help",
+                "/brands": "#brands",
+                "/[^/]*/product.*": "#products",
+                "/products": "#products",
+                "/promise": "#promise",
+                "/help": "#help",
+                "/blog": "#blog"
+            }, u = n.query({
+                scope: "name"
+            }, function() {
+                var t, n, o, a;
+                for (o = 0, a = u.length; a > o; o++) n = u[o], n.slug = slug(n.name.toLowerCase()), l["/" + n.slug] = "#brands";
+                return t = function() {
+                    var t, r, n;
+                    r = e.path();
+                    for (n in l)
+                        if (t = l[n], new RegExp(n).test(r)) return s.removeClass("active"), void $(t).addClass("active")
+                }, r.$on("$locationChangeSuccess", function() {
+                    return t()
+                }), t()
+            })
         }
     }
-});
+}]);
+
+app.directive("theFooter", ["$location", function(e) {
+    return {
+        templateUrl: "templates/the-footer.html",
+        restrict: "EA",
+        replace: !0,
+        link: function(t) {
+            return "1" === e.search().a ? t.hideFooter = !0 : void 0
+        }
+    }
+}]);
 
 app.directive('homePage', function(){
     return{
@@ -190,7 +233,7 @@ app.directive('brandSlider', ["Brand", "$location", "$rootScope", function(e) {
     }
 }]);
 
-app.directive('brandsPage', ["$routeParams", "$location", "Brand", function(e, t, r){
+app.directive('brandsPage', ["$stateParams", "$location", "Brand", function(e, t, r){
     return{
         restrict: 'E',
         templateUrl: 'templates/brands-page.html',
@@ -207,11 +250,11 @@ app.directive('brandsPage', ["$routeParams", "$location", "Brand", function(e, t
     }
 }]);
 
-app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", function(e, t, r, n) {
+app.directive('brandPage', ["$stateParams", "Brand", "$sce", "$location", function(e, t, r, n) {
     return{
-        restrict: 'E',
         templateUrl: 'templates/brand-page.html',
-        controller: 'brandController',
+        restrict: 'E',
+        //controller: 'brandController',
         replace: !0,
         link: function(o) {
             //console.log(o);
@@ -220,8 +263,7 @@ app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", functi
             }, function() {
                 var t, a, i, u, s, l, c;
                 for (i = null, l = o.brands, a = u = 0, s = l.length; s > u; a = ++u) t = l[a], t.slug = slug(t.name.toLowerCase()), t.description = r.trustAsHtml(null != (c = t.description) ? c : ""), e.brand === t.slug && (i = a, _.assign(o.brand, t), o.brand.iconClass = "icon-" + t.slug);
-                //console.log(_);
-                //return o.brands.splice(i, 1), o.brands.splice(3), null == i ? n.path("/").search("error", "1") : void 0
+                return o.brands.splice(i, 1), o.brands.splice(3), null == i ? n.path("/").search("error", "1") : void 0
             }), o.brand = {
                 $promise: o.brands.$promise
             }, o.displayVideo = function() {
@@ -242,6 +284,42 @@ app.directive('brandPage', ["$routeParams", "Brand", "$sce", "$location", functi
     }
 }]);
 
+app.directive('thePromise', function(){
+   return{
+        restrict: 'E',
+        templateUrl: 'templates/the-promise.html'
+   }
+});
+
+app.directive("page", ["$stateParams", function(e) {
+    return {
+        templateUrl: "templates/page.html",
+        restrict: "E",
+        replace: !0,
+        transclude: !0,
+        link: function(t) {
+            //console.log(e.brand);
+            var r;
+            return r = $("body"), t.stateParams = e, t.$watch("stateParams.brand", function(e) {
+                return r.attr("class", function(e, t) {
+                    return null != t ? t.replace(/(^|\s)brand-\S+/g, "") : void 0
+                }), e ? r.addClass("brand-" + e.toLowerCase()) : void 0
+            }), setTimeout(function() {
+                return r.addClass("brandTransitionsEnabled")
+            }, 500)
+        }
+    }
+}]);
+
+
+app.factory("Brand", ["$resource", function(e) {
+    return e("server/api/brands/:_id", {
+        _id: "@_id"
+    })
+}]);
+
+
+/* brandController - no use for now */
 app.controller('brandController',function($stateParams, $scope, $http, $location){
     //console.log($stateParams.brand);
     $scope.brand = {};
@@ -276,13 +354,6 @@ app.controller('brandController',function($stateParams, $scope, $http, $location
     });
     /**/
 });
-
-
-app.factory("Brand", ["$resource", function(e) {
-    return e("server/api/brands/:_id", {
-        _id: "@_id"
-    })
-}]);
 
 app.controller('socialMediaController',function($scope, $http){
     $scope.accounts = {};
