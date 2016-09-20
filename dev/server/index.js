@@ -170,4 +170,74 @@ app.post(baseurl+'/server/api/brands', function(req, res){
     });
 });
 
+app.get(baseurl+'/server/api/variations', function(req, res){
+    //res.json(req.query.query);
+    var query = !req.query.query ? req.query.query : JSON.parse(req.query.query);
+    //var featured_query = query ? query.featured : null;
+    //var brand_query = query ? query.brand : null;
+    //res.json(query);
 
+    /*
+    var query = JSON.parse(req.param('query'));
+    var brand_query = query.brand
+    res.json(brand_query);
+    /**
+    Brand.find(function(err, brands){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(brands);
+    }).sort({'_id': 1});
+    /**/
+
+    var brands;
+    fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
+        brands = JSON.parse(data);
+    });
+
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/variations.json'), 'utf8', function (err, data) {
+        var variations;
+        variations = JSON.parse(data);
+        //res.json(variations);
+        //if(query.featured != undefined)
+        if(_.has(query, 'featured')){
+            variations = _.filter(variations, function(variation) {
+                return variation.featured != null;
+            });
+        }
+
+        if(_.has(query, 'brand'))
+            variations = _.filter(variations, {'brand': query.brand});
+        //variations = _.find(variations, 'brand', brand_query);
+        //var dat = "";
+        /**/
+        _.forEach(variations, function(value, key) {
+            //dat += key + " - " + value.brand + ", ";
+            variations[key].brand = _.find(brands, {_id:value.brand});
+        });
+        /**/
+        res.json(variations);
+    });
+    /**/
+});
+
+app.get(baseurl+'/server/api/variations/:_id', function(req, res){
+    /**
+    Brand.findById(req.params._id, function(err, brand){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(brand);
+    });
+    /**/
+
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/variations.json'), 'utf8', function (err, data) {
+        var variations;
+        variations = JSON.parse(data);
+        var variation = _.find(variations, {_id:req.params._id});
+        res.json(variation);
+    });
+    /**/
+});

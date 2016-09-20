@@ -8,21 +8,21 @@
         </ol>
         <!-- Wrapper for slides-->
         <div role="listbox" class="carousel-inner">
-            <div class="item active"><img src="client/assets/images/header1.jpg" class="headerImage">
-                <div class="carousel-caption"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><img src="client/assets/images/gg_logo_white.png" class="gg-white-logo"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span>
+            <div class="item active"><img src="./client/assets/images/header1.jpg" class="headerImage">
+                <div class="carousel-caption"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><img src="./client/assets/images/gg_logo_white.png" class="gg-white-logo"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span>
                     <h2>MAKE THINGS BETTER.</h2>
                     <p style="letter-spacing: 1px;"><a href="./products" class="headerLinks"> PRODUCTS</a><span class="divider">&nbsp;|</span><a href="./help" class="headerLinks"> SERVICE</a><span class="divider">&nbsp;|</span><a href="./brands" class="headerLinks"> COMMUNITY</a></p>
                 </div>
             </div>
-            <div class="item"><img src="client/assets/images/header2.jpg" class="headerImage">
-                <div class="carousel-caption"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><img src="client/assets/images/gg_logo_white.png" class="gg-white-logo"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span>
+            <div class="item"><img src="./client/assets/images/header2.jpg" class="headerImage">
+                <div class="carousel-caption"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><img src="./client/assets/images/gg_logo_white.png" class="gg-white-logo"><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span><span class="glyphicon glyphicon-star stars"></span>
                     <h2>MAKE THINGS BETTER.</h2>
                     <p><a href="./products" class="headerLinks">THOUGHTFUL PURCHASES</a><span class="divider">&nbsp;&nbsp;|</span><a href="./brands" class="headerLinks"> COLLECTIVE GIVING</a><span class="divider">&nbsp;&nbsp;|</span><a href="./promise" class="headerLinks"> REAL CHANGES</a></p>
                 </div>
             </div>
-            <div class="item"><img src="client/assets/images/header3.jpg" class="headerImage">
+            <div class="item"><img src="./client/assets/images/header3.jpg" class="headerImage">
                 <div class="carousel-caption videoItem">
-                    <a href="https://www.youtube.com/watch?v=07HUYE_O2-I&amp;autoplay=1&amp;modestbranding=1&amp;rel=0" data-lity="data-lity" class="headerLinks"><img src="client/assets/images/playbutton.png" class="playButton">
+                    <a href="https://www.youtube.com/watch?v=07HUYE_O2-I&amp;autoplay=1&amp;modestbranding=1&amp;rel=0" data-lity="data-lity" class="headerLinks"><img src="./client/assets/images/playbutton.png" class="playButton">
                         <h2>IMPROVING SINGLE SERVE</h2>
                         <p>FROM THE FARM TO YOUR CUP</p>
                     </a>
@@ -44,7 +44,7 @@
         <div class="row theVariationsArea">
             <div class="col-xs-10 col-xs-offset-1 text-center shopOurProducts"><a ng-href="./products" class="btn btn-header grayBorder">SHOP OUR PRODUCTS</a></div>
             <div class="col-xs-12">
-                <div class="row variation-list" ng-controller="featuredVariationsController">
+                <div class="row variation-list"> <!-- ng-controller="featuredVariationsController" -->
                     <div ng-repeat="variation in featuredVariations" class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 tile-link">
                         <a ng-if="!variation.comingSoon" href="href" ng-href="./{{variation.brand.name | slugify}}/product/{{variation.sku}}/{{variation.slug}}">
                             <variation-tile variation="variation"></variation-tile>

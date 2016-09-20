@@ -1,0 +1,4602 @@
+[
+  {
+    "_id": "5630f348a93edab6b06a0c60",
+    "brand": "54f4907002cb4bff9f41ea85",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>This scale is designed to give you our most streamlined weighing experience, with no additional set-up or smartphone pairing necessary. Just step on and view your weight, in addition to body fat, lean mass, water weight, and bone mass. The oversized screen displays your results in large, easy-to-read numbers.</p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/rf3vywrtgk.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/rf3vywrtgk.jpg",
+      "image": "http://media.greatergoods.com/images/standard/rf3vywrtgk.jpg",
+      "large": "http://media.greatergoods.com/images/large/rf3vywrtgk.jpg"
+    },
+    "msrp": 74.99,
+    "name": "Body Composition Bath Scale ",
+    "sku": "0391",
+    "__v": 0,
+    "reviewLink": "amzn.to/1ZR5dGq",
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "subTitle": "Silver With Backlight",
+    "product": "5630f348a93edab6b06a0c4e",
+    "featured": null,
+    "orderConfirmationAutoresponderId": 123,
+    "reviewAutoresponderId": 106,
+    "autoresponders": {
+      "reviewUs": 106,
+      "orderConfirmation": 123,
+      "discountOrderShipped": 151,
+      "fiveStar": 153,
+      "oneStar": 155,
+      "discountThreshold": "30.00",
+      "productRegistration": 396
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 375,
+          "amazon": 372
+        },
+        "nondiscount": {
+          "real": 374,
+          "amazon": 373
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 379,
+          "amazon": 376
+        },
+        "nondiscount": {
+          "real": 378,
+          "amazon": 377
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 383,
+          "amazon": 380
+        },
+        "nondiscount": {
+          "real": 382,
+          "amazon": 381
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 387,
+          "amazon": 384
+        },
+        "nondiscount": {
+          "real": 386,
+          "amazon": 385
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 391,
+          "amazon": 388
+        },
+        "nondiscount": {
+          "real": 390,
+          "amazon": 389
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 395,
+          "amazon": 392
+        },
+        "nondiscount": {
+          "real": 394,
+          "amazon": 393
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3.5inches-7ft 2.5inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body Weight, BMI, Body Fat, Water Weight,  Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "32ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c69"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": null
+      },
+      "amazon": {
+        "price": 34.99,
+        "link": "http://www.amazon.com/gp/product/B019928F74/ref=s9_hps_bw_g121_i3"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "569d37292ab1e4aa3f8747b7",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/5m60i43tsv.jpg",
+        "image": "http://media.greatergoods.com/images/standard/5m60i43tsv.jpg"
+      },
+      {
+        "_id": "569d37292ab1e4aa3f8747b6",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/jzg9lc9rpc.jpg",
+        "image": "http://media.greatergoods.com/images/standard/jzg9lc9rpc.jpg"
+      },
+      {
+        "_id": "569d37292ab1e4aa3f8747b5",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/g5l1pjeyc2.jpg",
+        "image": "http://media.greatergoods.com/images/standard/g5l1pjeyc2.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0c6a",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e5-6df5-fab2-3ab2bd2974b2\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/jmzxzhlcw7.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/jmzxzhlcw7.jpg",
+      "image": "http://media.greatergoods.com/images/standard/jmzxzhlcw7.jpg",
+      "large": "http://media.greatergoods.com/images/large/jmzxzhlcw7.jpg"
+    },
+    "msrp": 29.99,
+    "name": "Basic Appsync Bathroom Scale",
+    "sku": "0359",
+    "__v": 0,
+    "reviewLink": "",
+    "subTitle": "no backlight, black",
+    "product": "5697c48e7967b9d305d12ab4",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "330lb. / 150kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD"
+      ],
+      [
+        "Battery",
+        "One CR2032"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c71"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "link": "",
+        "price": 19.99
+      },
+      "amazon": {
+        "link": "",
+        "price": null
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": []
+  },
+  {
+    "_id": "5630f348a93edab6b06a0c72",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e5-6df5-fab2-3ab2bd2974b2\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/l72s67st4v.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/l72s67st4v.jpg",
+      "image": "http://media.greatergoods.com/images/standard/l72s67st4v.jpg",
+      "large": "http://media.greatergoods.com/images/large/l72s67st4v.jpg"
+    },
+    "msrp": 29.99,
+    "name": "Basic Appsync Bathroom Scale",
+    "sku": "0358",
+    "__v": 0,
+    "reviewLink": "",
+    "subTitle": "no backlight, clear",
+    "product": "5697c48e7967b9d305d12ab4",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "330lb. / 150kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD"
+      ],
+      [
+        "Battery",
+        "One CR2032"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c79"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": 19.99,
+        "link": "http://www.bedbathandbeyond.com/store/product/weight-gurus-reg-smartphone-connected-bathroom-scale/1044239848?Keyword=Weight+Gurus"
+      },
+      "amazon": {
+        "price": null,
+        "link": ""
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "56c216c5fc87fbdb09b65312",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/ems9yvma69.jpg",
+        "image": "http://media.greatergoods.com/images/standard/ems9yvma69.jpg"
+      },
+      {
+        "_id": "56c216c5fc87fbdb09b65311",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2uftz5r1du.jpg",
+        "image": "http://media.greatergoods.com/images/standard/2uftz5r1du.jpg"
+      },
+      {
+        "_id": "56c216c5fc87fbdb09b65310",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/hs1ai6mdku.jpg",
+        "image": "http://media.greatergoods.com/images/standard/hs1ai6mdku.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0c81",
+    "brand": "54ef4ec900770bde69640b08",
+    "charity": "551c556b023a4c6b304caf86",
+    "description": "<p>At Greater Goods, we've gone to great lengths to create the best 1.0- and 2.0-compatible single-serve coffee. We responsibly source the finest premium grade coffee beans, roast them to perfection, and then pack them into eco-friendly c-pods instead of plastic cups. Our pods work with most single-serve brewers, only using less plastic. Each serving brews through a filter, creating less waste and a better-tasting cup of coffee.<b></b></p>",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/2o4kjwle2d.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/2o4kjwle2d.jpg",
+      "image": "http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg",
+      "large": "http://media.greatergoods.com/images/large/2o4kjwle2d.jpg"
+    },
+    "msrp": 44.99,
+    "name": "Mountain Blend ",
+    "sku": "0656",
+    "primaryVideo": "",
+    "__v": 0,
+    "reviewLink": "amzn.to/1HvBVrt",
+    "subTitle": "72 count, medium roast",
+    "product": "5630f348a93edab6b06a0c5d",
+    "autoresponders": {
+      "oneStar": 204,
+      "nonMemberOrderShipped": {
+        "order1": 195,
+        "order2": 196,
+        "order3": 197,
+        "default": 198
+      },
+      "memberOrderShipped": {
+        "reward": 199,
+        "default": 200
+      },
+      "reviewUs": 201,
+      "fiveStar": 202,
+      "fiveStarFollowUp": 203,
+      "join": 194
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Format / Compatibility",
+        "Our pods are compatible with most single-serve brewers available, including 1.0 and 2.0 Keurig Brewers."
+      ],
+      [
+        "Shipping Weight",
+        "3 pounds"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c83"
+      }
+    ],
+    "agent": {
+      "name": "David",
+      "phone": "314.991.8494 x32",
+      "email": "dtenzer@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "price": 35.63,
+        "link": "http://amzn.com/B00X6CKV2G"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": false,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "568e9a1b8f32b6fb62c64765",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2hn3qr9i4o.jpg",
+        "image": "http://media.greatergoods.com/images/standard/2hn3qr9i4o.jpg"
+      },
+      {
+        "_id": "568e9a1b8f32b6fb62c64764",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fkxrzi6wda.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fkxrzi6wda.jpg"
+      },
+      {
+        "_id": "568e9a1b8f32b6fb62c64763",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/w7kt4md6a5.jpg",
+        "image": "http://media.greatergoods.com/images/standard/w7kt4md6a5.jpg"
+      },
+      {
+        "_id": "568e9a1b8f32b6fb62c64762",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fbuqr97zs3.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fbuqr97zs3.jpg"
+      },
+      {
+        "_id": "568e9a1b8f32b6fb62c64761",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fojxznv35r.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fojxznv35r.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0c84",
+    "sku": "0651",
+    "name": "Breakfast Blend ",
+    "brand": "54ef4ec900770bde69640b08",
+    "charity": "551c556b023a4c6b304caf86",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/2o4kjwle2d.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/2o4kjwle2d.jpg",
+      "image": "http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg",
+      "large": "http://media.greatergoods.com/images/large/2o4kjwle2d.jpg"
+    },
+    "description": "<p><b id=\"docs-internal-guid-5e8b2a9d-38e6-8f2d-2a1f-8db1eb53a437\"><span style=\"color: #000000;background-color: transparent;\">At Greater Goods, we've gone to great lengths to create the best 1.0- and 2.0-compatible single-serve coffee. We responsibly source the finest premium grade coffee beans, roast them to perfection, and then pack them into eco-friendly c-pods instead of plastic cups. Our pods work with most single-serve brewers, only using less plastic. Each serving brews through a filter, creating less waste and a better-tasting cup of coffee.</span></b><br/></p>",
+    "__v": 0,
+    "reviewLink": "amzn.to/1JykseG",
+    "subTitle": "6 Count, Light Roast",
+    "msrp": 9.99,
+    "product": "5630f348a93edab6b06a0c5d",
+    "autoresponders": {
+      "oneStar": 193,
+      "fiveStarFollowUp": 192,
+      "fiveStar": 191,
+      "reviewUs": 190,
+      "memberOrderShipped": 189,
+      "nonMemberOrderShipped": 188,
+      "join": 187
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Format / Compatibility",
+        "Our pods are compatible with most single-serve brewers available, including 1.0 and 2.0 Keurig Brewers."
+      ],
+      [
+        "Shipping Weight",
+        "5 oz"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c86"
+      }
+    ],
+    "agent": {
+      "email": "dtenzer@greatergoods.com",
+      "phone": "314.991.8494 x32",
+      "name": "David"
+    },
+    "providers": {
+      "amazon": {
+        "link": "http://www.amazon.com/dp/B00X6CKV2G/ref=cm_sw_su_dp",
+        "price": 4.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": false,
+    "hideSale": true,
+    "hidden": true,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/2hn3qr9i4o.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2hn3qr9i4o.jpg",
+        "_id": "568e9ae48f32b6fb62c64773"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fkxrzi6wda.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fkxrzi6wda.jpg",
+        "_id": "568e9ae48f32b6fb62c64772"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/w7kt4md6a5.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/w7kt4md6a5.jpg",
+        "_id": "568e9ae48f32b6fb62c64771"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fojxznv35r.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fojxznv35r.jpg",
+        "_id": "568e9ae48f32b6fb62c64770"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0c87",
+    "brand": "54f4907002cb4bff9f41ea85",
+    "charity": "54ef4bb45173dd6e62f11fa6",
+    "description": "<p>Paying attention to long-term trends in your blood pressure can give you important information about your health. Our accurate, FDA-registered monitor features simple single-button operation and a large, backlit screen to make it easy to take your own measurements, at home. You can create multiple profiles to support up to two users, and the adjustable, one-size-fits-all arm cuff makes it easy to share with the rest of your household. We also include a convenient storage case so you can pack it away neatly in between uses.</p>",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/dll4fzhbwb.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/dll4fzhbwb.jpg",
+      "image": "http://media.greatergoods.com/images/standard/dll4fzhbwb.jpg",
+      "large": "http://media.greatergoods.com/images/large/dll4fzhbwb.jpg"
+    },
+    "msrp": 79.99,
+    "name": "Blood Pressure Monitor ",
+    "sku": "0600",
+    "__v": 0,
+    "reviewLink": "amzn.to/1x3zW9s",
+    "subTitle": "with cuff",
+    "product": "5630f348a93edab6b06a0c50",
+    "orderConfirmationAutoresponderId": 127,
+    "reviewAutoresponderId": 95,
+    "autoresponders": {
+      "reviewUs": 95,
+      "orderConfirmation": 127,
+      "discountOrderShipped": 171,
+      "fiveStar": 173,
+      "oneStar": 175,
+      "discountThreshold": "25.00"
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 46,
+          "amazon": 86
+        },
+        "nondiscount": {
+          "real": 83,
+          "amazon": 9
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 89,
+          "amazon": 67
+        },
+        "nondiscount": {
+          "real": 60,
+          "amazon": 45
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 62,
+          "amazon": 12
+        },
+        "nondiscount": {
+          "real": 63,
+          "amazon": 65
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 23,
+          "amazon": 28
+        },
+        "nondiscount": {
+          "real": 25,
+          "amazon": 27
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 38,
+          "amazon": 27
+        },
+        "nondiscount": {
+          "real": 39,
+          "amazon": 40
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 28,
+          "amazon": 22
+        },
+        "nondiscount": {
+          "real": 24,
+          "amazon": 21
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Power Supply",
+        "Battery Powered Mode: 6VDC 4xAAA batteries"
+      ],
+      [
+        "Display Mode",
+        "Digital LCD Display with Blue Backlight V.A. 60x40.5mm"
+      ],
+      [
+        "Measurement Mode",
+        "Oscillographic Testing Mode"
+      ],
+      [
+        "Measurement Range",
+        "Rated cuff pressure: 0kpa-40kpa (0mmHg~300mmHg) Measurement Pressure: 5.3kPa-30.7kPa (40mmHg-230mmHg) Pulse Value: (40-199) beat/minute"
+      ],
+      [
+        "Accuracy",
+        "Pressure: 5ºC-40ºC within +/- 0.4kpa (3mmHg) Pulse Value: +/- 5%"
+      ],
+      [
+        "Normal Working Condition",
+        "Temperature: 5ºC-40ºC Relative Humidity: ≤85% Atmospheric Pressure: 86kpa-106kpa"
+      ],
+      [
+        "Storage and Transportation Condition",
+        "Temperature: -20ºC-60ºC Relative Humidity: 10%-93% Atmospheric Pressure: 50kpa-106kpa"
+      ],
+      [
+        "Measurement Perimeter of the Upper Arm",
+        "Approx. 22cm~42cm"
+      ],
+      [
+        "Net Weight",
+        "Approx. 175g (Excluding the dry cells)"
+      ],
+      [
+        "External Dimensions",
+        "Approx. 110x110x40mm"
+      ],
+      [
+        "Attachment",
+        "4xAAA Batteries, User Manual, Storage Bag"
+      ],
+      [
+        "Mode of Operation",
+        "Continuous Operation"
+      ],
+      [
+        "Degree of Protection",
+        "Type BF applied part"
+      ],
+      [
+        "Protection Against Ingress of Water",
+        "IP21"
+      ],
+      [
+        "Software Version",
+        "V01"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c91"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "800.481.0233",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": 37.5,
+        "link": "http://www.amazon.com/Professional-Pressure-One-Size-Fits-All-Greater-Goods/dp/B00N9I63PG/ref=sr_1_1?m=A21JAYJNFQ9DBU&s=merchant-items&ie=UTF8&qid=1444063805&sr=1-1"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "5776951cc7137be113193b5e",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/1ebjvdg3uf.jpg",
+        "image": "http://media.greatergoods.com/images/standard/1ebjvdg3uf.jpg"
+      },
+      {
+        "_id": "5776951cc7137be113193b5d",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/etu6amkgt7.jpg",
+        "image": "http://media.greatergoods.com/images/standard/etu6amkgt7.jpg"
+      },
+      {
+        "_id": "5776951cc7137be113193b5c",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/wc03vffhcd.jpg",
+        "image": "http://media.greatergoods.com/images/standard/wc03vffhcd.jpg"
+      },
+      {
+        "_id": "5776951cc7137be113193b5b",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/qq5eslaz9i.jpg",
+        "image": "http://media.greatergoods.com/images/standard/qq5eslaz9i.jpg",
+        "cover": false
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/0sd257ecq4.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/0sd257ecq4.jpg",
+        "_id": "5776954ac7137be113193b61"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0c92",
+    "brand": "54ef4ec900770bde69640b08",
+    "charity": "551c556b023a4c6b304caf86",
+    "description": "<p>At Greater Goods, we've gone to great lengths to create the best 1.0- and 2.0-compatible single-serve coffee. We responsibly source the finest premium grade coffee beans, roast them to perfection, and then pack them into eco-friendly c-pods instead of plastic cups. Our pods work with most single-serve brewers, only using less plastic. Each serving brews through a filter, creating less waste and a better-tasting cup of coffee.<b></b><br/></p>",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/2o4kjwle2d.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/2o4kjwle2d.jpg",
+      "image": "http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg",
+      "large": "http://media.greatergoods.com/images/large/2o4kjwle2d.jpg"
+    },
+    "msrp": 44.99,
+    "name": "Breakfast Blend ",
+    "sku": "0655",
+    "primaryVideo": "",
+    "__v": 0,
+    "reviewLink": "amzn.to/1ek2OTJ",
+    "subTitle": "72 Count, Light Roast",
+    "product": "5630f348a93edab6b06a0c5d",
+    "autoresponders": {
+      "oneStar": 204,
+      "nonMemberOrderShipped": {
+        "order1": 195,
+        "order2": 196,
+        "order3": 197,
+        "default": 198
+      },
+      "memberOrderShipped": {
+        "reward": 199,
+        "default": 200
+      },
+      "reviewUs": 201,
+      "fiveStar": 202,
+      "fiveStarFollowUp": 203,
+      "join": 194
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Format / Compatibility",
+        "Our pods are compatible with most single-serve brewers available, including 1.0 and 2.0 Keurig Brewers."
+      ],
+      [
+        "Shipping Weight",
+        "3 pounds"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c94"
+      }
+    ],
+    "agent": {
+      "email": "dtenzer@greatergoods.com",
+      "phone": "314.991.8494 x32",
+      "name": "David"
+    },
+    "providers": {
+      "amazon": {
+        "price": 35.63,
+        "link": "http://amzn.com/B00X6CKUZY"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": false,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/2hn3qr9i4o.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2hn3qr9i4o.jpg",
+        "_id": "568e9a438f32b6fb62c6476a"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fkxrzi6wda.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fkxrzi6wda.jpg",
+        "_id": "568e9a438f32b6fb62c64769"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/w7kt4md6a5.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/w7kt4md6a5.jpg",
+        "_id": "568e9a438f32b6fb62c64768"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fbuqr97zs3.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fbuqr97zs3.jpg",
+        "_id": "568e9a438f32b6fb62c64767"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fojxznv35r.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fojxznv35r.jpg",
+        "_id": "568e9a438f32b6fb62c64766"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0c95",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e3-a8ae-a1b2-e09fb62acd44\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/0ciei9pv7e.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/0ciei9pv7e.jpg",
+      "image": "http://media.greatergoods.com/images/standard/0ciei9pv7e.jpg",
+      "large": "http://media.greatergoods.com/images/large/0ciei9pv7e.jpg"
+    },
+    "msrp": 79.99,
+    "name": "Appsync Body Fat Scale ",
+    "sku": "0369",
+    "__v": 0,
+    "reviewLink": "amzn.to/1eD4BSJ",
+    "subTitle": "with body composition and backlight, black",
+    "product": "5630f348a93edab6b06a0c54",
+    "featured": null,
+    "orderConfirmationAutoresponderId": 120,
+    "reviewAutoresponderId": 100,
+    "autoresponders": {
+      "reviewUs": 100,
+      "orderConfirmation": 120,
+      "discountOrderShipped": 136,
+      "fiveStar": 138,
+      "oneStar": 140,
+      "discountThreshold": "30.00",
+      "productRegistration": 318
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 297,
+          "amazon": 294
+        },
+        "nondiscount": {
+          "real": 296,
+          "amazon": 295
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 301,
+          "amazon": 298
+        },
+        "nondiscount": {
+          "real": 300,
+          "amazon": 299
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 305,
+          "amazon": 302
+        },
+        "nondiscount": {
+          "real": 304,
+          "amazon": 303
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 309,
+          "amazon": 306
+        },
+        "nondiscount": {
+          "real": 308,
+          "amazon": 307
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 313,
+          "amazon": 310
+        },
+        "nondiscount": {
+          "real": 312,
+          "amazon": 311
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 317,
+          "amazon": 314
+        },
+        "nondiscount": {
+          "real": 316,
+          "amazon": 315
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3inches-7ft 3inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body Weight, Body Fat, Water Weight,  Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c9f"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": 39.99,
+        "link": "http://www.amazon.com/Weight-Digital-Backlit-Smartphone-Tracking/dp/B00GBFEMU2/ref=sr_1_1?s=hpc&ie=UTF8&qid=1444070428&sr=1-1&keywords=weightless+scale"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/cpyvnbrl3y.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/cpyvnbrl3y.jpg",
+        "_id": "5696e9577967b9d305d12aae"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/etcdgu6egt.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/etcdgu6egt.jpg",
+        "_id": "5696e9577967b9d305d12aad"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/6nfb7x9brr.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/6nfb7x9brr.jpg",
+        "_id": "5696e9577967b9d305d12aac"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0ca0",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e3-a8ae-a1b2-e09fb62acd44\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/fjj7p6otj7.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/fjj7p6otj7.jpg",
+      "image": "http://media.greatergoods.com/images/standard/fjj7p6otj7.jpg",
+      "large": "http://media.greatergoods.com/images/large/fjj7p6otj7.jpg"
+    },
+    "msrp": 79.99,
+    "name": "Appsync Body Fat Scale ",
+    "sku": "0370",
+    "__v": 0,
+    "reviewLink": "amzn.to/1qwXCOd",
+    "subTitle": "with body composition and backlight, clear",
+    "product": "5630f348a93edab6b06a0c54",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3inches-7ft 3inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body Weight, Body Fat, Water Weight,  Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0caa"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "link": "",
+        "price": null
+      },
+      "amazon": {
+        "link": "http://www.amazon.com/Weight-Digital-Backlit-Smartphone-Tracking/dp/B00GBFEMU2/ref=sr_1_1?s=hpc&ie=UTF8&qid=1444070428&sr=1-1&keywords=weightless+scale",
+        "price": 39.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/uwdglr0cjp.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/uwdglr0cjp.jpg",
+        "_id": "5697df667967b9d305d12b03"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/vbnffq21ir.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/vbnffq21ir.jpg",
+        "_id": "5697df667967b9d305d12b02"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/g48wbzyasp.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/g48wbzyasp.jpg",
+        "_id": "5697df667967b9d305d12b01"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0cb6",
+    "sku": "0653",
+    "name": "VISTA BLEND ",
+    "brand": "54ef4ec900770bde69640b08",
+    "charity": "551c556b023a4c6b304caf86",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/2o4kjwle2d.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/2o4kjwle2d.jpg",
+      "image": "http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg",
+      "large": "http://media.greatergoods.com/images/large/2o4kjwle2d.jpg"
+    },
+    "description": "<p><b id=\"docs-internal-guid-5e8b2a9d-38e6-8f2d-2a1f-8db1eb53a437\"><span style=\"color: #000000;background-color: transparent;\">At Greater Goods, we've gone to great lengths to create the best 1.0- and 2.0-compatible single-serve coffee. We responsibly source the finest premium grade coffee beans, roast them to perfection, and then pack them into eco-friendly c-pods instead of plastic cups. Our pods work with most single-serve brewers, only using less plastic. Each serving brews through a filter, creating less waste and a better-tasting cup of coffee.</span></b><br/></p>",
+    "__v": 0,
+    "reviewLink": "amzn.to/1KQjrPW",
+    "subTitle": "6 COUNT, DARK ROAST",
+    "msrp": 9.99,
+    "product": "5630f348a93edab6b06a0c5d",
+    "autoresponders": {
+      "oneStar": 193,
+      "fiveStarFollowUp": 192,
+      "fiveStar": 191,
+      "reviewUs": 190,
+      "memberOrderShipped": 189,
+      "nonMemberOrderShipped": 188,
+      "join": 187
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Format / Compatibility",
+        "Our pods are compatible with most single-serve brewers available, including 1.0 and 2.0 Keurig Brewers."
+      ],
+      [
+        "Shipping Weight",
+        "5 oz"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cb8"
+      }
+    ],
+    "agent": {
+      "name": "David",
+      "phone": "314.991.8494 x32",
+      "email": "dtenzer@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "price": 4.99,
+        "link": "http://www.amazon.com/dp/B00X6CKV2G/ref=cm_sw_su_dp"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": false,
+    "hideSale": true,
+    "hidden": true,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/2hn3qr9i4o.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2hn3qr9i4o.jpg",
+        "_id": "568e9a648f32b6fb62c6476f"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fkxrzi6wda.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fkxrzi6wda.jpg",
+        "_id": "568e9a648f32b6fb62c6476e"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/w7kt4md6a5.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/w7kt4md6a5.jpg",
+        "_id": "568e9a648f32b6fb62c6476d"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fojxznv35r.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fojxznv35r.jpg",
+        "_id": "568e9a648f32b6fb62c6476b"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0cb9",
+    "brand": "5592a9759c7aabba213a548e",
+    "buyingGuide": "559414bf48cbea1972c80487",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It also connects to your smartphone using Bluetooth technology. Track your health with precise data, conveniently collected on your smartphone. Store your results in the Weight Gurus app, which is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit. Requires Bluetooth Smart technology (present in most recent Android phones, and an iPhone 4S or beyond, running iOS 7.1 or later.)<b></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/8arywhrnhe.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/8arywhrnhe.jpg",
+      "image": "http://media.greatergoods.com/images/standard/8arywhrnhe.jpg",
+      "large": "http://media.greatergoods.com/images/large/8arywhrnhe.jpg"
+    },
+    "msrp": 99.99,
+    "name": "Bluetooth Smart Scale ",
+    "sku": "0375",
+    "primaryVideo": "kR-K2aDcfZA",
+    "__v": 0,
+    "reviewLink": "bit.ly/WGBT0375",
+    "subTitle": "with body composition and backlight, black",
+    "product": "5630f348a93edab6b06a0c51",
+    "featured": 1,
+    "orderConfirmationAutoresponderId": 121,
+    "reviewAutoresponderId": 102,
+    "autoresponders": {
+      "reviewUs": 102,
+      "orderConfirmation": 121,
+      "discountOrderShipped": 141,
+      "fiveStar": 143,
+      "oneStar": 145,
+      "discountThreshold": "50.00"
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb / 0.1kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3.5inches-7ft 2.5inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body Weight, BMI, Body Fat, Water Weight, Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "32ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cc0"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": 59.99,
+        "link": "http://www.amazon.com/Bluetooth-Connected-Backlit-Greater-Goods/dp/B00N9ENKDI/ref=sr_1_2?m=A21JAYJNFQ9DBU&s=merchant-items&ie=UTF8&qid=1444063805&sr=1-2"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "5696e9307967b9d305d12aa9",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/ebtq7fp8wm.jpg",
+        "image": "http://media.greatergoods.com/images/standard/ebtq7fp8wm.jpg"
+      },
+      {
+        "_id": "5696e9307967b9d305d12aa8",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/aghgm7jalr.jpg",
+        "image": "http://media.greatergoods.com/images/standard/aghgm7jalr.jpg"
+      },
+      {
+        "_id": "5696e9307967b9d305d12aa7",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/l1zhe9ue3m.jpg",
+        "image": "http://media.greatergoods.com/images/standard/l1zhe9ue3m.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0cc1",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e5-6df5-fab2-3ab2bd2974b2\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/hpxon8vd2t.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/hpxon8vd2t.jpg",
+      "image": "http://media.greatergoods.com/images/standard/hpxon8vd2t.jpg",
+      "large": "http://media.greatergoods.com/images/large/hpxon8vd2t.jpg"
+    },
+    "msrp": 59.99,
+    "name": "Appsync Bathroom Scale ",
+    "sku": "0364",
+    "__v": 0,
+    "reviewLink": "amzn.to/1c5o86E",
+    "subTitle": "with backlight, black",
+    "product": "5630f348a93edab6b06a0c56",
+    "featured": null,
+    "orderConfirmationAutoresponderId": 119,
+    "reviewAutoresponderId": 98,
+    "autoresponders": {
+      "reviewUs": 98,
+      "orderConfirmation": 119,
+      "discountOrderShipped": 131,
+      "fiveStar": 133,
+      "oneStar": 135,
+      "discountThreshold": "20.00",
+      "productRegistration": 293
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 272,
+          "amazon": 269
+        },
+        "nondiscount": {
+          "real": 271,
+          "amazon": 270
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 276,
+          "amazon": 273
+        },
+        "nondiscount": {
+          "real": 275,
+          "amazon": 274
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 280,
+          "amazon": 277
+        },
+        "nondiscount": {
+          "real": 279,
+          "amazon": 278
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 284,
+          "amazon": 281
+        },
+        "nondiscount": {
+          "real": 283,
+          "amazon": 282
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 288,
+          "amazon": 285
+        },
+        "nondiscount": {
+          "real": 287,
+          "amazon": 286
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 292,
+          "amazon": 289
+        },
+        "nondiscount": {
+          "real": 291,
+          "amazon": 290
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature:",
+        "4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cca"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": 24.99,
+        "link": "http://www.amazon.com/Digital-Bathroom-Backlit-Smartphone-Tracking/dp/B00FT8ZHHE/ref=sr_1_4?m=A21JAYJNFQ9DBU&s=merchant-items&ie=UTF8&qid=1444063805&sr=1-4"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/th6198cn3u.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/th6198cn3u.jpg",
+        "_id": "5696e9857967b9d305d12ab3"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/etcdgu6egt.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/etcdgu6egt.jpg",
+        "_id": "5696e9857967b9d305d12ab2"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/3y0hnrb2xe.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/3y0hnrb2xe.jpg",
+        "_id": "5696e9857967b9d305d12ab1"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0ccb",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. Store your results in the Weight Gurus app, which is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e5-6df5-fab2-3ab2bd2974b2\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/tttdiywsj3.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/tttdiywsj3.jpg",
+      "image": "http://media.greatergoods.com/images/standard/tttdiywsj3.jpg",
+      "large": "http://media.greatergoods.com/images/large/tttdiywsj3.jpg"
+    },
+    "msrp": 59.99,
+    "name": "Appsync Bathroom Scale ",
+    "sku": "0371",
+    "__v": 0,
+    "reviewLink": "amzn.to/1qlpd5Z",
+    "subTitle": "with backlight, clear",
+    "product": "5630f348a93edab6b06a0c56",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature:",
+        "4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cd4"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "link": "",
+        "price": null
+      },
+      "amazon": {
+        "link": "http://www.amazon.com/Digital-Bathroom-Backlit-Smartphone-Tracking/dp/B00FT8ZHHE/ref=sr_1_4?m=A21JAYJNFQ9DBU&s=merchant-items&ie=UTF8&qid=1444063805&sr=1-4",
+        "price": 24.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "5630f348a93edab6b06a0cd0",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/gz8axsmwah.jpg",
+        "image": "http://media.greatergoods.com/images/standard/gz8axsmwah.jpg"
+      },
+      {
+        "_id": "5630f348a93edab6b06a0ccf",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/xmiwatw1ih.jpg",
+        "image": "http://media.greatergoods.com/images/standard/xmiwatw1ih.jpg"
+      },
+      {
+        "_id": "5630f348a93edab6b06a0ccd",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/xuaw0enoix.jpg",
+        "image": "http://media.greatergoods.com/images/standard/xuaw0enoix.jpg",
+        "cover": false
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0cd5",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It also connects to your smartphone using Bluetooth technology. Track your health with precise data, conveniently collected on your smartphone. Store your results in the Weight Gurus app, which is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit. Requires Bluetooth Smart technology (present in most recent Android phones, and an iPhone 4S or beyond, running iOS 7.1 or later.)<b></b><br/></p>",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/uoj3e2rd8u.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/uoj3e2rd8u.jpg",
+      "image": "http://media.greatergoods.com/images/standard/uoj3e2rd8u.jpg",
+      "large": "http://media.greatergoods.com/images/large/uoj3e2rd8u.jpg"
+    },
+    "msrp": 99.99,
+    "name": "Bluetooth Smart Scale ",
+    "sku": "0380",
+    "__v": 0,
+    "reviewLink": "",
+    "subTitle": "with body composition and backlight, clear",
+    "product": "5644c756520d51611479285a",
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3.5inches-7ft 2.5inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body weight, BMI, Body Fat, Water Weight,  Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "32ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "4ºF - 140ºF / -20ºC - 60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cd8"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "link": "http://www.bedbathandbeyond.com/store/product/weight-gurus-reg-bluetooth-reg-smart-bathroom-scale/1042777830?Keyword=Weight+Gurus",
+        "price": 59.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "56901b638f32b6fb62c647db",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/aor9wpuh3a.jpg",
+        "image": "http://media.greatergoods.com/images/standard/aor9wpuh3a.jpg"
+      },
+      {
+        "_id": "56901b638f32b6fb62c647da",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/tcho1p1gmh.jpg",
+        "image": "http://media.greatergoods.com/images/standard/tcho1p1gmh.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0ce2",
+    "brand": "551c55be023a4c6b304caf88",
+    "charity": "54f08c4608d508d676a5fae8",
+    "description": "<p>Food scales help you accurately measure ingredients for portion control and precision baking. We wanted our scale to unite functionality with beautiful design. Its sleek glass top is hygienic and easy to clean, with a low profile that fits easily into a drawer for storage. The easily readable display also shows highly accurate measurements in your choice of unit, so you can switch back and forth depending on the recipe.<b> </b></p>",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/fuvy8aabew.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/fuvy8aabew.jpg",
+      "image": "http://media.greatergoods.com/images/standard/fuvy8aabew.jpg",
+      "large": "http://media.greatergoods.com/images/large/fuvy8aabew.jpg"
+    },
+    "msrp": 39.99,
+    "name": "Food Scale ",
+    "sku": "0475",
+    "__v": 0,
+    "reviewLink": "amzn.to/1dLpLyb",
+    "subTitle": "from Kitchen Gurus, Silver",
+    "product": "5630f348a93edab6b06a0c4f",
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "g / fl.oz / lb:oz / ml"
+      ],
+      [
+        "Capacity",
+        "5000g / 176.4fl.oz / 11lb:0.4oz / 5000ml"
+      ],
+      [
+        "Division",
+        "1g / 0.1fl.oz / 0.1oz / 1ml"
+      ],
+      [
+        "Minimal Weight",
+        "2g"
+      ],
+      [
+        "Display",
+        "LCD"
+      ],
+      [
+        "Battery",
+        "One CR2032 button battery"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0ce9"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "link": "http://www.bedbathandbeyond.com/store/product/kitchen-gurus-designer-food-scale/1044818371?Keyword=kitchen+gurus",
+        "price": 19.99
+      },
+      "amazon": {
+        "link": "",
+        "price": null
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "56afd99fab53526f50bd08f5",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/0x5s2ymmk8.jpg",
+        "image": "http://media.greatergoods.com/images/standard/0x5s2ymmk8.jpg"
+      },
+      {
+        "_id": "56afd99fab53526f50bd08f4",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/8sgkbhwnf3.jpg",
+        "image": "http://media.greatergoods.com/images/standard/8sgkbhwnf3.jpg"
+      },
+      {
+        "_id": "56afd99fab53526f50bd08f3",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/j1qwruxuxc.jpg",
+        "image": "http://media.greatergoods.com/images/standard/j1qwruxuxc.jpg"
+      },
+      {
+        "_id": "56afd99fab53526f50bd08f2",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2lry44zxht.jpg",
+        "image": "http://media.greatergoods.com/images/standard/2lry44zxht.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "56a92a6cebfad8b141ca5cb4",
+    "sku": "0342",
+    "name": "Appsync Bathroom Scale",
+    "subTitle": "with backlight, silver",
+    "brand": "5592a9759c7aabba213a548e",
+    "product": "56a110917f13f0425dc29629",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/xpmc0p16la.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/xpmc0p16la.jpg",
+      "image": "http://media.greatergoods.com/images/standard/xpmc0p16la.jpg",
+      "large": "http://media.greatergoods.com/images/large/xpmc0p16la.jpg"
+    },
+    "msrp": 19.99,
+    "description": "Our scale conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync.",
+    "__v": 0,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight unit",
+        "lb / kg"
+      ],
+      [
+        "Capacity",
+        "397lb / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb / 0.1kg"
+      ],
+      [
+        "Minimal weight",
+        "5 kg"
+      ],
+      [
+        "Display",
+        "Positive LCD"
+      ],
+      [
+        "Batteries",
+        "2 CR2032"
+      ],
+      [
+        "Working temperature",
+        "32oF-104oF / 0oC-40oC"
+      ],
+      [
+        "Working humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage temperature",
+        "-4oF - 140oF / -20oC - 60oC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "56a92a6cebfad8b141ca5cb7"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "target": {
+        "price": 19.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "56a92a6cebfad8b141ca5cb6",
+        "image": "http://media.greatergoods.com/images/standard/456zbe83xr.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/456zbe83xr.jpg"
+      },
+      {
+        "_id": "56a92a6cebfad8b141ca5cb5",
+        "image": "http://media.greatergoods.com/images/standard/s2rnemipq8.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/s2rnemipq8.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0cea",
+    "brand": "551c55be023a4c6b304caf88",
+    "charity": "54f08c4608d508d676a5fae8",
+    "description": "<p>Food scales help you accurately measure ingredients for portion control and precision baking. We wanted our scale to unite functionality with beautiful design. Its sleek glass top is hygienic and easy to clean, with a low profile that fits easily into a drawer for storage. The easily readable display also shows highly accurate measurements in your choice of unit, so you can switch back and forth depending on the recipe.<b> </b></p>",
+    "featured": null,
+    "image": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/ay829wu23g.jpg",
+      "image": "http://media.greatergoods.com/images/standard/ay829wu23g.jpg"
+    },
+    "msrp": 39.99,
+    "name": "Food Scale ",
+    "sku": "0477",
+    "__v": 0,
+    "reviewLink": "amzn.to/1mFRXFm",
+    "subTitle": "from Kitchen Gurus, Black",
+    "product": "5630f348a93edab6b06a0c4f",
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "g / fl.oz / lb:oz / ml"
+      ],
+      [
+        "Capacity",
+        "5000g / 176.4fl.oz / 11lb:0.4oz / 5000ml"
+      ],
+      [
+        "Division",
+        "1g / 0.1fl.oz / 0.1oz / 1ml"
+      ],
+      [
+        "Minimal Weight",
+        "2g"
+      ],
+      [
+        "Display",
+        "LCD"
+      ],
+      [
+        "Battery",
+        "One CR2032 button battery"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cf1"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": 19.99,
+        "link": "http://www.amazon.com/Kitchen-Gurus-Glass-Digital-Scale/dp/B00HARZJFW/ref=sr_1_3?m=A21JAYJNFQ9DBU&s=merchant-items&ie=UTF8&qid=1444063805&sr=1-3"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/hg6mozgerd.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/hg6mozgerd.jpg",
+        "_id": "5630f348a93edab6b06a0cef"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/f5njz7l6vb.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/f5njz7l6vb.jpg",
+        "_id": "5630f348a93edab6b06a0cee"
+      },
+      {
+        "cover": true,
+        "image": "http://media.greatergoods.com/images/standard/21ehg2cdvq.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/21ehg2cdvq.jpg",
+        "_id": "5630f348a93edab6b06a0cec"
+      },
+      {
+        "cover": true,
+        "image": "http://media.greatergoods.com/images/standard/r2ysnrj31w.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/r2ysnrj31w.jpg",
+        "_id": "5630f348a93edab6b06a0ceb"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0cf6",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e3-a8ae-a1b2-e09fb62acd44\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/vr9z5pnsx5.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/vr9z5pnsx5.jpg",
+      "image": "http://media.greatergoods.com/images/standard/vr9z5pnsx5.jpg",
+      "large": "http://media.greatergoods.com/images/large/vr9z5pnsx5.jpg"
+    },
+    "msrp": null,
+    "name": "Appsync Body Fat Scale ",
+    "sku": "0346",
+    "__v": 0,
+    "subTitle": "with body composition, black",
+    "product": "56a110cd7f13f0425dc2962b",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb / kg"
+      ],
+      [
+        "Capacity",
+        "397lb / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3inches-7ft 3inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body weight, Body Fat, Water Weight,  Muscle Mass and Bone Mass"
+      ],
+      [
+        "Working Temperature:",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature:",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cfe"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "link": "",
+        "price": null
+      },
+      "amazon": {
+        "link": "",
+        "price": null
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": []
+  },
+  {
+    "_id": "5630f348a93edab6b06a0cff",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e3-a8ae-a1b2-e09fb62acd44\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/n3ba32dog1.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/n3ba32dog1.jpg",
+      "image": "http://media.greatergoods.com/images/standard/n3ba32dog1.jpg",
+      "large": "http://media.greatergoods.com/images/large/n3ba32dog1.jpg"
+    },
+    "msrp": null,
+    "name": "Appsync Body Fat Scale ",
+    "sku": "0345",
+    "__v": 0,
+    "reviewLink": "",
+    "subTitle": "with body composition, clear",
+    "product": "56a110cd7f13f0425dc2962b",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb / kg"
+      ],
+      [
+        "Capacity",
+        "397lb / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3inches-7ft 3inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body weight, Body Fat, Water Weight,  Muscle Mass and Bone Mass"
+      ],
+      [
+        "Working Temperature:",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature:",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d07"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": null,
+        "link": ""
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": []
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d08",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.<b id=\"docs-internal-guid-5e8b2a9d-38e3-a8ae-a1b2-e09fb62acd44\"></b></p>",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/mmhfucy5sl.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/mmhfucy5sl.jpg",
+      "image": "http://media.greatergoods.com/images/standard/mmhfucy5sl.jpg",
+      "large": "http://media.greatergoods.com/images/large/mmhfucy5sl.jpg"
+    },
+    "msrp": null,
+    "name": "Appsync Body Fat Scale ",
+    "sku": "0347",
+    "__v": 0,
+    "subTitle": "with body composition, silver",
+    "product": "56a110cd7f13f0425dc2962b",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb / kg"
+      ],
+      [
+        "Capacity",
+        "397lb / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3inches-7ft 3inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body weight, Body Fat, Water Weight,  Muscle Mass and Bone Mass"
+      ],
+      [
+        "Working Temperature:",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature:",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d10"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "link": "",
+        "price": null
+      },
+      "amazon": {
+        "link": "",
+        "price": null
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": []
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d27",
+    "brand": "551c55be023a4c6b304caf88",
+    "charity": "54f08c4608d508d676a5fae8",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/1sw8t73xja.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/1sw8t73xja.jpg",
+      "image": "http://media.greatergoods.com/images/standard/1sw8t73xja.jpg",
+      "large": "http://media.greatergoods.com/images/large/1sw8t73xja.jpg"
+    },
+    "name": "Nutrition Label Food Scale ",
+    "sku": "0451",
+    "description": "<p><b id=\"docs-internal-guid-5e8b2a9d-38e4-8105-2bf9-3b3b82a1735e\"></b></p><p dir=\"ltr\"><span style=\"color: #111111;background-color: #ffffff;\">The Perfect Portions Scale helps you plan healthy meals by giving you accurate information about your ingredients, calculated for your exact serving size. Easily measure nutritional facts by looking up individual foods in the 2000-item database, and add your own frequently used ingredients for a more personalized experience. You can also calculate daily totals for calories, carbs, fats, and more. The sleek glass top won’t trap crumbs, making it hygienic and easy to clean, and it fits easily into a drawer for storage.</span></p>",
+    "__v": 0,
+    "subTitle": "Silver",
+    "product": "5630f348a93edab6b06a0c59",
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "reviewLink": "amzn.to/JbHu3J",
+    "msrp": 59.99,
+    "orderConfirmationAutoresponderId": 124,
+    "reviewAutoresponderId": 110,
+    "autoresponders": {
+      "reviewUs": 110,
+      "orderConfirmation": 124,
+      "discountOrderShipped": 156,
+      "fiveStar": 158,
+      "oneStar": 160,
+      "discountThreshold": "30.00",
+      "productRegistration": 421
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 400,
+          "amazon": 397
+        },
+        "nondiscount": {
+          "real": 399,
+          "amazon": 398
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 404,
+          "amazon": 401
+        },
+        "nondiscount": {
+          "real": 403,
+          "amazon": 402
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 408,
+          "amazon": 405
+        },
+        "nondiscount": {
+          "real": 407,
+          "amazon": 406
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 412,
+          "amazon": 409
+        },
+        "nondiscount": {
+          "real": 411,
+          "amazon": 410
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 416,
+          "amazon": 413
+        },
+        "nondiscount": {
+          "real": 415,
+          "amazon": 414
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 420,
+          "amazon": 417
+        },
+        "nondiscount": {
+          "real": 419,
+          "amazon": 418
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Batteries",
+        "3 AAA"
+      ],
+      [
+        "Maximum Weight",
+        "10lbs. / 5kg"
+      ],
+      [
+        "Resolution",
+        "0.1oz / 1g"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d29"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "amazon": {
+        "price": 39.99,
+        "link": "http://www.amazon.com/Perfect-Portions-Digital-Nutrition-Display/dp/B003CMYV58/ref=sr_1_1?ie=UTF8&qid=1454607364&sr=8-1&keywords=greater+goods+perfect+portions+scale"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/6z7h1zx0tn.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/6z7h1zx0tn.jpg",
+        "_id": "56b38c38ab53526f50bd09df"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/q4qpo9qs6c.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/q4qpo9qs6c.jpg",
+        "_id": "56b38c38ab53526f50bd09de"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/fuzj09mwvw.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fuzj09mwvw.jpg",
+        "_id": "56b38c38ab53526f50bd09dd"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/qk3slgjhn8.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/qk3slgjhn8.jpg",
+        "_id": "56b38c38ab53526f50bd09dc"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d2a",
+    "sku": "0652",
+    "name": "MOUNTAIN BLEND ",
+    "brand": "54ef4ec900770bde69640b08",
+    "charity": "551c556b023a4c6b304caf86",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/2o4kjwle2d.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/2o4kjwle2d.jpg",
+      "image": "http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg",
+      "large": "http://media.greatergoods.com/images/large/2o4kjwle2d.jpg"
+    },
+    "description": "<p><b id=\"docs-internal-guid-5e8b2a9d-38e6-8f2d-2a1f-8db1eb53a437\"><span style=\"color: #000000;background-color: transparent;\">At Greater Goods, we've gone to great lengths to create the best 1.0- and 2.0-compatible single-serve coffee. We responsibly source the finest premium grade coffee beans, roast them to perfection, and then pack them into eco-friendly c-pods instead of plastic cups. Our pods work with most single-serve brewers, only using less plastic. Each serving brews through a filter, creating less waste and a better-tasting cup of coffee.</span></b><br/></p>",
+    "__v": 0,
+    "reviewLink": "amzn.to/1NWMGDQ",
+    "subTitle": "6 COUNT, MEDIUM ROAST",
+    "msrp": 9.99,
+    "product": "5630f348a93edab6b06a0c5d",
+    "autoresponders": {
+      "oneStar": 193,
+      "fiveStarFollowUp": 192,
+      "fiveStar": 191,
+      "reviewUs": 190,
+      "memberOrderShipped": 189,
+      "nonMemberOrderShipped": 188,
+      "join": 187
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Format / Compatibility",
+        "Our pods are compatible with most single-serve brewers available, including 1.0 and 2.0 Keurig Brewers."
+      ],
+      [
+        "Shipping Weight",
+        "5 oz"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d2c"
+      }
+    ],
+    "agent": {
+      "email": "dtenzer@greatergoods.com",
+      "phone": "314.991.8494 x32",
+      "name": "David"
+    },
+    "providers": {
+      "amazon": {
+        "price": 4.99,
+        "link": "http://www.amazon.com/dp/B00X6CKV2G/ref=cm_sw_su_dp"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": false,
+    "hideSale": true,
+    "hidden": true,
+    "secondaryImages": [
+      {
+        "_id": "568e9b598f32b6fb62c6477c",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2hn3qr9i4o.jpg",
+        "image": "http://media.greatergoods.com/images/standard/2hn3qr9i4o.jpg"
+      },
+      {
+        "_id": "568e9b598f32b6fb62c6477b",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fkxrzi6wda.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fkxrzi6wda.jpg"
+      },
+      {
+        "_id": "568e9b598f32b6fb62c6477a",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/w7kt4md6a5.jpg",
+        "image": "http://media.greatergoods.com/images/standard/w7kt4md6a5.jpg"
+      },
+      {
+        "_id": "568e9b598f32b6fb62c64779",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fojxznv35r.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fojxznv35r.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d2d",
+    "brand": "551c55be023a4c6b304caf88",
+    "charity": "54f08c4608d508d676a5fae8",
+    "description": "<p>The Kitrics Nutrition Label Scale helps you plan healthy meals by giving you accurate information about your ingredients, calculated for your exact serving size. Easily measure nutritional facts by looking up individual foods in the extensive database, and add your own frequently used ingredients for a more personalized experience. You can also calculate daily totals for calories, carbs, fats, and more.<b> </b></p>",
+    "featured": null,
+    "image": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/t03wlqjc21.jpg",
+      "image": "http://media.greatergoods.com/images/standard/t03wlqjc21.jpg",
+      "large": "http://media.greatergoods.com/images/large/t03wlqjc21.jpg"
+    },
+    "msrp": 59.99,
+    "name": "Kitrics Nutrition Label Scale ",
+    "sku": "0122",
+    "__v": 0,
+    "reviewLink": "",
+    "product": "5630f348a93edab6b06a0c4d",
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Batteries",
+        "2 AA"
+      ],
+      [
+        "Maximum Weight",
+        "2kg / 72oz / 4.5lbs."
+      ],
+      [
+        "Graduation",
+        "1g / 0.05oz"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d34"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "link": "http://www.amazon.com/Kitrics-Digital-Nutrition-Scale-Silver/dp/B000U67EI0/ref=sr_1_1?ie=UTF8&qid=1444069767&sr=8-1&keywords=Kitrics+Nutrition+Label+Scale",
+        "price": 51.57
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "5630f348a93edab6b06a0d31",
+        "image": "http://media.greatergoods.com/images/standard/90e4k97eat.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/90e4k97eat.jpg"
+      },
+      {
+        "_id": "5630f348a93edab6b06a0d30",
+        "image": "http://media.greatergoods.com/images/standard/pv72y16gs2.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/pv72y16gs2.jpg"
+      },
+      {
+        "_id": "5630f348a93edab6b06a0d2f",
+        "image": "http://media.greatergoods.com/images/standard/8bpok1vbh7.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/8bpok1vbh7.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d35",
+    "brand": "551c55be023a4c6b304caf88",
+    "charity": "54f08c4608d508d676a5fae8",
+    "description": "<p><b id=\"docs-internal-guid-5e8b2a9d-38e4-8105-2bf9-3b3b82a1735e\"></b></p><p>The Perfect Portions Scale helps you plan healthy meals by giving you accurate information about your ingredients, calculated for your exact serving size. Easily measure nutritional facts by looking up individual foods in the 2000-item database, and add your own frequently used ingredients for a more personalized experience. You can also calculate daily totals for calories, carbs, fats, and more. The sleek glass top won’t trap crumbs, making it hygienic and easy to clean, and it fits easily into a drawer for storage.</p><p></p>",
+    "image": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/nzx028u4rf.jpg",
+      "image": "http://media.greatergoods.com/images/standard/nzx028u4rf.jpg",
+      "large": "http://media.greatergoods.com/images/large/nzx028u4rf.jpg"
+    },
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "msrp": 59.99,
+    "name": "Perfect Portions Scale ",
+    "sku": "0450",
+    "__v": 0,
+    "reviewLink": "amzn.to/JbHu3J",
+    "orderConfirmationAutoresponderId": 124,
+    "reviewAutoresponderId": 110,
+    "autoresponders": {
+      "reviewUs": 110,
+      "orderConfirmation": 124,
+      "discountOrderShipped": 156,
+      "fiveStar": 158,
+      "oneStar": 160,
+      "discountThreshold": "30.00"
+    },
+    "subTitle": "from Kitchen Gurus, Silver",
+    "product": "5630f348a93edab6b06a0c52",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Battery",
+        "3 AAA"
+      ],
+      [
+        "Maximum Weight",
+        "10lb. / 5kg"
+      ],
+      [
+        "Resolution",
+        "0.1oz / 1g"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d3c"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "link": "http://www.bedbathandbeyond.com/store/product/perfect-portions-digital-nutrition-food-scale/1016983853?Keyword=perfect+portions",
+        "price": 49.99
+      },
+      "amazon": {
+        "link": "",
+        "price": null
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "5630f348a93edab6b06a0d3a",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/w5oujkf0nz.jpg",
+        "image": "http://media.greatergoods.com/images/standard/w5oujkf0nz.jpg"
+      },
+      {
+        "_id": "5630f348a93edab6b06a0d39",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2drnn5qgoz.jpg",
+        "image": "http://media.greatergoods.com/images/standard/2drnn5qgoz.jpg"
+      },
+      {
+        "_id": "5630f348a93edab6b06a0d37",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/iq5j2x0zir.jpg",
+        "image": "http://media.greatergoods.com/images/standard/iq5j2x0zir.jpg"
+      },
+      {
+        "_id": "5630f348a93edab6b06a0d36",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/8ivzi16zjm.jpg",
+        "image": "http://media.greatergoods.com/images/standard/8ivzi16zjm.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d3d",
+    "brand": "551c55be023a4c6b304caf88",
+    "charity": "54f08c4608d508d676a5fae8",
+    "description": "<p><b id=\"docs-internal-guid-5e8b2a9d-38e4-8105-2bf9-3b3b82a1735e\"></b></p><p>The Perfect Portions Scale helps you plan healthy meals by giving you accurate information about your ingredients, calculated for your exact serving size. Easily measure nutritional facts by looking up individual foods in the 2000-item database, and add your own frequently used ingredients for a more personalized experience. You can also calculate daily totals for calories, carbs, fats, and more. The sleek glass top won’t trap crumbs, making it hygienic and easy to clean, and it fits easily into a drawer for storage.</p><p></p>",
+    "image": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/lt6zj3b197.jpg",
+      "image": "http://media.greatergoods.com/images/standard/lt6zj3b197.jpg"
+    },
+    "msrp": 59.99,
+    "name": "Perfect Portions Scale ",
+    "sku": "0452",
+    "__v": 0,
+    "reviewLink": "amzn.to/1dBrmkZ",
+    "subTitle": "from Kitchen Gurus, Black",
+    "product": "5630f348a93edab6b06a0c52",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Battery",
+        "3 AAA"
+      ],
+      [
+        "Maximum Weight",
+        "10lb. / 5kg"
+      ],
+      [
+        "Resolution",
+        "0.1oz / 1g"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d44"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": 49.99,
+        "link": "http://www.amazon.com/Perfect-Portions-Digital-Nutrition-Display/dp/B003CMYV58/ref=sr_1_7?m=A21JAYJNFQ9DBU&s=merchant-items&ie=UTF8&qid=1444063805&sr=1-7"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/a2fncnwchz.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/a2fncnwchz.jpg",
+        "_id": "5630f348a93edab6b06a0d42"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/jdnvshj4nc.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/jdnvshj4nc.jpg",
+        "_id": "5630f348a93edab6b06a0d41"
+      },
+      {
+        "cover": true,
+        "image": "http://media.greatergoods.com/images/standard/shojm0ldnn.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/shojm0ldnn.jpg",
+        "_id": "5630f348a93edab6b06a0d3f"
+      },
+      {
+        "cover": false,
+        "image": "http://media.greatergoods.com/images/standard/34lno15m4f.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/34lno15m4f.jpg",
+        "_id": "5630f348a93edab6b06a0d3e"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d4e",
+    "brand": "54ef4ec900770bde69640b08",
+    "charity": "551c556b023a4c6b304caf86",
+    "description": "<p>At Greater Goods, we've gone to great lengths to create the best 1.0- and 2.0-compatible single-serve coffee. We responsibly source the finest premium grade coffee beans, roast them to perfection, and then pack them into eco-friendly c-pods instead of plastic cups. Our pods work with most single-serve brewers, only using less plastic. Each serving brews through a filter, creating less waste and a better-tasting cup of coffee.<b></b></p>",
+    "featured": 3,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/2o4kjwle2d.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/2o4kjwle2d.jpg",
+      "image": "http://media.greatergoods.com/images/standard/2o4kjwle2d.jpg",
+      "large": "http://media.greatergoods.com/images/large/2o4kjwle2d.jpg"
+    },
+    "msrp": 44.99,
+    "name": "Vista Blend ",
+    "sku": "0657",
+    "primaryVideo": "",
+    "__v": 0,
+    "reviewLink": "amzn.to/1dyzRmi",
+    "subTitle": "72 count, dark roast",
+    "product": "5630f348a93edab6b06a0c5d",
+    "autoresponders": {
+      "oneStar": 204,
+      "nonMemberOrderShipped": {
+        "order1": 195,
+        "order2": 196,
+        "order3": 197,
+        "default": 198
+      },
+      "memberOrderShipped": {
+        "reward": 199,
+        "default": 200
+      },
+      "reviewUs": 201,
+      "fiveStar": 202,
+      "fiveStarFollowUp": 203,
+      "join": 194
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Format / Compatibility",
+        "Our pods are compatible with most single-serve brewers available, including 1.0 and 2.0 Keurig Brewers."
+      ],
+      [
+        "Shipping Weight",
+        "3 pounds"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d50"
+      }
+    ],
+    "agent": {
+      "email": "dtenzer@greatergoods.com",
+      "phone": "314.991.8494 x32",
+      "name": "David"
+    },
+    "providers": {
+      "amazon": {
+        "price": 35.63,
+        "link": "http://amzn.com/B00X6CKUW2"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": false,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "568e9b2e8f32b6fb62c64778",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2hn3qr9i4o.jpg",
+        "image": "http://media.greatergoods.com/images/standard/2hn3qr9i4o.jpg"
+      },
+      {
+        "_id": "568e9b2e8f32b6fb62c64777",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fkxrzi6wda.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fkxrzi6wda.jpg"
+      },
+      {
+        "_id": "568e9b2e8f32b6fb62c64776",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/w7kt4md6a5.jpg",
+        "image": "http://media.greatergoods.com/images/standard/w7kt4md6a5.jpg"
+      },
+      {
+        "_id": "568e9b2e8f32b6fb62c64775",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fbuqr97zs3.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fbuqr97zs3.jpg"
+      },
+      {
+        "_id": "568e9b2e8f32b6fb62c64774",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fojxznv35r.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fojxznv35r.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5630f348a93edab6b06a0d51",
+    "sku": "0341",
+    "name": "Appsync Body Fat Scale ",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync. The Weight Gurus app is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit.</p>",
+    "featured": null,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/ilztcmsc2p.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/ilztcmsc2p.jpg",
+      "image": "http://media.greatergoods.com/images/standard/ilztcmsc2p.jpg",
+      "large": "http://media.greatergoods.com/images/large/ilztcmsc2p.jpg"
+    },
+    "msrp": 59.99,
+    "__v": 0,
+    "subTitle": "with body composition and backlight, silver",
+    "product": "5644c86c520d51611479285b",
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3 ft 3 inches-7 ft 3 inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body Weight, Body Fat, Water Weight,  Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "32ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature:",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0d55"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "link": "http://www.bedbathandbeyond.com/store/product/weight-gurus-appsync-body-composition-bathroom-scale/1041867273",
+        "price": 49.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/5ub8tr9bot.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/5ub8tr9bot.jpg",
+        "_id": "569673827967b9d305d12a33"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/n1qjp2llge.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/n1qjp2llge.jpg",
+        "_id": "569673827967b9d305d12a32"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/pfzr0f0mun.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/pfzr0f0mun.jpg",
+        "_id": "569673827967b9d305d12a31"
+      }
+    ]
+  },
+  {
+    "_id": "56732c686e2857d227affd55",
+    "brand": "54f4907002cb4bff9f41ea85",
+    "charity": "54ef4bb45173dd6e62f11fa6",
+    "description": "Your blood pressure and heart rate are important indicators of your overall health, and our wrist monitor can help you conveniently track these measurements at home. We designed it to be compact and easy to use, with a comfortable wrist cuff that adjusts to fit most adult users. This FDA-approved monitor measures systolic and diastolic blood pressure, as well as pulse, and displays the results on a large LCD screen with oversized numbers. Two different users can store up to 60 records each, and it is small enough to store easily in a drawer or cabinet in between uses.",
+    "featured": 2,
+    "gettingStartedPdf": "http://media.greatergoods.com/assets/abcj235c5t.pdf",
+    "gettingStartedVideo": {
+      "video": "http://media.greatergoods.com/videos/standard/zokxm7pi5m.mp4",
+      "thumbnail": "http://media.greatergoods.com/videos/thumbnail/zokxm7pi5m.jpg"
+    },
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/aj8moln2nz.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/aj8moln2nz.jpg",
+      "image": "http://media.greatergoods.com/images/standard/aj8moln2nz.jpg",
+      "large": "http://media.greatergoods.com/images/large/aj8moln2nz.jpg"
+    },
+    "msrp": 69.99,
+    "name": "Wrist Blood Pressure Monitor",
+    "sku": "0605",
+    "displayGuide": false,
+    "webVideoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/5ohi9pqums.jpg",
+      "image": "http://media.greatergoods.com/images/standard/5ohi9pqums.jpg"
+    },
+    "cardVideo": "5tmQ8GD4Lvk",
+    "amazonVideo": "o0HA-0AXrT4",
+    "video": "J9IrQWslHWc",
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/v27gchrgtx.jpg",
+      "image": "http://media.greatergoods.com/images/standard/v27gchrgtx.jpg"
+    },
+    "gettingStartedSteps": [
+      {
+        "name": "INSTALLING AND REPLACING THE BATTERIES",
+        "description": "<p></p><p>Slide off the battery cover.</p><p>• Install the batteries by&#3; matching the correct&#3; polarity. &#3;Always use the correct&#3; battery type (2 x AAA batteries).</p><p>• Replace the cover.</p><p><br/></p><p>Replace the batteries whenever the following happen:</p><p>•Low battery symbol appears.</p><p>•The display dims.</p><p>•The display does not light up.</p>",
+        "_id": "5630f348a93edab6b06a0c90"
+      },
+      {
+        "name": "SETTING TIME, DATE, AND MEASUREMENT UNIT",
+        "description": "<p>It is important to set the clock before using your&#3; blood pressure monitor,<br/>so that a time stamp can &#3;be assigned to each record that is stored in&#3; the memory.&#3;<br/>(year: 2014 - 2054 , time format: 24 H /12 H)<br/>1. When the monitor is off, hold and press   the “NEXT” button for about 3 seconds to enter into setting mode.<br/>2. Press the “NEXT” button to change the [YEAR] then press the “SET” button to confirm your selection.<br/>3. Repeat step 2 to confirm &#3;[MONTH], [DAY],&#3; time format (24 hours or 12 hours), &#3;[HOUR], [MINUTE], and [MEASUREMENT UNIT].<br/>4. After confirming the measurement unit,&#3; the LCD will display all the settings you have&#3; done once again and then turn off.<br/></p>",
+        "_id": "5630f348a93edab6b06a0c8f"
+      },
+      {
+        "_id": "56732f3c6182cc0b5fbce619",
+        "description": "<p>1. Remove all accessories (watch, bracelet, etc.) &#3;from your wrist. If your<br/>    physician has diagnosed&#3; you with poor circulation in one wrist,<br/>    use the other one.<br/>2. Roll or push up your sleeve to expose the skin.<br/>3. Apply the cuff to your wrist with your palm&#3; facing up.<br/>4. Position the edge of the cuff about 1-1.5 cm away from your palm.<br/>5. Fasten the wrist cuff around your wrist, leaving&#3; no extra room between<br/>    the cuff and your skin.&#3; If the cuff is too loose, the measurement will &#3;not<br/>    be accurate. Rest for 5 minutes before&#3; measuring. Wait at least 3  minutes between&#3; measurements. This allows your blood circulation to recover.<br/><br/>NOTE: For a meaningful comparison, try to measure&#3; under similar     conditions. For example, take daily &#3;measurements at approximately<br/>the same time,&#3; on the same wrist, or as directed by a physician. <br/>Patients with Hypertension: See page 17.<br/></p>",
+        "name": "FASTEN THE CUFF"
+      },
+      {
+        "_id": "56732f3c6182cc0b5fbce618",
+        "name": "START THE MEASUREMENT",
+        "description": "<p>1. When the blood pressure monitor is off,&#3; press the “POWER” button to turn it on, the&#3; LCD will display the user ID first. Press the “NEXT”&#3; button to change the user ID between User 1 &#3;and User 2. Press the “SET” button to&#3; confirm, and it will finish the whole measurement for the selected user.<br/><br/>2. Press the “POWER” button to power off,&#3; otherwise the device will turn off  within 1 minute.<br/></p>"
+      }
+    ],
+    "__v": 0,
+    "reviewLink": "amzn.to/1ZmDWLY",
+    "subTitle": "",
+    "htmlGuide": null,
+    "product": "567328506182cc0b5fbce612",
+    "orderConfirmationAutoresponderId": 128,
+    "reviewAutoresponderId": 88,
+    "autoresponders": {
+      "reviewUs": 88,
+      "orderConfirmation": 128,
+      "discountOrderShipped": 176,
+      "fiveStar": 178,
+      "oneStar": 180,
+      "discountThreshold": "15.00"
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 10,
+          "amazon": 897
+        },
+        "nondiscount": {
+          "real": 23,
+          "amazon": 897
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 87,
+          "amazon": 978
+        },
+        "nondiscount": {
+          "real": 89,
+          "amazon": 878
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 78,
+          "amazon": 897
+        },
+        "nondiscount": {
+          "real": 7,
+          "amazon": 787
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 878,
+          "amazon": 789
+        },
+        "nondiscount": {
+          "real": 79,
+          "amazon": 78
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 78,
+          "amazon": 78
+        },
+        "nondiscount": {
+          "real": 789,
+          "amazon": 78
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 789,
+          "amazon": 78
+        },
+        "nondiscount": {
+          "real": 7,
+          "amazon": 7
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Power Supply",
+        "2 AAA batteries (3V DC)"
+      ],
+      [
+        "Display Mode",
+        "Digital LCD V.A. 32mm × 45mm"
+      ],
+      [
+        "Measurement Mode",
+        "Oscillographic Testing Mode"
+      ],
+      [
+        "Measurement Range",
+        "Rated cuff pressure: 0mmHg~300mmHg(0kPa ~ 40kPa) Measurement pressure: SYS: 60mmHg~230mmHg (8.0kPa~30.7kPa) DIA: 40mmHg~130mmHg (5.3kPa~17.3kPa) Pulse value: (40 -199) beat / minute"
+      ],
+      [
+        "Accuracy",
+        "Pressure: 5˚C - 40˚C within ± 0.4 kPa (3 mmHg) Pulse value: ±5%"
+      ],
+      [
+        "Normal Working Condition",
+        "Temperature: 5˚C to 40˚C Relative humidity: ≤85% RH Atmospheric pressure: 86 kPa to 106 kPa"
+      ],
+      [
+        "Storage and Transportation Condition",
+        "Temperature: -20ºC-60ºC Relative Humidity: 10%-93% Atmospheric Pressure: 50kpa-106kpa"
+      ],
+      [
+        "Measurement Perimeter of the Wrist",
+        "About 5.3 in - 8.4 in"
+      ],
+      [
+        "Net Weight",
+        "Approx. 105 g (Excluding the dry cells)"
+      ],
+      [
+        "External Dimensions",
+        "Approx. 3.4in x 2.6in x 0.9in (Exclude the cuff)"
+      ],
+      [
+        "Mode of Operation",
+        "Continuous Operation"
+      ],
+      [
+        "Degree of Protection",
+        "Type BF applied part"
+      ],
+      [
+        "Protection Against Ingress of Water",
+        "IP22"
+      ],
+      [
+        "Software Version",
+        "V01"
+      ],
+      [
+        "Device classification",
+        "Internally Powered ME Equipment"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c91"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "800.481.0233",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "bbb": {
+        "link": "",
+        "price": null
+      },
+      "amazon": {
+        "link": "http://www.amazon.com/dp/B01928T0DS",
+        "price": 34.95
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/15b38mptzg.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/15b38mptzg.jpg",
+        "_id": "568ea1f88f32b6fb62c64786"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/3n967prrfc.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/3n967prrfc.jpg",
+        "_id": "568ea1f88f32b6fb62c64785"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/kbmmi0wzjf.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/kbmmi0wzjf.jpg",
+        "_id": "568ea1f88f32b6fb62c64784"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/luug8u9h7p.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/luug8u9h7p.jpg",
+        "_id": "568ea1f88f32b6fb62c64783"
+      }
+    ]
+  },
+  {
+    "_id": "56797101d4c6edb5bd84ad8f",
+    "brand": "5592a9759c7aabba213a548e",
+    "buyingGuide": "559414bf48cbea1972c80487",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It also connects to your smartphone using Bluetooth technology. Track your health with precise data, conveniently collected on your smartphone. Store your results in the Weight Gurus app, which is also designed for use with the following platforms: FITBIT, Apple’s Health app, and Google Fit. Requires Bluetooth Smart technology (present in most recent Android phones, and an iPhone 4S or beyond, running iOS 7.1 or later.)<b></b></p>",
+    "gettingStartedPdf": "http://media.greatergoods.com/assets/agg0138bg0.pdf",
+    "gettingStartedVideo": {
+      "video": "http://media.greatergoods.com/videos/standard/zokxm7pi5m.mp4",
+      "thumbnail": "http://media.greatergoods.com/videos/thumbnail/zokxm7pi5m.jpg"
+    },
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/f8o0wwjtla.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/f8o0wwjtla.jpg",
+      "image": "http://media.greatergoods.com/images/standard/f8o0wwjtla.jpg",
+      "large": "http://media.greatergoods.com/images/large/f8o0wwjtla.jpg"
+    },
+    "msrp": 99.99,
+    "name": "Bluetooth Smart Scale",
+    "sku": "0382",
+    "htmlGuide": "5627d818e326970c009465f5",
+    "primaryVideo": "",
+    "displayGuide": false,
+    "webVideoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/5ohi9pqums.jpg",
+      "image": "http://media.greatergoods.com/images/standard/5ohi9pqums.jpg"
+    },
+    "cardVideo": "5tmQ8GD4Lvk",
+    "amazonVideo": "o0HA-0AXrT4",
+    "video": "J9IrQWslHWc",
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "gettingStartedSteps": [
+      {
+        "description": "<ol><li>Make sure your phone's Bluetooth is turned on.</li><li>Select &#34;Bluetooth Setup&#34; in the Weight Gurus App menu.<br/>*If asked, make sure to fill out a few more pieces of information about yourself. This will setup your body metrics calculation.</li><li>Press and hold the &#34;UNIT&#34; button on the back of the scale. Once the small circles start bouncing back and forth on the scale's screen, you can let go of the &#34;UNIT&#34; button.</li><li>Tap the &#34;+&#34; symbol on your phone's screen to begin the pairing process.</li><li>Your phone's Bluetooth will connect with the scale and then bring up another screen. Tap on the picture of your scale to choose it.</li><li>Select your user number.</li><li>Manually select your user number on the scale by using the arrow buttons and then tapping &#34;SEL&#34; then step on and weigh yourself.</li><li>When the pairing process is completed, your phone will alert you that pairing is complete.<br/></li></ol>",
+        "name": "Bluetooth Smart Scale Setup",
+        "_id": "5630f348a93edab6b06a0cbf"
+      }
+    ],
+    "__v": 0,
+    "reviewLink": "bit.ly/WGBT0375",
+    "subTitle": "with body composition and backlight, white",
+    "product": "56a105527f13f0425dc29608",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb / 0.1kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3.5inches-7ft 2.5inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body Weight, BMI, Body Fat, Water Weight, Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "32ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "-4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cc0"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "target": {
+        "price": 59.99,
+        "link": "http://www.target.com/p/weight-gurus-bluetooth-body-composition-scale-white/-/A-49161154#prodSlot=medium_1_1&term=weight+gurus"
+      },
+      "bbb": {
+        "price": null,
+        "link": null
+      },
+      "amazon": {
+        "price": null,
+        "link": null
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/xdfik87bfo.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/xdfik87bfo.jpg",
+        "_id": "569d49777f13f0425dc292c5"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/l4jl4x28be.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/l4jl4x28be.jpg",
+        "_id": "569d49777f13f0425dc292c4"
+      }
+    ]
+  },
+  {
+    "_id": "567972a4d4c6edb5bd84ad92",
+    "brand": "5592a9759c7aabba213a548e",
+    "charity": "5592a9e19c7aabba213a548f",
+    "description": "<p>Our scale provides a highly accurate way to monitor your overall weight over time, as well as body fat, lean mass, water weight, and bone mass. It conveniently syncs to your smartphone using the free Weight Gurus app, so you get accurate results and detailed health metrics right in your pocket. This low-cost alternative to Bluetooth transfers your measurements by scanning a barcode with your smartphone’s camera. There’s no setup or pairing necessary—just point your camera towards your scale’s display screen to sync.<b id=\"docs-internal-guid-5e8b2a9d-38e3-a8ae-a1b2-e09fb62acd44\"></b></p>",
+    "gettingStartedPdf": "http://media.greatergoods.com/assets/800yak41cl.pdf",
+    "gettingStartedVideo": {
+      "video": "http://media.greatergoods.com/videos/standard/zokxm7pi5m.mp4",
+      "thumbnail": "http://media.greatergoods.com/videos/thumbnail/zokxm7pi5m.jpg"
+    },
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/671i3kfv58.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/671i3kfv58.jpg",
+      "image": "http://media.greatergoods.com/images/standard/671i3kfv58.jpg",
+      "large": "http://media.greatergoods.com/images/large/671i3kfv58.jpg"
+    },
+    "msrp": null,
+    "name": "Appsync Body Fat Scale",
+    "sku": "0343",
+    "displayGuide": false,
+    "webVideoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/5ohi9pqums.jpg",
+      "image": "http://media.greatergoods.com/images/standard/5ohi9pqums.jpg"
+    },
+    "cardVideo": "5tmQ8GD4Lvk",
+    "amazonVideo": "o0HA-0AXrT4",
+    "video": "J9IrQWslHWc",
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "gettingStartedSteps": [
+      {
+        "description": "<ol><li>Remove the plastic pull tab from the back of the scale.</li><li>Tap the scale awake (briefly step on then off the scale).</li><li>Press and hold the SET button.</li><li>Use the UP and DOWN arrows to make selections, then press the SET button to select.<br/>Enter: USER NUMBER*, GENDER, ATHLETE MODE*, HEIGHT, AGE, and WEIGHT MODE*.<br/>*USER NUMBER - Your personal user profile number (Select user 1-8).<br/>*WEIGHT MODE - Select Traditional or Weightless: # for Traditional mode to see your weight (125.6lbs) or +/- for Weightless to track your weight progress (-12.3lbs).<br/>*ATHLETE MODE - An athlete is defined as a person who  is involved in intense physical activity approximately 12 hours per week and who has a resting heart rate of approximately 60 beats or less per minute.<br/></li></ol>",
+        "name": "SETTING UP YOUR SCALE",
+        "_id": "5630f348a93edab6b06a0c9e"
+      },
+      {
+        "description": "<p><span>Step on the scale and evenly distribute your weight. Make sure that your feet are making good contact with all four metal conductors.</span><br/></p>",
+        "name": "WEIGH",
+        "_id": "5630f348a93edab6b06a0c9d"
+      },
+      {
+        "name": "SYNC",
+        "description": "<ol id=\"docs-internal-guid-6c77a6ab-4def-3fbc-3455-24607c6d6b0f\"><li dir=\"ltr\" style=\"color: #000000;background-color: transparent;\"><p dir=\"ltr\"><span style=\"color: #000000;background-color: transparent;\">Press SET on your scale as it's showing your measurement results.</span></p></li><li dir=\"ltr\" style=\"color: #000000;background-color: transparent;\"><p dir=\"ltr\"><span style=\"color: #000000;background-color: transparent;\">Open the Weight Gurus App's Camera/Sync function.</span></p></li><li dir=\"ltr\" style=\"color: #000000;background-color: transparent;\"><span style=\"color: #000000;background-color: transparent;\">Hold your device above your scale's LCD screen. When the display shows the barcode, your results will automatically be transferred to your device. Press SUBMIT to store your results.</span></li></ol>",
+        "_id": "5630f348a93edab6b06a0c9c"
+      }
+    ],
+    "__v": 0,
+    "reviewLink": "amzn.to/1eD4BSJ",
+    "htmlGuide": null,
+    "subTitle": "with body composition and backlight, silver",
+    "products": "5630f348a93edab6b06a0c54",
+    "product": "56a109fb7f13f0425dc29614",
+    "featured": null,
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "4 AAA"
+      ],
+      [
+        "User No.",
+        "8"
+      ],
+      [
+        "Age Range",
+        "10-85"
+      ],
+      [
+        "Stature Range",
+        "3ft 3inches-7ft 3inches / 100-220cm"
+      ],
+      [
+        "Measurements Calculate",
+        "Body Weight, Body Fat, Water Weight,  Muscle Mass, and Bone Mass"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature",
+        "4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0c9f"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "target": {
+        "link": "http://www.target.com/p/weight-gurus-appsync-smart-scale-with-body-composition-silver/-/A-46790468#prodSlot=medium_1_2&term=weight+gurus",
+        "price": 39.99
+      },
+      "bbb": {
+        "link": "",
+        "price": null
+      },
+      "amazon": {
+        "link": "",
+        "price": null
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "569d49517f13f0425dc292c0",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/5jstvgsw1s.jpg",
+        "image": "http://media.greatergoods.com/images/standard/5jstvgsw1s.jpg"
+      },
+      {
+        "_id": "569d49517f13f0425dc292bf",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/sspt7djmjz.jpg",
+        "image": "http://media.greatergoods.com/images/standard/sspt7djmjz.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "5681771a6e2857d227b008f2",
+    "brand": "54f4907002cb4bff9f41ea85",
+    "charity": "54ef4bb45173dd6e62f11fa6",
+    "description": "This scale is designed to give you our most streamlined weighing experience, with no additional set-up or smartphone pairing necessary. Just step on and view your weight on the large, easy-to-read screen.",
+    "gettingStartedPdf": "http://media.greatergoods.com/assets/5itrevu994.pdf",
+    "gettingStartedVideo": {
+      "video": "http://media.greatergoods.com/videos/standard/zokxm7pi5m.mp4",
+      "thumbnail": "http://media.greatergoods.com/videos/thumbnail/zokxm7pi5m.jpg"
+    },
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/5egs7z8u2o.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/5egs7z8u2o.jpg",
+      "image": "http://media.greatergoods.com/images/standard/5egs7z8u2o.jpg",
+      "large": "http://media.greatergoods.com/images/large/5egs7z8u2o.jpg"
+    },
+    "msrp": 49.99,
+    "name": "Basic Bathroom Scale",
+    "sku": "0390",
+    "displayGuide": false,
+    "webVideoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/5ohi9pqums.jpg",
+      "image": "http://media.greatergoods.com/images/standard/5ohi9pqums.jpg"
+    },
+    "cardVideo": "5tmQ8GD4Lvk",
+    "amazonVideo": "o0HA-0AXrT4",
+    "video": "J9IrQWslHWc",
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "gettingStartedSteps": [
+      {
+        "description": "<ol><li>Remove the plastic pull tab from the back of the scale.</li><li>Step on the scale, evenly distributing your weight.</li></ol>",
+        "name": "WEIGH",
+        "_id": "5630f348a93edab6b06a0cc9"
+      }
+    ],
+    "__v": 0,
+    "reviewLink": "amzn.to/1lPxqQA",
+    "subTitle": "Silver With Backlight",
+    "htmlGuide": null,
+    "products": "5630f348a93edab6b06a0c56",
+    "product": "569fc7397f13f0425dc294f9",
+    "featured": null,
+    "orderConfirmationAutoresponderId": 122,
+    "reviewAutoresponderId": 104,
+    "autoresponders": {
+      "reviewUs": 104,
+      "orderConfirmation": 122,
+      "discountOrderShipped": 146,
+      "fiveStar": 148,
+      "oneStar": 150,
+      "discountThreshold": "16.00",
+      "productRegistration": 371
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 349,
+          "amazon": 344
+        },
+        "nondiscount": {
+          "real": 348,
+          "amazon": 347
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 353,
+          "amazon": 350
+        },
+        "nondiscount": {
+          "real": 352,
+          "amazon": 351
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 357,
+          "amazon": 354
+        },
+        "nondiscount": {
+          "real": 356,
+          "amazon": 355
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 361,
+          "amazon": 358
+        },
+        "nondiscount": {
+          "real": 360,
+          "amazon": 359
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 365,
+          "amazon": 362
+        },
+        "nondiscount": {
+          "real": 364,
+          "amazon": 363
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 370,
+          "amazon": 366
+        },
+        "nondiscount": {
+          "real": 369,
+          "amazon": 367
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight Unit",
+        "lb. / kg"
+      ],
+      [
+        "Capacity",
+        "397lb. / 180kg"
+      ],
+      [
+        "Division",
+        "0.1lb. / 0.1kg"
+      ],
+      [
+        "Minimal Weight",
+        "5kg"
+      ],
+      [
+        "Display",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries",
+        "2 CR2032 Batteries"
+      ],
+      [
+        "Working Temperature",
+        "2ºF-104ºF / 0ºC-40ºC"
+      ],
+      [
+        "Working Humidity",
+        "≤90% RH"
+      ],
+      [
+        "Storage Temperature:",
+        "4ºF-140ºF / -20ºC-60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "5630f348a93edab6b06a0cca"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "bbb": {
+        "price": null,
+        "link": ""
+      },
+      "amazon": {
+        "price": 19.99,
+        "link": "http://www.amazon.com/gp/product/B01929N69G/ref=s9_hps_bw_g121_i4"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "568ad3b36182cc0b5fbceaee",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/d582lcckf1.jpg",
+        "image": "http://media.greatergoods.com/images/standard/d582lcckf1.jpg"
+      },
+      {
+        "_id": "568ad3b36182cc0b5fbceaed",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/fmejgqlexh.jpg",
+        "image": "http://media.greatergoods.com/images/standard/fmejgqlexh.jpg"
+      },
+      {
+        "_id": "568ad3b36182cc0b5fbceaec",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/pq270f6qwe.jpg",
+        "image": "http://media.greatergoods.com/images/standard/pq270f6qwe.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "56a91e11ebfad8b141ca5ca5",
+    "sku": "0478",
+    "name": "Kitchen Scale + Timer",
+    "brand": "551c55be023a4c6b304caf88",
+    "product": "56a657287f13f0425dc299b5",
+    "msrp": 59.99,
+    "subTitle": "silver",
+    "__v": 0,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/1jws0q2pex.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/1jws0q2pex.jpg",
+      "image": "http://media.greatergoods.com/images/standard/1jws0q2pex.jpg",
+      "large": "http://media.greatergoods.com/images/large/1jws0q2pex.jpg"
+    },
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "reviewLink": "amzn.to/1OWTm4t",
+    "description": "This scale makes it easier to prepare healthy meals at home. Manage portion sizes by accurately measuring ingredients, and use the built-in stopwatch and timer to track each step of your recipe. While weighing, you can switch back and forth between grams, ounces, fluid ounces, and milliliters. Easily read your results on a large, backlit LCD screen. The smooth tempered glass top and touch-sensitive buttons are both stylish and simple to clean. In between uses, its low-profile design fits comfortably in a drawer or cabinet.",
+    "orderConfirmationAutoresponderId": 126,
+    "reviewAutoresponderId": 112,
+    "autoresponders": {
+      "reviewUs": 112,
+      "orderConfirmation": 126,
+      "discountOrderShipped": 166,
+      "fiveStar": 168,
+      "oneStar": 170,
+      "discountThreshold": "15.00"
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight unit",
+        "g / fl.oz / lb:oz / ml"
+      ],
+      [
+        "Capacity",
+        "5000g / 176.4fl.oz / 11lb:0.4oz / 5000ml"
+      ],
+      [
+        "Division",
+        "1g / 0.1fl.oz / 0.1oz / 1ml"
+      ],
+      [
+        "Minimal weight",
+        "2g"
+      ],
+      [
+        "Display",
+        "LCD with backlight"
+      ],
+      [
+        "Battery",
+        "3 AAA batteries"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "56a91e11ebfad8b141ca5ca6"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "amazon": {
+        "link": "https://www.amazon.com/Greater-Goods-Nourish-Digital-Kitchen/dp/B01AX83C1M/ref=sr_1_2?ie=UTF8&qid=1473269029&sr=8-2&keywords=kitchen+scale+%2B+timer",
+        "price": 29.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "56a9252bebfad8b141ca5cae",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/kbkrgzosbl.jpg",
+        "image": "http://media.greatergoods.com/images/standard/kbkrgzosbl.jpg"
+      },
+      {
+        "_id": "56a9252bebfad8b141ca5cad",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/lz6ivofqb4.jpg",
+        "image": "http://media.greatergoods.com/images/standard/lz6ivofqb4.jpg"
+      },
+      {
+        "_id": "56a9252bebfad8b141ca5cac",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/0kelgemo8n.jpg",
+        "image": "http://media.greatergoods.com/images/standard/0kelgemo8n.jpg"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/bmn6wfwsyv.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/bmn6wfwsyv.jpg",
+        "_id": "56b293deab53526f50bd098f"
+      }
+    ]
+  },
+  {
+    "_id": "56abc696ab53526f50bd080a",
+    "sku": "0476",
+    "name": "Designer Kitchen Scale",
+    "brand": "551c55be023a4c6b304caf88",
+    "product": "5630f348a93edab6b06a0c4f",
+    "videoPoster": {
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/pgtyfxtkvd.jpg",
+      "image": "http://media.greatergoods.com/images/standard/pgtyfxtkvd.jpg"
+    },
+    "reviewLink": "amzn.to/1hcxiAV",
+    "__v": 0,
+    "msrp": 34.99,
+    "description": "Food scales help you accurately measure ingredients for portion control and precision baking. We wanted our scale to unite functionality with beautiful design. Its sleek glass top is hygienic and easy to clean, with a low profile that fits easily into a drawer for storage. The easily readable display also shows highly accurate measurements in your choice of unit, so you can switch back and forth depending on the recipe.",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/6h2pcgyfnh.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/6h2pcgyfnh.jpg",
+      "image": "http://media.greatergoods.com/images/standard/6h2pcgyfnh.jpg",
+      "large": "http://media.greatergoods.com/images/large/6h2pcgyfnh.jpg"
+    },
+    "orderConfirmationAutoresponderId": 125,
+    "reviewAutoresponderId": 108,
+    "autoresponders": {
+      "reviewUs": 108,
+      "orderConfirmation": 125,
+      "discountOrderShipped": 161,
+      "fiveStar": 163,
+      "oneStar": 165,
+      "discountThreshold": "12.00",
+      "productRegistration": 446
+    },
+    "responders": {
+      "orderShipped": {
+        "discount": {
+          "real": 425,
+          "amazon": 422
+        },
+        "nondiscount": {
+          "real": 424,
+          "amazon": 423
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "real": 429,
+          "amazon": 426
+        },
+        "nondiscount": {
+          "real": 428,
+          "amazon": 427
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 433,
+          "amazon": 430
+        },
+        "nondiscount": {
+          "real": 432,
+          "amazon": 431
+        }
+      },
+      "5star": {
+        "discount": {
+          "real": 437,
+          "amazon": 434
+        },
+        "nondiscount": {
+          "real": 436,
+          "amazon": 435
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "real": 441,
+          "amazon": 438
+        },
+        "nondiscount": {
+          "real": 440,
+          "amazon": 439
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "real": 445,
+          "amazon": 442
+        },
+        "nondiscount": {
+          "real": 444,
+          "amazon": 443
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [],
+    "features": [
+      {
+        "_id": "56abc696ab53526f50bd080b"
+      }
+    ],
+    "agent": {
+      "email": "nick@greatergoods.com",
+      "phone": "314.991.8494 x38",
+      "name": "Nick"
+    },
+    "providers": {
+      "amazon": {
+        "price": 19.99,
+        "link": "http://www.amazon.com/dp/B00HARZJ84"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/ik0j6e9y3n.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/ik0j6e9y3n.jpg",
+        "_id": "56b29369ab53526f50bd098d"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/2lry44zxht.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/2lry44zxht.jpg",
+        "_id": "56b29369ab53526f50bd098c"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/zxv4ugnbef.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/zxv4ugnbef.jpg",
+        "_id": "56b29369ab53526f50bd098b"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/o2p82ouws4.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/o2p82ouws4.jpg",
+        "_id": "56b29369ab53526f50bd098a"
+      }
+    ]
+  },
+  {
+    "_id": "56c5e6bdcc4b026d758c25a3",
+    "sku": "0385",
+    "name": "Weight Gurus Wi-Fi Smart Scale",
+    "brand": "5592a9759c7aabba213a548e",
+    "product": "56c5e665cc4b026d758c25a1",
+    "__v": 0,
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/v2mqq9yt8v.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/v2mqq9yt8v.jpg",
+      "image": "http://media.greatergoods.com/images/standard/v2mqq9yt8v.jpg",
+      "large": "http://media.greatergoods.com/images/large/v2mqq9yt8v.jpg"
+    },
+    "msrp": null,
+    "description": "Our signature scale syncs your results to the cloud over Wi-Fi, so you can track your progress by logging into the free Weight Gurus app from any Internet-connected device—no pairing necessary. Track your overall weight, in addition to body fat, lean mass, water weight, and bone mass. The large, backlit screen and sleek tempered glass top are both functional and stylish.",
+    "autoresponders": {
+      "orderConfirmation": 555,
+      "discountOrderShipped": 556,
+      "fiveStar": 558,
+      "oneStar": 560,
+      "productRegistration": null
+    },
+    "reviewLink": "http://amzn.to/2aKb6CH",
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Weight unit:",
+        "lb / kg"
+      ],
+      [
+        "Capacity:",
+        "397lb / 180kg"
+      ],
+      [
+        "Division:",
+        "0.2lb / 0.2kg"
+      ],
+      [
+        "Minimal weight:",
+        "5kg"
+      ],
+      [
+        "Function keys:",
+        "▼, SET, ▲"
+      ],
+      [
+        "Display:",
+        "Positive LCD, Backlight"
+      ],
+      [
+        "Batteries:",
+        "4 AAA"
+      ],
+      [
+        "User No.:",
+        "8"
+      ],
+      [
+        "Age range:",
+        "10-85"
+      ],
+      [
+        "Stature Range:",
+        "3ft 3inches to 7ft 3inches / 100-220cm"
+      ],
+      [
+        "Measurements calculated:",
+        "Body weight, BMI, body fat, water weight, muscle mass, and bone mass"
+      ],
+      [
+        "Working temperature:",
+        "32ºF - 104ºF / 0ºC - 40ºC"
+      ],
+      [
+        "Working humidity:",
+        "≤90% RH"
+      ],
+      [
+        "Storage temperature:",
+        "-4ºF - 140ºF  /  -20ºC - 60ºC"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "56c5e6bdcc4b026d758c25a4"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "target": {
+        "price": null
+      },
+      "bbb": {
+        "link": "http://www.bedbathandbeyond.com/store/product/weight-gurus-reg-wifi-smart-body-composition-scale/1045801228",
+        "price": 79.99
+      },
+      "amazon": {
+        "price": 79.99,
+        "link": "https://www.amazon.com/Weight-Gurus-Connected-Backlit-Stainless/dp/B01IFYLAR4"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/di3mtsm5z0.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/di3mtsm5z0.jpg",
+        "_id": "56d0b9abb4d4fe30165acfee"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/gn8twmuspw.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/gn8twmuspw.jpg",
+        "_id": "56d0b9abb4d4fe30165acfed"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/n8mg4dfo87.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/n8mg4dfo87.jpg",
+        "_id": "56d0b9abb4d4fe30165acfec"
+      }
+    ]
+  },
+  {
+    "_id": "570ea18dd5e4b75b1ae4fab6",
+    "sku": "0302",
+    "name": "Screen Protector",
+    "subTitle": "+ Application Clip",
+    "brand": "5729017f0877738268ef2bf8",
+    "__v": 0,
+    "description": "This tempered glass screen protector comes with an easy application clip, which will guide it into place so you can attach it correctly on the first try. Designed for an iPhone 6 or 6s, the durable but lightweight glass resists scratches, water, and fingerprints without changing the sensitivity of your touch screen. Cutouts accommodate the home button, front camera, speaker, and light sensor. Cleaning supplies are included so you can wipe down your phone screen before application.",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/1597imdz4i.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/1597imdz4i.jpg",
+      "image": "http://media.greatergoods.com/images/standard/1597imdz4i.jpg",
+      "large": "http://media.greatergoods.com/images/large/1597imdz4i.jpg"
+    },
+    "product": "570ea36ad5e4b75b1ae4fabb",
+    "msrp": 9.99,
+    "autoresponders": {
+      "reviewUs": 209,
+      "discountThreshold": "5.99",
+      "oneStar": 214,
+      "fiveStar": 212,
+      "discountOrderShipped": 210,
+      "orderConfirmation": 208,
+      "productRegistration": 268
+    },
+    "responders": {
+      "orderShipped": {
+        "nondiscount": {
+          "real": 220,
+          "amazon": 218
+        },
+        "discount": {
+          "amazon": 217,
+          "real": 221
+        }
+      },
+      "5star": {
+        "nondiscount": {
+          "real": 233,
+          "amazon": 232
+        },
+        "discount": {
+          "real": 234,
+          "amazon": 231
+        }
+      },
+      "5starFollowup": {
+        "discount": {
+          "amazon": 235,
+          "real": 238
+        },
+        "nondiscount": {
+          "amazon": 236,
+          "real": 237
+        }
+      },
+      "1and2Star": {
+        "discount": {
+          "amazon": 239,
+          "real": 242
+        },
+        "nondiscount": {
+          "amazon": 240,
+          "real": 241
+        }
+      },
+      "reviewUs": {
+        "discount": {
+          "real": 230,
+          "amazon": 226
+        },
+        "nondiscount": {
+          "amazon": 227,
+          "real": 228
+        }
+      },
+      "orderDelivered": {
+        "discount": {
+          "amazon": 222,
+          "real": 225
+        },
+        "nondiscount": {
+          "amazon": 223,
+          "real": 224
+        }
+      }
+    },
+    "displayFeatures": false,
+    "specs": [
+      [
+        "Dimensions",
+        "128mm x 59 mm x .5 mm"
+      ],
+      [
+        "Compatibility",
+        "iPhone 6 or 6s"
+      ],
+      [
+        "Materials",
+        "Tempered glass"
+      ],
+      [
+        "Comes With",
+        "Easy application clip, microfiber cloth, alcohol swab, dust removal sticker"
+      ]
+    ],
+    "features": [
+      {
+        "_id": "570ea18dd5e4b75b1ae4fab7"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "link": "http://www.amazon.com/dp/B01EXBN04O",
+        "price": 7.99
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "http://media.greatergoods.com/images/standard/u6czrr1xy1.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/u6czrr1xy1.jpg",
+        "_id": "5727c871f065e8135044522b"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/ogzbw9x8wz.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/ogzbw9x8wz.jpg",
+        "_id": "5727c871f065e8135044522a"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/mmxbs87a40.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/mmxbs87a40.jpg",
+        "_id": "5727c871f065e81350445229"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/gv9n01gyy8.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/gv9n01gyy8.jpg",
+        "_id": "5727c871f065e81350445228"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/p11lszghg9.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/p11lszghg9.jpg",
+        "_id": "5727c871f065e81350445227"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/253i34vgho.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/253i34vgho.jpg",
+        "_id": "5727c871f065e81350445226"
+      }
+    ]
+  },
+  {
+    "_id": "56c5e761cc4b026d758c25a7",
+    "sku": "0396",
+    "name": "Wi-Fi Smart Scale",
+    "subTitle": "Amazon",
+    "brand": "5592a9759c7aabba213a548e",
+    "product": "56c5e727cc4b026d758c25a5",
+    "__v": 0,
+    "description": "Our signature scale syncs your results to the cloud over Wi-Fi, so you can track your progress by logging into the free Weight Gurus app from any Internet-connected device—no pairing necessary. Track your overall weight, in addition to body fat, lean mass, water weight, and bone mass. The large, backlit screen and sleek tempered glass top are both functional and stylish.",
+    "image": {
+      "original": "http://media.greatergoods.com/images/original/ljrwznaptz.jpg",
+      "thumbnail": "http://media.greatergoods.com/images/thumbnail/ljrwznaptz.jpg",
+      "image": "http://media.greatergoods.com/images/standard/ljrwznaptz.jpg",
+      "large": "http://media.greatergoods.com/images/large/ljrwznaptz.jpg"
+    },
+    "autoresponders": {
+      "oneStar": 568,
+      "fiveStar": 566,
+      "discountOrderShipped": 564,
+      "orderConfirmation": 563,
+      "productRegistration": null
+    },
+    "reviewLink": "http://amzn.to/2aLGmaB",
+    "msrp": 139.99,
+    "displayFeatures": false,
+    "specs": [],
+    "features": [
+      {
+        "_id": "56c5e761cc4b026d758c25a8"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "price": 79.99,
+        "link": "https://www.amazon.com/dp/B01IFYLARO/ref=twister_B01IFYLAP6?_encoding=UTF8&psc=1"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "57a244653edf72322a734144",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/9ipy9b4rh0.jpg",
+        "image": "http://media.greatergoods.com/images/standard/9ipy9b4rh0.jpg"
+      },
+      {
+        "_id": "57a244653edf72322a734143",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/rt63k28ubr.jpg",
+        "image": "http://media.greatergoods.com/images/standard/rt63k28ubr.jpg"
+      },
+      {
+        "_id": "57a244653edf72322a734142",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/5mie84nf2p.jpg",
+        "image": "http://media.greatergoods.com/images/standard/5mie84nf2p.jpg"
+      },
+      {
+        "_id": "57a244653edf72322a734141",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/0bmwk0xlwq.jpg",
+        "image": "http://media.greatergoods.com/images/standard/0bmwk0xlwq.jpg"
+      },
+      {
+        "image": "http://media.greatergoods.com/images/standard/t7rw4vsqyw.jpg",
+        "thumbnail": "http://media.greatergoods.com/images/thumbnail/t7rw4vsqyw.jpg",
+        "_id": "57a256b03edf72322a734166"
+      }
+    ]
+  },
+  {
+    "_id": "57c87e57cd0d6e9b488cf44d",
+    "sku": "0556",
+    "name": "Signature Chef Knife",
+    "brand": "551c55be023a4c6b304caf88",
+    "product": "57c87db8cd0d6e9b488cf447",
+    "__v": 0,
+    "description": "Our Signature Chef Knife is carefully handcrafted from superior Japanese Damascus steel for precision and beauty. The unique marbled pattern you see on the blade is the result of hammering together 67 layers of stainless steel around a high-carbon VG-10 core, which we then grind to one of the sharpest edges possible. The balanced, full-tang ABS handle ensures comfort and proper technique with less fatigue. Knife design blends Japanese and German styles for optimal control and comfort.",
+    "image": {
+      "original": "https://media.greatergoods.com/images/original/it8vb9usjt.jpg",
+      "thumbnail": "https://media.greatergoods.com/images/thumbnail/it8vb9usjt.jpg",
+      "image": "https://media.greatergoods.com/images/standard/it8vb9usjt.jpg",
+      "large": "https://media.greatergoods.com/images/large/it8vb9usjt.jpg"
+    },
+    "displayFeatures": false,
+    "specs": [],
+    "features": [
+      {
+        "_id": "57c87e57cd0d6e9b488cf44e"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "price": 79.99,
+        "link": "https://www.amazon.com/gp/product/B01L2I4SM4/ref=s9_acsd_hps_bw_c_x_5?th=1"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "_id": "57d071b11b8d848b5583fe26",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/h67bzolwjr.jpg",
+        "image": "https://media.greatergoods.com/images/standard/h67bzolwjr.jpg"
+      },
+      {
+        "_id": "57d071b11b8d848b5583fe25",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/vbb6qg36w7.jpg",
+        "image": "https://media.greatergoods.com/images/standard/vbb6qg36w7.jpg"
+      },
+      {
+        "_id": "57d071b11b8d848b5583fe24",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/lfjeo2vk4z.jpg",
+        "image": "https://media.greatergoods.com/images/standard/lfjeo2vk4z.jpg"
+      },
+      {
+        "_id": "57d071b11b8d848b5583fe23",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/6tpexxhol6.jpg",
+        "image": "https://media.greatergoods.com/images/standard/6tpexxhol6.jpg"
+      },
+      {
+        "_id": "57d071b11b8d848b5583fe22",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/a1zs5ws7mq.jpg",
+        "image": "https://media.greatergoods.com/images/standard/a1zs5ws7mq.jpg"
+      }
+    ]
+  },
+  {
+    "_id": "57c87e3ccd0d6e9b488cf44b",
+    "sku": "0555",
+    "name": "Designer Chef Knife",
+    "brand": "551c55be023a4c6b304caf88",
+    "product": "57c87db8cd0d6e9b488cf447",
+    "__v": 0,
+    "description": "Our 8-inch Designer Chef Knife is meticulously handcrafted from 2 types of steel, each with its own unique advantage: hard 9Cr18MoV (440 C) steel core is sharpened to a cutting edge and wrapped in a rust-resistant stainless steel body. Together, this combination of metals ensures strength, durability, and a sharp, lasting edge. Then, we anchor the blade in a specially-designed, full-tang ABS handle that reinforces proper technique and balances the heft of the knife. Knife design blends Japanese and German styles for optimal precision and comfort.",
+    "image": {
+      "original": "https://media.greatergoods.com/images/original/9ms58oxm82.jpg",
+      "thumbnail": "https://media.greatergoods.com/images/thumbnail/9ms58oxm82.jpg",
+      "image": "https://media.greatergoods.com/images/standard/9ms58oxm82.jpg",
+      "large": "https://media.greatergoods.com/images/large/9ms58oxm82.jpg"
+    },
+    "displayFeatures": false,
+    "specs": [],
+    "features": [
+      {
+        "_id": "57c87e3ccd0d6e9b488cf44c"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "price": 49.99,
+        "link": "https://www.amazon.com/gp/product/B01L2I4SE2/ref=s9_acsd_hps_bw_c_x_5?th=1"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "https://media.greatergoods.com/images/standard/t55o3vc52m.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/t55o3vc52m.jpg",
+        "_id": "57d071e31b8d848b5583fe31"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/oiibbpydl0.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/oiibbpydl0.jpg",
+        "_id": "57d071e31b8d848b5583fe30"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/9fmgg3zj30.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/9fmgg3zj30.jpg",
+        "_id": "57d071e31b8d848b5583fe2f"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/ia75p5c2jy.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/ia75p5c2jy.jpg",
+        "_id": "57d071e31b8d848b5583fe2e"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/sc47bsas7l.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/sc47bsas7l.jpg",
+        "_id": "57d071e31b8d848b5583fe2d"
+      }
+    ]
+  },
+  {
+    "_id": "57752d7dc7137be11319397a",
+    "sku": "0480",
+    "name": "Kitchen Scale",
+    "brand": "551c55be023a4c6b304caf88",
+    "product": "57752cc9c7137be113193978",
+    "__v": 0,
+    "reviewLink": "http://amzn.to/2bf9LX3",
+    "image": {
+      "original": "https://media.greatergoods.com/images/original/gv00tha0lm.jpg",
+      "thumbnail": "https://media.greatergoods.com/images/thumbnail/gv00tha0lm.jpg",
+      "image": "https://media.greatergoods.com/images/standard/gv00tha0lm.jpg",
+      "large": "https://media.greatergoods.com/images/large/gv00tha0lm.jpg"
+    },
+    "displayFeatures": false,
+    "specs": [],
+    "features": [
+      {
+        "_id": "57752d7dc7137be11319397b"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": true,
+    "hidden": true,
+    "secondaryImages": [
+      {
+        "image": "https://media.greatergoods.com/images/standard/8e4x2gygxj.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/8e4x2gygxj.jpg",
+        "_id": "57d1bcd61b8d848b558400ce"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/pd3si6xe0x.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/pd3si6xe0x.jpg",
+        "_id": "57d1bcd61b8d848b558400cd"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/0k1mgu500d.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/0k1mgu500d.jpg",
+        "_id": "57d1bcd61b8d848b558400cc"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/zdxnxh8jq9.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/zdxnxh8jq9.jpg",
+        "_id": "57d1bcd61b8d848b558400cb"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/oj7lmv3sct.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/oj7lmv3sct.jpg",
+        "_id": "57d1bcd61b8d848b558400ca"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/kxcvk4z90t.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/kxcvk4z90t.jpg",
+        "_id": "57d1bcd61b8d848b558400c9"
+      }
+    ]
+  },
+  {
+    "_id": "57c87e20cd0d6e9b488cf449",
+    "sku": "0550",
+    "name": "Chef Knife",
+    "brand": "551c55be023a4c6b304caf88",
+    "product": "57c87db8cd0d6e9b488cf447",
+    "__v": 0,
+    "description": "The first steps of a recipe lay the foundation for your meal; that’s why a good knife is one of the most important tools in your kitchen. Meticulously handcrafted through a multi-step process, our 8-inch Chef Knife helps you precisely prepare your ingredients using a variety of cuts. We handcraft the blade out of German stainless steel for sharpness and durability, and then join it to a balanced, full-tang ABS handle that is molded to comfortably support your hand.",
+    "image": {
+      "original": "https://media.greatergoods.com/images/original/fslql8rjz9.jpg",
+      "thumbnail": "https://media.greatergoods.com/images/thumbnail/fslql8rjz9.jpg",
+      "image": "https://media.greatergoods.com/images/standard/fslql8rjz9.jpg",
+      "large": "https://media.greatergoods.com/images/large/fslql8rjz9.jpg"
+    },
+    "displayFeatures": false,
+    "specs": [],
+    "features": [
+      {
+        "_id": "57c87e20cd0d6e9b488cf44a"
+      }
+    ],
+    "agent": {
+      "name": "Nick",
+      "phone": "314.991.8494 x38",
+      "email": "nick@greatergoods.com"
+    },
+    "providers": {
+      "amazon": {
+        "price": 19.99,
+        "link": "https://www.amazon.com/gp/product/B01L2I4SDI/ref=s9_acsd_hps_bw_c_x_5?th=1"
+      }
+    },
+    "shownOn": [],
+    "canBeRegistered": true,
+    "hideSale": false,
+    "hidden": false,
+    "secondaryImages": [
+      {
+        "image": "https://media.greatergoods.com/images/standard/4lrbaepxn0.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/4lrbaepxn0.jpg",
+        "_id": "57d072111b8d848b5583fe3c"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/y835ierlhg.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/y835ierlhg.jpg",
+        "_id": "57d072111b8d848b5583fe3b"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/ga15xn87sb.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/ga15xn87sb.jpg",
+        "_id": "57d072111b8d848b5583fe3a"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/wt77hbdubh.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/wt77hbdubh.jpg",
+        "_id": "57d072111b8d848b5583fe39"
+      },
+      {
+        "image": "https://media.greatergoods.com/images/standard/lodltdttgh.jpg",
+        "thumbnail": "https://media.greatergoods.com/images/thumbnail/lodltdttgh.jpg",
+        "_id": "57d072111b8d848b5583fe38"
+      }
+    ]
+  }
+]

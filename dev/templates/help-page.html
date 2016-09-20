@@ -1,0 +1,30 @@
+<div class="helpPage container">
+    <div class="contentBody">
+        <div class="row top">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+                <h2>Enter your product number to find your getting started guide.</h2></div>
+            <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 text-center">
+                <form class="skuLookupBox"><span style="cursor:pointer">GREATERGOODS.COM/</span>
+                    <input id="lookupSKU" ng-pattern="skuPattern" placeholder="####" ng-model="lookupSKU" autofocus="autofocus" class="skuInput"><a ng-href="./product/{{lookupSKU}}/getting-started" class="skuLookupGo">GO</a></form>
+            </div>
+        </div>
+        <div class="row searchDiv">
+            <div class="col-md-12 col-md-offset-0 col-xs-0 col-xs-offset-1 desktopOnly">
+                <hr>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+                <div class="filter desktopOnly">
+                    <select ng-model="selectedBrand" ng-options="brand.slug as (!brand ? 'All Brands' : brand.slug) | titlecase for brand in brands" title=""></select>
+                </div>
+                <div class="filter">
+                    <input ng-model="search" placeholder="Search" class="searchBox lg">
+                </div>
+            </div>
+        </div>
+        <div class="row tileList">
+            <div class="col-xs-12">
+                <div class="row variation-list"><span ng-repeat="variation in variations | searchFilter: search | filter: {sku: lookupSKU} | orderBy: 'sku': true"><div ng-show="!variation.hidden" class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-0 tile-link"><a ng-show="variation.image.image" href="href" ng-href="./{{variation.brand.slug}}/product/{{variation.sku}}/{{variation.slug}}/getting-started{{amazonSearch}}"><div ng-class="'brand-{{variation.brand.slug}}'" class="variation tile"><div class="dimmer desktopOnly"></div><div class="tile-container"><back-img ng-src="variation.image.image"></back-img><div class="border brandBackgroundColor"></div><div class="description"><div class="textContainer"><h3>{{variation.name | uppercase}}<small> {{variation.subTitle | uppercase}}</small></h3><div class="priceText">{{variation.sku}}</div></div></div></div></div></a></div></span></div>
+            </div>
+        </div>
+    </div>
+</div>

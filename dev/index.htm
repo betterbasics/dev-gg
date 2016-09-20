@@ -3,14 +3,10 @@
 	<head>
         <!-- <meta charset="utf-8" name="robots" content="noindex"> -->
         <meta charset="utf-8" name="google-site-verification" content="YNvkIfATsCRI3Q8UFBXxy8TJiAs9TmD9nKbPDkbNV4U" />
+        <base href="/dev/"></base>
 		<title>Greater Goods - RISE | BALANCE | NOURISH | WEIGHTGURUS</title>
-		<!---->
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
-        <!---->
-		<script src="client/javascripts/app.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="client/assets/fontello/css/fontello.css">
 
@@ -38,12 +34,16 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!---->
 
-        <base href="/dev/"></base>
 	</head>
 	<body ng-app="devggApp">
 		<div ui-view autoscroll="true">
 		</div>
 
+		<!---->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+        <!---->
         <script src="https://www.youtube.com/iframe_api"></script>
 		<script src="client/lib/jquery/dist/jquery.js"></script>
 		<script src="client/lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -61,6 +61,13 @@
 		<script src="client/lib/angular-youtube-mb/src/angular-youtube-embed.js"></script>
 		<script src="client/lib/angular-touch/angular-touch.js"></script>
 		<script src="client/lib/angular-scroll/angular-scroll.js"></script>
+        <script src="client/lib/select2/dist/js/select2.js"></script>
+		<script src="client/lib/bootstrap-select/dist/js/bootstrap-select.js"></script>
+        <script src="client/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="client/lib/angular-parallex-scroll/dist/angular-parallax-scroll.min.js"></script>
+		<script src="client/lib/parallax.js/parallax.min.js"></script>
+		<script src="client/lib/angular-parallax/scripts/angular-parallax.js"></script>
+		<script src="client/lib/lity/dist/lity.min.js"></script>
 
 		<!-- bower:js --
 		<script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -102,8 +109,8 @@
 		<script src="lib/textAngular/dist/textAngular-sanitize.js"></script>
 		<script src="lib/textAngular/dist/textAngularSetup.js"></script>
 		<!-- endinject -->
-		<!-- app:js --
-		<script src="app.js"></script>
+		<!-- app:js -->
+		<script src="client/javascripts/app.js"></script>
 		<!-- endinject -->
 	</body>
 </html>

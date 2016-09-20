@@ -1,14 +1,14 @@
-var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed']);
+var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed', 'ngTouch', 'ui.bootstrap']);
 
-app.config(["$routeProvider", "$locationProvider", "$httpProvider", function(e, t, r) {
-        return e.when = _.wrap(e.when, function(e, t, r) {
-            return _.defaults(r, {
-                caseInsensitiveMatch: !0
-            }), e(t, r)
-        }), e.otherwise({
-            redirectTo: "/"
-        })
-}]);
+//app.config(["$routeProvider", "$locationProvider", "$httpProvider", function(e, t, r) {
+//        return e.when = _.wrap(e.when, function(e, t, r) {
+//            return _.defaults(r, {
+//                caseInsensitiveMatch: !0
+//            }), e(t, r)
+//        }), e.otherwise({
+//            redirectTo: "/"
+//        })
+//}]);
 
 //, 'ui.utils', 'util', 'filters', 'angular-bind-html-compile', 'brands'
 //'variations', 'charities', 'reviewTeam', 'brands', 'blogPosts', 'products', 'customers', 'careers', 'ipCookie', 'duScroll', 'angular-amazon-login', 'angular-parallax',
@@ -35,15 +35,19 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 			})
 			.state('Support', {
 				url: "/help",
-				templateUrl: "templates/support.html"
+				templateUrl: "templates/help.html"
 			})
 			.state('Admin', {
 				url: "/admin",
 				templateUrl: "templates/admin.html"
 			})
 			.state('Brand', {
-				url: "/:brand",
+				url: "/{brand}",
 				templateUrl: "templates/brand.html"
+			})
+			.state('Brand Help', {
+				url: "/{brand}/help",
+				templateUrl: "templates/help.html"
 			})
         //use the HTML5 History API
         $locationProvider.html5Mode(true);
@@ -80,6 +84,25 @@ app.run(["$rootScope", "$location", "$route", "ipCookie", function(e, t, r, n) {
     })
 }]);
 /**/
+
+app.run(["$uibModal", function(e) {
+    var t;
+    return t = e.open, e.open = function(e) {
+        var r, n;
+        return n = e.controller, r = null, e.controller = ["$scope", "$injector", function(e, t) {
+            "ngInject";
+            return t.invoke(n, r, {
+                $scope: e
+            }), setTimeout(function() {
+                return $(".modal-backdrop").on("click", function() {
+                    return e.$apply(function() {
+                        return r.dismiss()
+                    })
+                })
+            }, 0)
+        }], r = t(e)
+    }
+}]);
 
 
 app.directive('testTemp', function(){
@@ -119,6 +142,7 @@ app.directive('theHeader', ["$location", "$rootScope", "Brand", function(e, r, n
                     i.addClass("ui-scrollfix");
                 } else{
                     i.removeClass("ui-scrollfix");
+
                 }
             }), setTimeout(function() {
                 return i.addClass("transitionActive")
@@ -159,12 +183,56 @@ app.directive("theFooter", ["$location", function(e) {
     }
 }]);
 
+app.directive('homePage', ["Variation", "ourPromiseModal", "errorModal", "$routeParams", function(e, t, r, n) {
+    return{
+        templateUrl: 'templates/home-page.html',
+        restrict: 'E',
+        link: function(o) {
+            var a;
+            return o.ourPromiseModal = t, "1" === n.error && r.open(), o.showError = !0, o.headerVideos = [{
+                type: "video",
+                url: "https://www.youtube.com/watch?v=N7TkK2joi4I",
+                thumbUrl: "https://i.ytimg.com/vi/N7TkK2joi4I/1.jpg"
+            }], a = {
+                scope: "name msrp image brand sku featured providers comingSoon",
+                populate: "brand",
+                query: {
+                    featured: {
+                        $ne: null
+                    }
+                }
+            }, o.featuredVariations = e.query(a, function() {
+                var e, t, r, n;
+                for (n = o.featuredVariations, t = 0, r = n.length; r > t; t++) e = n[t], e.slug = slug(e.name.toLowerCase());
+                return o.featuredVariations.sort(function(e, t) {
+                    return e.featured < t.featured ? -1 : e.featured > t.featured ? 1 : 0
+                })
+            }), o.displayVideo = function() {
+                var e;
+                return e = o.$watch("videoPlayer.playVideo", function(t) {
+                    return t ? (o.videoDisplay = !0, o.videoPlayer.playVideo(), e()) : void 0
+                })
+            }, o.$on("youtube.player.buffering", function() {
+                return o.posterWasClicked = !0
+            }), o.$on("youtube.player.playing", function() {
+                return o.posterWasClicked = !0
+            }), o.thisIsMattsFault = function() {
+                return $("body").animate({
+                    scrollTop: $(window).height() - 64
+                }, 800)
+            }
+        }
+    }
+}]);
+
+/**
 app.directive('homePage', function(){
     return{
         restrict: 'E',
         templateUrl: 'templates/home-page.html',
     }
 });
+/**/
 
 app.directive('variationTile', function(){
    return{
@@ -205,26 +273,26 @@ app.directive("backImg", function() {
         link: function(e, t) {
             var r;
             return t.css({
-                    opacity: 0,
-                    transition: "opacity 400ms"
-                }), r = function() {
+                opacity: 0,
+                transition: "opacity 400ms"
+            }), r = function() {
+                return t.css({
+                    opacity: ""
+                }), setTimeout(function() {
                     return t.css({
-                            opacity: ""
-                        }), setTimeout(function() {
-                            return t.css({
-                                transition: ""
-                            })
-                        }, 400)
-                }, e.$watch("ngSrc", function(n) {
-                    var o;
-                    return n ? (t.css({
-                        "background-image": "url('" + n + "')"
-                        }), t.addClass("backImg"), o = new Image, o.src = e.ngSrc, o.complete ? r() : o.addEventListener("load", r)) : void 0
-                }), e.$watch("cover", function(e) {
-                    return t.css({
-                        "background-size": e ? "cover" : "contain"
+                        transition: ""
                     })
+                }, 400)
+            }, e.$watch("ngSrc", function(n) {
+                var o;
+                return n ? (t.css({
+                    "background-image": "url('" + n + "')"
+                    }), t.addClass("backImg"), o = new Image, o.src = e.ngSrc, o.complete ? r() : o.addEventListener("load", r)) : void 0
+            }), e.$watch("cover", function(e) {
+                return t.css({
+                    "background-size": e ? "cover" : "contain"
                 })
+            })
         }
     }
 });
@@ -341,11 +409,114 @@ app.directive("page", ["$stateParams", function(e) {
     }
 }]);
 
+app.directive("helpPage", ["$stateParams", "$location", "$q", "Brand", "$window", "Variation", function(e, t, r, n, o, a) {
+    return {
+        templateUrl: "templates/help-page.html",
+        restrict: "E",
+        replace: !0,
+        link: function(o, i) {
+            var u, s, l, c;
+            //c = $("select", i);
+            //console.log(o.variations);
+            return o.selectedBrand = e.brand, u = r.defer(), o.brand = {
+                name: e.brand,
+                $promise: u.promise
+            }, o.brand.$promise.then(function(e) {
+                return _.assign(o.brand, e)
+            }), c = $("select", i), c.selectpicker(), o.brands = n.query({
+                scope: "name"
+            }, function() {
+                var t, r, n, a;
+                for (a = o.brands, r = 0, n = a.length; n > r; r++) t = a[r], t.slug = slug(t.name.toLowerCase());
+                return u.resolve(_.find(o.brands, {
+                    slug: e.brand
+                })), o.brands.unshift(void 0), setTimeout(function() {
+                    return c.selectpicker("refresh"), c.on("change", function() {
+                        var e, t, r;
+                        t = c.val();
+                        var brand_slug = t.split(":")[1];
+                        var selected_brand = _.find(o.brands, {
+                            slug: brand_slug
+                        });
+                        return e = null != (r = selected_brand) ? r.name : void 0, o.$apply(function() {
+                            //console.log(e);
+                            return o.brandSelected(e)
+                        })
+                    })
+                }, 0)
+            }), o.brandSelected = function(e) {
+                var r;
+                return r = e ? "/" + slug(e.toLowerCase()) + "/help" : "/help", t.path(r)
+            }, l = {
+                scope: "name image brand sku hidden",
+                populate: "brand product",
+                query: {
+                    comingSoon: {
+                        $ne: !0
+                    }
+                },
+                populateChildren: !0
+            },  s = function() {
+                //console.log(o);
+                //console.log(o.variations);
+                return o.variations = a.query(l, function() {
+                    var e, t, r, n, a;
+                    //for (n = o.variations, a = [], t = 0, r = n.length; r > t; t++) e = n[t], e.slug = slug('testing sample'), e.brand.slug = slug('testing sample 123'), e.search = e.name + e.brand.name + e.sku, a.push(e.search += e.search.replace(/[^a-zA-Z0-9]/g, ""));
+                    for (n = o.variations, a = [], t = 0, r = n.length; r > t; t++) e = n[t], e.slug = slug(e.name.toLowerCase()), e.brand.slug = slug(e.brand.name.toLowerCase()), e.search = e.name + e.brand.name + e.sku, a.push(e.search += e.search.replace(/[^a-zA-Z0-9]/g, ""));
+                    //console.log(n);
+                    return a
+                })
+            }, null != o.brand && o.brand.$promise.then(function() {
+                var e;
+                //console.log(o.brand);
+                return (null != (e = o.brand) ? e._id : void 0) && (null == l.query && (l.query = {}), l.query.brand = o.brand._id), s()
+            }), "1" === t.search().a && (o.amazonSearch = "?a=1"), o.$watch("lookupSKU", function(e, t) {
+                return /^\d{0,4}$/.test(e) ? void 0 : o.lookupSKU = t
+            })
+        }
+    }
+}]);
+
 
 app.factory("Brand", ["$resource", function(e) {
     return e("server/api/brands/:_id", {
         _id: "@_id"
     })
+}]);
+
+app.factory("Variation", ["$resource", function(e) {
+    return e("server/api/variations/:_id", {
+        _id: "@_id"
+    })
+}]);
+
+app.factory("ourPromiseModal", ["$uibModal", function(e) {
+    return {
+        open: function() {
+            var t;
+            return t = e.open({
+                templateUrl: "templates/our-promise-modal.html",
+                size: "lg",
+                controller: ["$scope", function(e) {
+                    return e.close = t.close
+                }]
+            })
+        }
+    }
+}]);
+
+app.factory("errorModal", ["$uibModal", "$http", function(e) {
+    return {
+        open: function() {
+            var t;
+            return t = e.open({
+                templateUrl: "templates/error-modal.html",
+                controller: ["$scope", function(e) {
+                    return e.close = t.close
+                }]
+            })
+        }
+    }
 }]);
 
 
@@ -446,3 +617,15 @@ app.filter("titlecase", function() {
         }, e.toLowerCase().split(" ").map(t).join(" ")
     }
 });
+
+app.filter("searchFilter", ["$filter", function(e) {
+    return function(t, r, n) {
+        var o, a;
+        return null == r && (r = ""), null == n && (n = "AND"), a = r.toLowerCase().split(/\s+/), "AND" === n ? (o = t, a.forEach(function(t) {
+            //console.log(o);
+            return o = e("filter")(o, t)
+        })) : (o = [], a.forEach(function(r) {
+            return o = o.concat(e("filter")(t, r))
+        })), o
+    }
+}]);
