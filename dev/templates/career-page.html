@@ -1,0 +1,25 @@
+<div class="career-page">
+    <div class="container">
+        <div class="row headerContent">
+            <div class="col-xs-8">
+                <h2>{{career.jobTitle}}</h2></div><a id="apply" ng-href="/careers/apply/{{career._id}}" class="col-xs-4 btn btn-header">APPLY NOW</a></div>
+        <div class="row jobContent"><b>Greater Goods LLC Job Posting</b>
+            <br>
+            <br>
+            <p class="jobTitle"><b class="col-xs-12 col-sm-2">Title: </b>{{career.jobTitle}}</p>
+            <p class="jobLocation"><b class="col-xs-12 col-sm-2">Location: </b>{{career.location}}</p>
+            <p class="jobStatus"><b class="col-xs-12 col-sm-2">Status: </b>{{career.status}}</p>
+            <br><b>Company Profile</b>
+            <p>Greater Goods LLC is an agile product design company that partners with first-class charities. We are one of the fastest growing social enterprises in the St. Louis metropolitan area. We are dedicated to designing with foresight, sourcing with care, and then portioning our success to amazing charities that are making a real difference.
+                <br>Greater Goods has operated for the past decade and over the past 3 years we’ve grown very quickly: including increasing from a handful of employees to 15-20, expanding in both Target and Bed Bath &amp; Beyond, and exponential sales growth. And just as important, we were recently awarded the Abolitionist in Action award by LOVE146 for our support of their charity.</p>
+            <br><b>Job Description</b>
+            <p>{{career.description}}</p>
+            <br><b>Experience / Education / Skills</b>
+            <div bind-html-compile="career.experience" class="htmlContent"></div>
+            <br>
+            <p>If you are interested in this opportunity, please forward your resume to careers@greatergoods.com or fill in an application.</p>
+            <br>
+            <p>Greater Goods LLC is an equal opportunity employer.</p>
+        </div>
+    </div>
+</div>

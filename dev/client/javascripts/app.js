@@ -37,6 +37,14 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 				url: "/help",
 				templateUrl: "templates/help.html"
 			})
+			.state('Careers', {
+				url: "/careers",
+				templateUrl: "templates/careers.html"
+			})
+			.state('Career', {
+				url: "/careers/{id}",
+				templateUrl: "templates/career.html"
+			})
 			.state('Admin', {
 				url: "/admin",
 				templateUrl: "templates/admin.html"
@@ -477,6 +485,36 @@ app.directive("helpPage", ["$stateParams", "$location", "$q", "Brand", "$window"
     }
 }]);
 
+app.directive("careersPage", ["$stateParams", "$location", "Career", function(e, t, r) {
+    return {
+        templateUrl: "templates/careers-page.html",
+        restrict: "E",
+        replace: !0,
+        link: function(e) {
+            return e.careers = r.query({
+                scope: "jobTitle summary hidden"
+            })
+        }
+    }
+}]);
+
+app.directive("careerPage", ["$stateParams", "$location", "Career", function(e, t, r) {
+    return {
+        templateUrl: "templates/career-page.html",
+        restrict: "E",
+        replace: !0,
+        link: function(t) {
+            var n;
+            return n = e.id, t.career = r.get({
+                expectOne: !0,
+                query: {
+                    _id: n
+                }
+            }), console.log(e.id)
+        }
+    }
+}]);
+
 
 app.factory("Brand", ["$resource", function(e) {
     return e("server/api/brands/:_id", {
@@ -517,6 +555,18 @@ app.factory("errorModal", ["$uibModal", "$http", function(e) {
             })
         }
     }
+}]);
+
+app.factory("Career", ["$resource", function(e) {
+    return e("server/api/careers/:_id", {
+        _id: "@_id"
+    })
+//        , {
+//        policy: {
+//            method: "GET",
+//            url: "https://api.greatergoods.com/s3Policy"
+//        }
+//    })
 }]);
 
 

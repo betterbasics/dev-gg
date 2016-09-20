@@ -1,0 +1,24 @@
+<div class="careers-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="headerImage poster">
+                <h1 class="posterText text-center">DO YOU WANT TO<br>MAKE THINGS BETTER?</h1></div>
+        </div>
+        <div class="careersInfo container">
+            <div class="row">
+                <h2 class="text-center">We solve problems through thoughtful design and charitable partnerships. Bring your unique skills to our team.</h2>
+                <p>Greater Goods LLC is an agile product design company that works with leading charities. We design, source, and sell a range of home and electronic goods, and then use a piece of the profits to support the work of our charity partners. Our team is dedicated to designing with foresight, sourcing with care, and then portioning our success to amazing organizations that are making a real difference.</p>
+                <p>We are one of the fastest growing social enterprises in the St. Louis metropolitan area. Over the past 3 years we’ve increased from a handful of employees to 15-20, expanded in both Target and Bed Bath &amp; Beyond, and driven exponential sales growth. Just as importantly, we were also recently awarded the Abolitionist in Action award by LOVE146 for our support of their charity work.</p>
+                <h3 class="openPositions text-center">OPEN POSITIONS</h3></div>
+            <div ng-if="careers.length === 0" class="row noCareers text-center">
+                <p>We have no open positions at the moment. Please check back later.</p>
+            </div>
+        </div>
+        <div ng-repeat="career in careers" class="careersList container">
+            <div ng-if="!career.hidden" class="row careerInfo">
+                <h3>{{career.jobTitle}}</h3>
+                <br>
+                <p>{{career.summary}}</p><a href="careers/{{career._id}}" class="btn">READ MORE</a></div>
+        </div>
+    </div>
+</div>

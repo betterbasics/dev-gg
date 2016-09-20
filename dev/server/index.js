@@ -241,3 +241,50 @@ app.get(baseurl+'/server/api/variations/:_id', function(req, res){
     });
     /**/
 });
+
+app.get(baseurl+'/server/api/careers', function(req, res){
+    var query = !req.query.query ? req.query.query : JSON.parse(req.query.query);
+    //res.json(query);
+
+
+    /**
+    Career.find(function(err, careers){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(careers);
+    }).sort({'_id': 1});
+    /**/
+
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/careers.json'), 'utf8', function (err, data) {
+        var careers;
+        careers = JSON.parse(data);
+
+        if(_.has(query, '_id'))
+            careers = _.find(careers, {'_id': query._id});
+
+        res.json(careers);
+    });
+    /**/
+});
+
+app.get(baseurl+'/server/api/careers/:_id', function(req, res){
+    /**
+    Career.findById(req.params._id, function(err, career){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(career);
+    });
+    /**/
+
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/careers.json'), 'utf8', function (err, data) {
+        var careers;
+        careers = JSON.parse(data);
+        var career = _.find(careers, {_id:req.params._id});
+        res.json(career);
+    });
+    /**/
+});
