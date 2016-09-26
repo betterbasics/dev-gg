@@ -1,0 +1,17 @@
+<div class="gallery">
+    <div ng-class="{'videoDisplay':videoDisplay}" class="mainDisplay">
+        <div ng-show="currentMedia.video" class="videoContainer embed-responsive embed-responsive-16by9">
+            <youtube-video player="videoPlayer" video-id="currentMedia.video" player-vars="$root.playerVars" class="embed-responsive-item"></youtube-video>
+        </div>
+        <back-img ng-show="currentMedia.video" ng-src="currentMedia.image" cover="currentMedia.cover" class="poster">
+            <div ng-click="displayVideo()" style="cursor:pointer" class="text-center centerVertical"><span class="posterText"><span class="icon-play"></span></span>
+            </div>
+        </back-img>
+        <back-img ng-if="!currentMedia.video" ng-src="currentMedia.image" cover="currentMedia.cover"></back-img>
+        <div class="galleryNav">
+            <ul ng-if="gallery.length > 1" class="galleryNavRow">
+                <li ng-repeat="media in gallery" ng-click="changeCurrent(media, $index)" ng-class="{'active': media==currentMedia}" class="galleryNavItem brandActiveBkColor"></li>
+            </ul>
+        </div>
+    </div>
+</div>

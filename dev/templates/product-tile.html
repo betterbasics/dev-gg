@@ -1,0 +1,13 @@
+<div class="productTile tile">
+    <div class="dimmer"></div>
+    <div class="tile-container">
+        <back-img ng-src="product.image.image" ng-show="product.image"></back-img>
+        <div class="border brandBackgroundColor"></div>
+        <div class="description">
+            <div class="textContainer">
+                <h3>{{product.name | uppercase}}</h3>
+                <div class="price"><span ng-show="product.msrp" class="msrp">{{product.msrp | currency}}  </span><span ng-show="product.providers.amazon.price" class="amazon">{{product.providers.amazon.price | currency}}</span><span ng-show="product.providers.bbb.price &amp;&amp; !product.providers.amazon.price" class="bbb">{{product.providers.bbb.price | currency}}</span><span ng-show="product.providers.target.price &amp;&amp; !product.providers.amazon.price &amp;&amp; !product.providers.bbb.price" class="target">{{product.providers.target.price | currency}}</span></div>
+            </div>
+        </div>
+    </div>
+</div>

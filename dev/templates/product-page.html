@@ -1,0 +1,36 @@
+<div class="product-page">
+    <div class="container">
+        <product-view product="variation" redirectonvariantselection="'true'"></product-view>
+    </div>
+    <div class="container-fluid contentBody">
+        <div ng-show="variation.product.staticHTML" bind-html-compile="variation.product.staticHTML" class="productStatic contentBody"></div>
+        <div ng-show="variation.product.staticHTML" class="row">
+            <div class="col-xs-10 col-xs-offset-1 contentButtons"><a href="href" ng-href="./{{variation.brand.slug}}" class="btn grayBorder">SEE THE STORY</a><a href="href" ng-href="./{{variation.brand.slug}}/products" class="btn grayBorder">SHOP {{product.brand.name}}</a></div>
+        </div>
+    </div>
+    <div class="container contentBody">
+        <div ng-show="variation.product.staticHTML &amp;&amp; !variation.hideSale" class="row">
+            <div class="col-sm-12 col-xs-offset-0 col-xs-10 col-xs-offset-1">
+                <hr>
+            </div>
+        </div>
+        <!-- Product Call-to-action-->
+        <div ng-show="variation.product.staticHTML &amp;&amp; !variation.hideSale" class="row productCta">
+            <div class="item col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0"><img ng-src="{{variation.image.thumbnail}}" class="img-responsive productThumb">
+                <div class="details">
+                    <h2>{{variation.name | uppercase}}<br><small>{{variation.subTitle | uppercase}}<br><span ng-show="variation.providers.amazon.price" class="amazon">{{product.providers.amazon.price | currency}}</span><span ng-show="variation.providers.bbb.price &amp;&amp; !product.providers.amazon.price" class="bbb">{{product.providers.bbb.price | currency}}</span></small></h2>
+                    <div class="buyBtn"><span ng-show="variation.providers.amazon.link" class="amazon"><a ng-href="{{variation.providers.amazon.link}}" target="_blank"><span>Buy now on</span><img src="client/assets/images/buyOnAmazon2.png" alt="Amazon" class="providerImage"></a>
+                        </span><span ng-show="variation.providers.bbb.link &amp;&amp; !product.providers.amazon.price" class="bbb"><a ng-href="{{variation.providers.bbb.link}}" target="_blank"><span>Buy now on</span><img src="assets/images/buyOnBedBathBeyond2.png" alt="Bed Bath &amp; Beyond" class="providerImage"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-xs-offset-0 col-xs-10 col-xs-offset-1">
+                <hr>
+            </div>
+        </div>
+        <brand-slider></brand-slider>
+    </div>
+</div>

@@ -124,6 +124,86 @@ app.delete(baseurl+'/server/api/product/:_id', function(req, res){
 /*brands api*/
 var fs = require("fs");
 var path = require("path");
+var parseJSON = function (text){
+    try{
+        return JSON.parse(text);
+    }
+    catch (error){
+        return text;
+    }
+};
+
+app.get(baseurl+'/server/api/products', function(req, res, $http){
+    var params = parseJSON(req.query);
+
+    /**
+    Product.find(function(err, products){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(products);
+    }).sort({'_id': 1});
+    /**/
+
+    /**
+    var brands;
+    fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
+        brands = parseJSON(data);
+    });
+    /**/
+
+    /*using json file*/
+    var products;
+    fs.readFile(path.join(__dirname, '..', 'client/json/products.json'), 'utf8', function (err, data) {
+        //res.json(variations);
+        products = parseJSON(data);
+
+        if(_.has(params, 'query')){
+            var query = parseJSON(params.query);
+            if(_.has(query, 'brand'))
+                products = _.filter(products, {'brand': query.brand});
+        }
+
+        if(_.has(params, 'select')){
+            var select = params.select.split(" ");
+            products = _.map(products, item => _.pick(item, select));
+        }
+
+        if(_.has(params, 'populate')){
+            var brands = parseJSON(fs.readFileSync('../client/json/brands.json', 'utf8'));
+            var variations = parseJSON(fs.readFileSync('../client/json/variations.json', 'utf8'));
+            //var populate = params.populate.split(" ");
+            _.forEach(products, function(value, key) {
+                //if(populate.indexOf('brand') > -1)
+                    products[key].brand = _.find(brands, {_id:value.brand});
+                    products[key].frontman = _.find(variations, {_id:value.frontman});
+            });
+        }
+
+        res.json(products);
+    });
+    /**/
+});
+
+app.get(baseurl+'/server/api/products/:_id', function(req, res){
+    /**
+    Product.findById(req.params._id, function(err, product){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(product);
+    });
+    /**/
+
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/products.json'), 'utf8', function (err, data) {
+        var products;
+        products = JSON.parse(data);
+        var product = _.find(products, {_id:req.params._id});
+        res.json(product);
+    });
+    /**/
+});
 
 app.get(baseurl+'/server/api/brands', function(req, res){
     Brand.find(function(err, brands){
@@ -171,8 +251,11 @@ app.post(baseurl+'/server/api/brands', function(req, res){
 });
 
 app.get(baseurl+'/server/api/variations', function(req, res){
+    var params = parseJSON(req.query);
+    //res.json(params);
+
     //res.json(req.query.query);
-    var query = !req.query.query ? req.query.query : JSON.parse(req.query.query);
+    //var query = !req.query.query ? req.query.query : JSON.parse(req.query.query);
     //var featured_query = query ? query.featured : null;
     //var brand_query = query ? query.brand : null;
     //res.json(query);
@@ -190,15 +273,57 @@ app.get(baseurl+'/server/api/variations', function(req, res){
     }).sort({'_id': 1});
     /**/
 
-    var brands;
-    fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
-        brands = JSON.parse(data);
-    });
+//    var brands;
+//    fs.readFile(path.join(__dirname, '..', 'client/json/brands.json'), 'utf8', function (err, data) {
+//        brands = JSON.parse(data);
+//    });
 
     /*using json file*/
     fs.readFile(path.join(__dirname, '..', 'client/json/variations.json'), 'utf8', function (err, data) {
         var variations;
         variations = JSON.parse(data);
+
+        if(_.has(params, 'query')){
+            var query = parseJSON(params.query);
+            if(_.has(query, 'featured')){
+                variations = _.filter(variations, function(variation) {
+                    return variation.featured != null;
+                });
+            }
+            if(_.has(query, 'brand')){
+                variations = _.filter(variations, {'brand': query.brand});
+            }
+            if(_.has(query, 'sku')){
+                variations = _.find(variations, {'sku': query.sku});
+            }
+        }
+
+        if(_.has(params, 'populate')){
+            var populate = params.populate.split(" ");
+            if(_.has(params, 'expectOne')){
+                if(params.expectOne){
+                    if(populate.indexOf('brand') > -1){
+                        var brands = parseJSON(fs.readFileSync('../client/json/brands.json', 'utf8'));
+                        variations.brand = _.find(brands, {_id:variations.brand});
+                    }
+                    if(populate.indexOf('product') > -1){
+                        var products = parseJSON(fs.readFileSync('../client/json/products.json', 'utf8'));
+                        variations.product = _.find(products, {_id:variations.product});
+                    }
+                }
+            } else{
+                _.forEach(variations, function(value, key) {
+                    if(populate.indexOf('brand') > -1){
+                        var brands = parseJSON(fs.readFileSync('../client/json/brands.json', 'utf8'));
+                        variations[key].brand = _.find(brands, {_id:value.brand});
+                    }
+                });
+            }
+        }
+
+        res.json(variations);
+
+        /*
         //res.json(variations);
         //if(query.featured != undefined)
         if(_.has(query, 'featured')){
@@ -211,13 +336,14 @@ app.get(baseurl+'/server/api/variations', function(req, res){
             variations = _.filter(variations, {'brand': query.brand});
         //variations = _.find(variations, 'brand', brand_query);
         //var dat = "";
-        /**/
+        /**
         _.forEach(variations, function(value, key) {
             //dat += key + " - " + value.brand + ", ";
             variations[key].brand = _.find(brands, {_id:value.brand});
         });
-        /**/
+        /**
         res.json(variations);
+        /**/
     });
     /**/
 });

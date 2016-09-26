@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row tileList">
+        <div class="col-xs-12">
+            <div class="row product-list"><span ng-repeat="product in products | filter: {sku: product.sku} | orderBy: 'frontman.sku': true"><div ng-if="!product.frontman.hideSale &amp;&amp; !product.hideSale" class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 tile-link"><a href="href" ng-href="./{{product.brand.slug}}/product/{{product.frontman.sku}}/{{product.slug}}" class="brand-{{product.brand.slug}}"><product-tile product="product.frontman"></product-tile></a></div></span></div>
+        </div>
+    </div>
+</div>

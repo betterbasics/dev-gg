@@ -1,0 +1,6 @@
+<div class="products-page contentBody">
+    <div class="row filter">
+        <select ng-model="selectedBrand" ng-options="brand.name as (!brand ? 'All Brands' : brand.name) for brand in brands" title=""></select>
+    </div>
+    <product-tile-list brand="brand"></product-tile-list>
+</div>

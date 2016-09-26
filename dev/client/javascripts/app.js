@@ -53,6 +53,14 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 				url: "/{brand}",
 				templateUrl: "templates/brand.html"
 			})
+			.state('Brand Products', {
+				url: "/{brand}/products",
+				templateUrl: "templates/products.html"
+			})
+			.state('Brand Product', {
+				url: "/{brand}/product/{sku}/{slug}",
+				templateUrl: "templates/product.html"
+			})
 			.state('Brand Help', {
 				url: "/{brand}/help",
 				templateUrl: "templates/help.html"
@@ -339,6 +347,234 @@ app.directive('brandSlider', ["Brand", "$location", "$rootScope", function(e) {
     }
 }]);
 
+app.directive("productsPage", ["Brand", "$location", "$stateParams", "$q", function(e, t, r, n) {
+    return {
+        templateUrl: "templates/products-page.html",
+        restrict: "EA",
+        replace: !0,
+        link: function(o, a) {
+            var i, u;
+            return i = n.defer(), o.brand = {
+                name: r.brand,
+                $promise: i.promise
+            }, o.brand.$promise.then(function(e) {
+                return _.assign(o.brand, e)
+            }), u = $("select", a), u.selectpicker(), o.brands = e.query({
+                scope: "name"
+            }, function() {
+                var e, t, n, a, s;
+                for (a = o.brands, t = 0, n = a.length; n > t; t++) e = a[t], e.slug = slug(e.name.toLowerCase());
+                return o.selectedBrand = null != (s = _.find(o.brands, {
+                    slug: r.brand
+                })) ? s.name : void 0, i.resolve(_.find(o.brands, {
+                    slug: r.brand
+                })), o.brands.unshift(void 0), setTimeout(function() {
+                    return u.selectpicker("refresh"), u.on("change", function() {
+                        var e, t, r;
+                        t = u.val();
+                        //console.log(t);
+                        var brand_slug = t.split(":")[1];
+                        var selected_brand = _.find(o.brands, {
+                            slug: slug(brand_slug.toLowerCase())
+                        });
+                        //console.log(selected_brand);
+//                        return e = null != (r = selected_brand) ? r.name : void 0, o.$apply(function() {
+//                            //console.log(e);
+//                            return o.brandSelected(e)
+//                        })
+//
+//                        console.log(u.val());
+                        return e = null != (r = selected_brand) ? r.name : void 0, o.$apply(function() {
+                            //console.log("brand selected: " + e);
+                            //console.log("r selected: " + r);
+                            return o.brandSelected(e)
+                        })
+                    })
+                }, 0)
+            }), o.brandSelected = function(e) {
+                var r;
+                return o.selectedBrand = e, r = e ? "/" + slug(e.toLowerCase()) + "/products" : "/products", t.path(r)
+            }
+        }
+    }
+}]);
+
+//app.directive("productPage", ["$stateParams", "Variation", "$location", "faqModal", "$sce", function(e, t, r, n, o) {
+app.directive("productPage", ["$stateParams", "Variation", "$location", "$sce", function(e, t, r, o) {
+    return {
+        templateUrl: "templates/product-page.html",
+        restrict: "E",
+        replace: !0,
+        link: function(a) {
+            //return a.faqModal = n, a.variation = t.get({
+            return a.variation = t.get({
+                expectOne: !0,
+                query: {
+                    sku: e.sku
+                },
+                populate: "brand charity product buyingGuide"
+            }, function() {
+                var t, n, i, u;
+                return a.variation.product.staticHTML = o.trustAsHtml(null != (i = a.variation.product.staticHTML) ? i : ""), a.variation.staticProductHTML = o.trustAsHtml(null != (u = a.variation.staticProductHTML) ? u : ""), n = slug(a.variation.name.toLowerCase()), t = slug(a.variation.brand.name.toLowerCase()), a.variation.slug = n, a.variation.brand.slug = t, a.variation.brand.name = slug(a.variation.brand.name.toLowerCase()), (e.slug !== n || e.brand !== t) && r.path("/" + t + "/product/" + a.variation.sku + "/" + n, !1), a.variation.brand.iconClass = "icon-" + slug(a.variation.brand.name.toLowerCase())
+            }), a.variation.$promise["catch"](function(e) {
+                return 404 === e.status ? r.path("/products") : void 0
+            })
+        }
+    }
+}]);
+
+app.directive("productTileList", ["Product", "Brand", "$location", function(e) {
+    return {
+        templateUrl: "templates/product-tile-list.html",
+        restrict: "EA",
+        replace: !0,
+        scope: {
+            brand: "=?",
+            products: "=?",
+            ngClick: "=?",
+            limit: "@?"
+        },
+        link: function(t) {
+            var r, n;
+            return null == t.limit && (t.limit = 1 / 0), n = {
+                select: "name brand frontman hideSale",
+                populate: "brand frontman"
+            }, r = function() {
+                return t.products = e.query(n, function() {
+                    var e, r, n, o, a;
+                    console.log(t.products);
+                    for (t.products.splice(t.limit), o = t.products, a = [], r = 0, n = o.length; n > r; r++) e = o[r], e.slug = slug(e.name.toLowerCase()), a.push(e.brand.slug = slug(e.brand.name.toLowerCase()));
+                    return a
+                })
+            }, null != t.ngClick && (t.click = t.ngClick), null != t.brand ? t.brand.$promise.then(function() {
+                var e;
+                return (null != (e = t.brand) ? e._id : void 0) && (null == n.query && (n.query = {}), n.query.brand = t.brand._id), r()
+            }) : r()
+        }
+    }
+}]);
+
+app.directive("productTile", ["$location", "$rootScope", function() {
+    return {
+        templateUrl: "templates/product-tile.html",
+        restrict: "E",
+        scope: {
+            product: "="
+        },
+        replace: !0,
+        link: function(e, t) {
+            var r, n;
+            return (null != (r = e.product) && null != (n = r.brand) ? n.name : void 0) ? t.addClass("brand-" + e.product.brand.name, "brandOverride") : void 0
+        }
+    }
+}]);
+
+app.directive("productView", ["$routeParams", "Variation", "$location", function(e, t, r) {
+    return {
+        templateUrl: "templates/product-view.html",
+        restrict: "E",
+        scope: {
+            product: "=",
+            redirectOnVariantSelection: "&"
+        },
+        link: function(e, n) {
+            var o, a, i, u;
+            return e.swipeRight = function() {
+                return e.galleryIndex > 0 ? e.galleryIndex-- : void 0
+            }, e.swipeLeft = function() {
+                return e.galleryIndex < e.gallery.length - 1 ? e.galleryIndex++ : void 0
+            }, e.gallery = [], i = function() {
+                for (var t, r, n, o, a; e.gallery.length;) e.gallery.pop();
+                for (e.gallery.push(e.product.primaryVideo ? {
+                        video: e.product.primaryVideo,
+                        image: e.product.image.image
+                    } : {
+                        image: e.product.image.image
+                    }), o = e.product.secondaryImages, a = [], r = 0, n = o.length; n > r; r++) t = o[r], a.push(_.find(e.gallery, function(e) {
+                    return e.image === t.image
+                }) ? void 0 : e.gallery.push(t));
+                return a
+            }, o = function() {
+                var t, r, n, o, a, i, u, s, l, c, d, m, p, f, g;
+                t = {}, g = e.product.product.variants.values;
+                for (l in g)
+                    if (s = g[l], 0 === _.size(t))
+                        for (n = d = 0, p = s.length; p > d; n = ++d) u = s[n], t[u] = [n + ""];
+                    else
+                        for (a = t, t = {}, n = m = 0, f = s.length; f > m; n = ++m) {
+                            u = s[n];
+                            for (o in a) i = a[o], c = _.clone(i), c.push(n + ""), t[o + " " + u] = c
+                        }
+                    return r = _.invert(e.product.product.variants.bindings), t[r[e.product._id]]
+            }, u = function() {
+                return setTimeout(function() {
+                    var t, r, o, a, i, u, s;
+                    for (u = null != (i = e.product.product.variants.variables) ? i : [], s = [], t = o = 0, a = u.length; a > o; t = ++o) r = u[t], s.push(function(t) {
+                        var r;
+                        return r = $("select#selector" + t, n), r.selectpicker(), r.on("change", function() {
+                            var n;
+                            return n = r.val(), e.$apply(function() {
+                                return e.variantSelection[t] = n
+                            })
+                        })
+                    }(t));
+                    return s
+                }, 0)
+            }, a = function() {
+                var n, a, s, l, c, d, m;
+                if (e.toggleSpecsAndDetails = function(t) {
+                        return e.specsAndDetailsActive = !e.specsAndDetailsActive, "specs" === t ? (e.specsActive = !e.specsActive, e.detailsActive = !1) : (e.detailsActive = !e.detailsActive, e.specsActive = !1)
+                    }, i(), u(), e.product.product.variants) {
+                    for (a = e.product.product.variants.values, e.variantSelection = o(), d = e.product.product.variants.variables, m = [], n = l = 0, c = d.length; c > l; n = ++l) s = d[n], m.push(e.$watch("variantSelection[" + n + "]", function(o, a) {
+                        var s, l, c, d, m, p, f;
+                        if (null != a && a !== o) {
+                            for (s = [], f = e.product.product.variants.variables, n = m = 0, p = f.length; p > m; n = ++m) c = f[n], s.push(e.product.product.variants.values[c][e.variantSelection[n]]);
+                            return s = s.join(" "), l = e.product.product.variants.bindings[s], d = t.get({
+                                expectOne: !0,
+                                query: {
+                                    _id: l
+                                },
+                                populate: "brand charity product"
+                            }, function() {
+                                return e.product = d, i(), u(), e.redirectOnVariantSelection ? r.path("/" + slug(e.product.brand.name.toLowerCase()) + "/product/" + e.product.sku + "/" + slug(e.product.name.toLowerCase()), !1) : void 0
+                            })
+                        }
+                    }));
+                    return m
+                }
+            }, e.product.$promise ? e.product.$promise.then(function() {
+                return a()
+            }) : a()
+        }
+    }
+}]);
+
+app.directive("gallery", ["$rootScope", function() {
+    return {
+        templateUrl: "templates/gallery.html",
+        replace: !0,
+        restrict: "E",
+        scope: {
+            gallery: "=",
+            currentIndex: "=?"
+        },
+        link: function(e) {
+            return e.currentIndex = 0, e.$watch("currentIndex", function(t) {
+                return e.currentMedia = e.gallery[t]
+            }), e.changeCurrent = function(t, r) {
+                return e.currentIndex = r, e.currentMedia = t, e.videoDisplay = !1, e.videoPlayer.stopVideo()
+            }, e.$watch("gallery[0]", function(t) {
+                return e.currentMedia = t, e.videoDisplay = !1
+            }), e.displayVideo = function() {
+                var t;
+                return t = e.$watch("videoPlayer.playVideo", function(r) {
+                    return r ? (e.videoDisplay = !0, e.videoPlayer.playVideo(), t()) : void 0
+                })
+            }
+        }
+    }
+}]);
+
 app.directive('brandsPage', ["$stateParams", "$location", "Brand", function(e, t, r){
     return{
         restrict: 'E',
@@ -515,6 +751,22 @@ app.directive("careerPage", ["$stateParams", "$location", "Career", function(e, 
     }
 }]);
 
+
+app.factory("Product", ["$resource", function(e) {
+    return e("server/api/products/:_id", {
+        _id: "@_id"
+    })
+//        , {
+//        lock: {
+//            method: "POST",
+//            url: "https://api.greatergoods.com/products/lock"
+//        },
+//        unlock: {
+//            method: "POST",
+//            url: "https://api.greatergoods.com/products/unlock"
+//        }
+//    })
+}]);
 
 app.factory("Brand", ["$resource", function(e) {
     return e("server/api/brands/:_id", {

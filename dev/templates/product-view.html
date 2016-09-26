@@ -1,0 +1,40 @@
+<div ng-swipe-right="swipeRight()" ng-swipe-left="swipeLeft()" class="productView row">
+    <h4 class="col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg text-center">{{product.name | uppercase}}</h4>
+    <div class="galleryContainer col-sm-6">
+        <gallery gallery="gallery" current-index="galleryIndex"></gallery>
+    </div>
+    <div class="description col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+        <h3 class="hidden-xs">{{product.name | uppercase}}<span ng-show="product.subTitle"><br><small>{{product.subTitle | uppercase}}</small></span></h3>
+        <div class="price"><span class="msrp">{{product.msrp | currency}}</span><span ng-show="product.providers.amazon.price" class="amazon">{{product.providers.amazon.price | currency}}</span><span ng-show="product.providers.bbb.price &amp;&amp; !product.providers.amazon.price &amp;&amp; !product.providers.target.price" class="bbb">{{product.providers.bbb.price | currency}}</span><span ng-show="product.providers.target.price &amp;&amp; !product.providers.amazon.price &amp;&amp; !product.providers.bbb.price" class="target">{{product.providers.target.price | currency}}</span></div>
+        <div class="descriptionText">
+            <div ng-bind-html="product.description" class="copy"></div>
+            <div ng-if="product.product.variants" ng-repeat="variable in product.product.variants.variables" class="row variants">
+                <div class="form-group variantSelect">
+                    <label for="{{variable}}" class="col-xs-4 control-label">{{variable | uppercase}}</label>
+                    <div class="col-xs-8 selects">
+                        <select id="selector{{$index}}" ng-options="ndx as value for (ndx, value) in product.product.variants.values[variable]" ng-model="variantSelection[$index]" title="" class="form-control"></select>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="!product.hideSale" class="buyBtn"><span ng-show="product.providers.bbb.link" class="bbb"><a ng-href="{{product.providers.bbb.link}}" target="blank"><span>Buy now on</span><img src="client/assets/images/buyOnBedBathBeyond2.png" alt="Bed Bath &amp; Beyond" class="providerImage"></a>
+                </span><span ng-show="product.providers.target.link &amp;&amp; !product.providers.amazon.price" class="target"><a ng-href="{{product.providers.target.link}}" target="blank"><span>Buy now on</span><img src="assets/images/buyOnTarget.png" alt="Target" class="providerImage"></a>
+                </span>
+            </div>
+            <div ng-show="!product.hideSale" class="buyBtn"><span ng-show="product.providers.amazon.link" class="amazon"><a ng-href="{{product.providers.amazon.link}}" target="blank"><span>Buy now on</span><img src="client/assets/images/buyOnAmazon2.png" alt="Amazon" class="providerImage"></a>
+                </span>
+            </div>
+            <div ng-class="{'active': specsActive}" class="specsAndDetails">
+                <div class="information">
+                    <ul ng-if="specsActive">
+                        <li ng-repeat="spec in product.specs" class="font-sm"><b>{{spec[0]}}:</b>&nbsp;{{spec[1]}}</li>
+                    </ul>
+                </div>
+                <div ng-click="specsActive = (detailsActive = false)" class="close glyphicon glyphicon-remove"></div>
+                <div class="whiteFade"></div>
+            </div>
+            <div class="sliderControls row"><a href="href" ng-href="./{{product.brand.name}}/product/{{product.sku}}/{{product.slug}}/getting-started" class="sliderControl brandSliderBtn col-xs-6">Getting Started</a>
+                <div ng-click="toggleSpecsAndDetails('specs')" ng-class="{'active': specsActive}" class="sliderControl second brandSliderBtn col-xs-6">Specs</div>
+            </div>
+        </div>
+    </div>
+</div>
