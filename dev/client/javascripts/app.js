@@ -61,6 +61,10 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 				url: "/{brand}/product/{sku}/{slug}",
 				templateUrl: "templates/product.html"
 			})
+			.state('Brand Product Getting Started', {
+				url: "/{brand}/product/{sku}/{slug}/getting-started",
+				templateUrl: "templates/getting-started.html"
+			})
 			.state('Brand Help', {
 				url: "/{brand}/help",
 				templateUrl: "templates/help.html"
@@ -72,7 +76,7 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 
 
 /**/
-app.run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
+app.run(["$rootScope", "$anchorScroll", function ($rootScope, $anchorScroll) {
     $rootScope.$on("$locationChangeSuccess", function() {
         //console.log("AnchorScroll");
         $anchorScroll();
@@ -81,15 +85,17 @@ app.run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
     });
 }]);
 /**/
-/**
-app.run(["$rootScope", "$location", "$route", "ipCookie", function(e, t, r, n) {
+/**/
+//app.run(["$rootScope", "$location", "$route", "ipCookie", function(e, t, r, n) {
+app.run(["$rootScope", "$location", "$state", function(e, t, r) {
     var o, a, i, u, s;
     return i = t.path, a = 0, e.$on("$locationChangeStart", function() {
         return a = document.body.scrollTop || document.documentElement.scrollTop
     }), t.path = function(n, o) {
         var u, s;
         return o === !1 ? (u = r.current, s = e.$on("$locationChangeSuccess", function() {
-            return r.current.$$route = u.$$route, s()
+            //console.log(r);
+            return r.current.url = u.url, s()
         }), i.apply(t, [n]).replace()) : (s = e.$on("$locationChangeSuccess", function() {
             return setTimeout(function() {
                 return document.body.scrollTop = document.documentElement.scrollTop = a > 36 ? 37 : 0
@@ -199,7 +205,7 @@ app.directive("theFooter", ["$location", function(e) {
     }
 }]);
 
-app.directive('homePage', ["Variation", "ourPromiseModal", "errorModal", "$routeParams", function(e, t, r, n) {
+app.directive('homePage', ["Variation", "ourPromiseModal", "errorModal", "$stateParams", function(e, t, r, n) {
     return{
         templateUrl: 'templates/home-page.html',
         restrict: 'E',
@@ -442,7 +448,7 @@ app.directive("productTileList", ["Product", "Brand", "$location", function(e) {
             }, r = function() {
                 return t.products = e.query(n, function() {
                     var e, r, n, o, a;
-                    console.log(t.products);
+                    //console.log(t.products);
                     for (t.products.splice(t.limit), o = t.products, a = [], r = 0, n = o.length; n > r; r++) e = o[r], e.slug = slug(e.name.toLowerCase()), a.push(e.brand.slug = slug(e.brand.name.toLowerCase()));
                     return a
                 })
@@ -469,7 +475,7 @@ app.directive("productTile", ["$location", "$rootScope", function() {
     }
 }]);
 
-app.directive("productView", ["$routeParams", "Variation", "$location", function(e, t, r) {
+app.directive("productView", ["$stateParams", "Variation", "$location", function(e, t, r) {
     return {
         templateUrl: "templates/product-view.html",
         restrict: "E",
@@ -571,6 +577,61 @@ app.directive("gallery", ["$rootScope", function() {
                     return r ? (e.videoDisplay = !0, e.videoPlayer.playVideo(), t()) : void 0
                 })
             }
+        }
+    }
+}]);
+
+//app.directive("gettingStartedPage", ["Variation", "Product", "$stateParams", "$timeout", "$location", "FAQ", "HtmlGuideNode", "registerModal", "getHelpModal", "$document", function(e, t, r, n, o, a, i, u, s) {
+app.directive("gettingStartedPage", ["Variation", "Product", "$stateParams", /*"$timeout",*/ "$location", "FAQ", "HtmlGuideNode", /*"$document",*/ function(e, t, r, /*n,*/ o, a, i) {
+    return {
+        templateUrl: "templates/getting-started-page.html",
+        restrict: "E",
+        replace: !0,
+        link: function(t, n) {
+            console.log(t);
+            return t.variation = e.get({
+                expectOne: !0,
+                query: {
+                    sku: r.sku
+                },
+                populate: "product brand"
+            }, function() {
+                var e, n, s;
+                return t.variation.product || o.path("/help", !1), t.variation.sku = r.sku, t.product = t.variation.product, t.faqs = a.get({
+                    expectOne: !0,
+                    query: {
+                        product: t.product._id
+                    }
+                }), t.product.htmlGuideRootNode = i.get({
+                    _id: t.product.htmlGuide
+                }), e = slug(t.variation.name.toLowerCase()), n = slug(t.variation.brand.name.toLowerCase()), r.slug !== e || r.brand !== n ? o.path("/" + n + "/product/" + t.variation.sku + "/" + e + "/getting-started", !1) : "1" === o.search().a ? (t.videoId = t.product.amazonVideo, t.posterWasClicked = !0, s = t.$watch("videoPlayer.playVideo", function(e) {
+                    return e ? (t.videoPlayer.playVideo(), s()) : void 0
+                })) : "1" !== o.search().c ? t.videoId = t.product.video : (t.videoId = t.product.cardVideo, -1 === document.cookie.indexOf(t.variation.sku + "=true") ? u.open(t.variation) : void 0)
+            }), t.variation.$promise["catch"](function(e) {
+                return 404 === e.status ? o.path("/help") : void 0
+            }), "1" === o.search().a && (t.amazonSearch = "?a=1", t.hideRegister = !0, $(n).addClass("navHidden")), t.$on("youtube.player.buffering", function() {
+                return t.posterWasClicked = !0
+            }), t.$on("youtube.player.playing", function() {
+                return t.posterWasClicked = !0
+            }), t.playerVars = {
+                modestbranding: 1,
+                showinfo: 0,
+                theme: "light",
+                autohide: 1,
+                rel: 0
+            }, /*t.sendMessage = function() {
+                return $http.post("https://api.greatergoods.com/contact", $scope.contact).success(function() {
+                    return $scope.close()
+                }).error(function() {
+                    return alert("Could not send the message at this time. Please try again later.")
+                })
+            },*/ $(window).scroll(function() {
+                return setTimeout(function() {
+                    return $("ul").parent("li.active").length > 1 && $("li").parent("ul").parent("li").removeClass("active"), $("li").has("li.active").addClass("active")
+                }, 100)
+            })/*, t.registerClicked = function(e) {
+                return u.open(e)
+            }*/
         }
     }
 }]);
@@ -821,6 +882,24 @@ app.factory("Career", ["$resource", function(e) {
 //    })
 }]);
 
+app.factory("FAQ", ["$resource", function(e) {
+    return e("server/api/faq", {})
+//        , {
+//        lock: {
+//            method: "POST",
+//            url: "https://api.greatergoods.com/faq/lock"
+//        },
+//        unlock: {
+//            method: "POST",
+//            url: "https://api.greatergoods.com/faq/unlock"
+//        }
+//    })
+}]);
+
+app.factory("HtmlGuideNode", ["$resource", function(e) {
+    return e("server/api/html-guide", {})
+}]);
+
 
 /* brandController - no use for now */
 app.controller('brandController',function($stateParams, $scope, $http, $location){
@@ -931,3 +1010,9 @@ app.filter("searchFilter", ["$filter", function(e) {
         })), o
     }
 }]);
+
+app.filter("anchorSafe", function() {
+    return function(e) {
+        return e ? e.replace(/[^a-z0-9 ]/gi, "").replace(/[ ]/g, "-").substring(0, 20) : void 0
+    }
+});

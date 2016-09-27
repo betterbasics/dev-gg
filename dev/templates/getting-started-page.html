@@ -1,0 +1,87 @@
+<div class="gettingStartedPage">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="video col-lg-10 col-lg-offset-1 col-xs-12">
+                <div ng-if="videoId" class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive-item">
+                        <youtube-video player="$parent.videoPlayer" video-id="$parent.videoId" player-vars="$parent.playerVars"></youtube-video>
+                        <div ng-hide="posterWasClicked" style="pointer-events:none" class="videoPoster"><img ng-src="{{product.webVideoPoster.image}}" style="width:100%; height:100%;">
+                            <h2 class="overlay"><small>{{variation.name | uppercase}} {{variation.subTitle | uppercase}}</small>PAPERLESS MANUAL</h2><i class="icon-play"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-xs-12 accordionButtons text-center">
+                <button ng-click="registerClicked(variation)" ng-hide="hideRegister" class="upper-buttons collapsed">
+                    <div class="btn registerButton"><span class="icon icon-register"></span><span class="name">REGISTER</span></div>
+                </button>
+                <button ng-click="getHelpModal.open(variation)" class="upper-buttons collapsed">
+                    <div class="btn contactButton brandSliderBtn"><span class="icon icon-get-help"></span><span class="name">CONTACT US</span></div>
+                </button>
+                <hr class="desktopOnly">
+            </div>
+        </div>
+        <div class="row guide contentBody">
+            <div class="col-md-7 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                <section id="gettingStarted" class="gettingStarted top">
+                    <h2 ng-click="gettingstarted.show = !gettingstarted.show">GETTING STARTED</h2>
+                    <div ng-repeat="step in product.gettingStartedSteps" id="{{step.name | anchorSafe}}" ng-show="gettingstarted.show" class="item"><i ng-if="step.name" ng-class="{'glyphicon-chevron-right': !step.show, 'glyphicon-chevron-down': step.show}" ng-click="step.show = !step.show" class="glyphicon pull-left brandColor"></i>
+                        <h3 ng-click="step.show = !step.show" ng-if="step.name">{{step.name | uppercase}}</h3>
+                        <div text-angular="text-angular" ta-bind="ta-bind" ng-model="step.description" ng-show="step.show || !step.name" class="contents"></div>
+                    </div>
+                    <hr class="bluehr">
+                </section>
+                <section id="faqs" ng-show="faqs.list.length > 0" class="faqs">
+                    <h2 ng-click="faqs.show = !faqs.show">FAQs</h2>
+                    <div ng-repeat="faq in faqs.list" ng-show="faqs.show" id="{{faq.menuTitle | anchorSafe}}" class="item"><i ng-class="{'glyphicon-chevron-right': !step.show, 'glyphicon-chevron-down': step.show}" ng-click="step.show = !step.show" class="glyphicon pull-left brandColor"></i>
+                        <h4 ng-click="faq.show = !faq.show">{{faq.question}}</h4>
+                        <div text-angular="text-angular" ta-bind="ta-bind" ng-model="faq.answer" ng-show="faq.show" class="contents"></div>
+                    </div>
+                    <hr class="bluehr">
+                </section>
+                <section ng-repeat="child in product.htmlGuideRootNode.children | orderBy: 'order'" id="{{child.menuTitle | anchorSafe}}">
+                    <h2 ng-click="child.show = !child.show">{{child.title}}</h2>
+                    <div text-angular="text-angular" ta-bind="ta-bind" ng-model="child.content" ng-show="child.show" class="contents"></div>
+                    <div ng-repeat="subchild in child.children | orderBy: 'order'" ng-show="child.show" ng-if="subchild.title" id="{{subchild.menuTitle | anchorSafe}}" class="item"> <i ng-class="{'glyphicon-chevron-right': !step.show, 'glyphicon-chevron-down': step.show}" ng-click="step.show = !step.show" class="glyphicon pull-left brandColor"></i>
+                        <h3 ng-click="subchild.show = !subchild.show">{{subchild.title | uppercase}}</h3>
+                        <div text-angular="text-angular" ta-bind="ta-bind" ng-model="subchild.content" ng-show="subchild.show" class="contents"></div>
+                    </div>
+                    <hr ng-if="product.htmlGuideRootNode.children" class="bluehr">
+                </section>
+                <section id="ourPromise" class="ourPromise">
+                    <h2 ng-click="ourPromise.show = !ourPromise.show">Our Promise</h2>
+                    <div ng-show="ourPromise.show" class="item">
+                        <p>We collaborate with charities and responsible makers to produce great products for good. Learn how we’re partnering with these passionate people.</p><a href="href" ng-href="/promise" class="btn grayBorder">LEARN MORE</a></div>
+                    <hr class="bluehr hidden-md hidden-lg">
+                </section>
+                <section id="ourPromise" class="ourPromise hidden-lg hidden-md">
+                    <a href="{{product.gettingStartedPdf}}" ng-show="product.gettingStartedPdf">
+                        <h2>Download Full Manual</h2></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
+                <ul affix="affix" affix-offset="-600" class="nav affix">
+                    <li du-scrollspy="gettingStarted"><a href="#gettingStarted" du-smooth-scroll="du-smooth-scroll">Getting Started</a>
+                        <ul class="collapsedNav">
+                            <li ng-repeat="step in product.gettingStartedSteps" du-scrollspy="{{step.name | anchorSafe}}" ng-if="step.name"><a href="#{{step.name | anchorSafe}}" du-smooth-scroll="du-smooth-scroll">{{step.name}}</a></li>
+                        </ul>
+                    </li>
+                    <li du-scrollspy="faqs" ng-show="faqs.list.length > 0"><a href="#faqs" du-smooth-scroll="du-smooth-scroll">FAQ</a>
+                        <ul class="collapsedNav">
+                            <li ng-repeat="faq in faqs.list" du-scrollspy="{{faq.menuTitle | anchorSafe}}" ng-if="faq.menuTitle"><a href="#{{faq.menuTitle | anchorSafe}}" du-smooth-scroll="du-smooth-scroll">{{faq.menuTitle}}</a></li>
+                        </ul>
+                    </li>
+                    <li ng-repeat="child in product.htmlGuideRootNode.children | orderBy: 'order'" du-scrollspy="{{child.menuTitle | anchorSafe}}" ng-if="child.menuTitle"><a href="#{{child.menuTitle | anchorSafe}}" du-smooth-scroll="du-smooth-scroll">{{child.menuTitle}}</a>
+                        <ul class="collapsedNav">
+                            <li ng-repeat="subchild in child.children | orderBy: 'order'" du-scrollspy="{{subchild.menuTitle | anchorSafe}}" ng-if="child.menuTitle"><a href="#{{subchild.menuTitle | anchorSafe}}" du-smooth-scroll="du-smooth-scroll">{{subchild.menuTitle}}</a></li>
+                        </ul>
+                    </li>
+                    <li du-scrollspy="ourPromise"><a href="#ourPromise" du-smooth-scroll="du-smooth-scroll">Our Promise</a></li>
+                    <li du-scrollspy="downloadFoodCodeBook"><a href="https://media.greatergoods.com/assets/PerfectPortion_FoodCodes.pdf" target="blank" ng-show="variation.sku == '0450' || variation.sku == '0451' ||  variation.sku == '0452'" du-smooth-scroll="du-smooth-scroll">Food Code Book</a></li>
+                    <li du-scrollspy="downloadFullManual"><a href="{{product.gettingStartedPdf}}" ng-show="product.gettingStartedPdf" du-smooth-scroll="du-smooth-scroll">Download Full Manual</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

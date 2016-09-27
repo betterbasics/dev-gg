@@ -414,3 +414,49 @@ app.get(baseurl+'/server/api/careers/:_id', function(req, res){
     });
     /**/
 });
+
+app.get(baseurl+'/server/api/faq', function(req, res){
+    var params = parseJSON(req.query);
+    /**
+    Career.find(function(err, careers){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(careers);
+    }).sort({'_id': 1});
+    /**/
+
+    /*using json file*/
+    fs.readFile(path.join(__dirname, '..', 'client/json/faq.json'), 'utf8', function (err, data) {
+        var faq;
+        faq = JSON.parse(data);
+
+        if(_.has(params, 'query')){
+            var query = parseJSON(params.query);
+            if(_.has(query, 'product')){
+                faq = _.find(faq, {'product': query.product});
+            }
+        }
+
+        res.json(faq);
+    });
+    /**/
+});
+
+app.get(baseurl+'/server/api/html-guide', function(req, res){
+    /**
+    Career.find(function(err, careers){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(careers);
+    }).sort({'_id': 1});
+    /**/
+
+    /*using json file*/
+    var htmlGuideNode;
+    htmlGuideNode = {};
+
+    res.json(htmlGuideNode);
+    /**/
+});
