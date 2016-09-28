@@ -1,4 +1,4 @@
-var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed', 'ngTouch', 'ui.bootstrap']);
+var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed', 'ngTouch', 'ui.bootstrap', 'textAngular', 'duScroll']).value("duScrollOffset", 80).value("duScrollDuration", 800);
 
 //app.config(["$routeProvider", "$locationProvider", "$httpProvider", function(e, t, r) {
 //        return e.when = _.wrap(e.when, function(e, t, r) {
@@ -519,7 +519,10 @@ app.directive("productView", ["$stateParams", "Variation", "$location", function
                         var r;
                         return r = $("select#selector" + t, n), r.selectpicker(), r.on("change", function() {
                             var n;
-                            return n = r.val(), e.$apply(function() {
+                            //console.log(r.val());
+                            n = r.val();
+                            var selected = n.split(":")[1];
+                            return n = selected, e.$apply(function() {
                                 return e.variantSelection[t] = n
                             })
                         })
@@ -588,7 +591,7 @@ app.directive("gettingStartedPage", ["Variation", "Product", "$stateParams", /*"
         restrict: "E",
         replace: !0,
         link: function(t, n) {
-            console.log(t);
+            //console.log(t);
             return t.variation = e.get({
                 expectOne: !0,
                 query: {
@@ -811,6 +814,23 @@ app.directive("careerPage", ["$stateParams", "$location", "Career", function(e, 
         }
     }
 }]);
+
+app.directive("affix", function() {
+    return {
+        restrict: "A",
+        link: function(e, t, r) {
+            var n;
+            return null == r.affixOffset && (r.affixOffset = 0), n = $(t).offset().top, $(window).on("scroll", function() {
+                var e;
+                return e = n - $(window).scrollTop(), e < r.affixOffset ? ($(t).css({
+                    position: "fixed"
+                }), $(t).addClass("affixed")) : ($(t).css({
+                    position: ""
+                }), $(t).removeClass("affixed"))
+            })
+        }
+    }
+});
 
 
 app.factory("Product", ["$resource", function(e) {

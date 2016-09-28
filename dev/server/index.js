@@ -296,6 +296,9 @@ app.get(baseurl+'/server/api/variations', function(req, res){
             if(_.has(query, 'sku')){
                 variations = _.find(variations, {'sku': query.sku});
             }
+            if(_.has(query, '_id')){
+                variations = _.find(variations, {'_id': query._id});
+            }
         }
 
         if(_.has(params, 'populate')){
