@@ -8,9 +8,11 @@ var _ = require('lodash');
 require('./models/books');
 require('./models/products');
 require('./models/brands');
+require('./models/variations');
 var Book = mongoose.model('Book');
 var Product = mongoose.model('Product');
 var Brand = mongoose.model('Brand');
+var Variation = mongoose.model('Variation');
 
 // Create the application.
 var app = express();
@@ -136,13 +138,54 @@ var parseJSON = function (text){
 app.get(baseurl+'/server/api/products', function(req, res, $http){
     var params = parseJSON(req.query);
 
-    /**
-    Product.find(function(err, products){
+    var products_find = Product.find({});
+
+    if(_.has(params, 'query')){
+        var query = parseJSON(params.query);
+        products_find.where(query);
+        //products_find.where({'brand': query.brand});
+    }
+
+    products_find.sort({'brand': -1});
+
+    if(_.has(params, 'select'))
+        products_find.select(params.select);
+
+    if(_.has(params, 'populate')){
+        var populate = params.populate.split(" ");
+        if(populate.indexOf('brand') > -1){
+            products_find.populate({
+                path: 'brand',
+                model: 'Brand'
+            });
+        }
+        if(populate.indexOf('frontman') > -1){
+            products_find.populate({
+                path: 'frontman',
+                model: 'Variation'
+            });
+        }
+    }
+
+    products_find.exec(function(err, products){
         if(err){
             return res.send(500, err);
         }
         res.json(products);
-    }).sort({'_id': 1});
+    });
+    /**/
+
+    /*
+    Product.find({}).populate({
+//        path: 'brand',
+//        model: 'Brand'
+    }).exec(function(err, products){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(products);
+    });
+    //}).sort({'_id': 1});
     /**/
 
     /**
@@ -152,7 +195,7 @@ app.get(baseurl+'/server/api/products', function(req, res, $http){
     });
     /**/
 
-    /*using json file*/
+    /*using json file*
     var products;
     fs.readFile(path.join(__dirname, '..', 'client/json/products.json'), 'utf8', function (err, data) {
         //res.json(variations);
@@ -186,7 +229,7 @@ app.get(baseurl+'/server/api/products', function(req, res, $http){
 });
 
 app.get(baseurl+'/server/api/products/:_id', function(req, res){
-    /**
+    /**/
     Product.findById(req.params._id, function(err, product){
         if(err){
             return res.send(500, err);
@@ -195,7 +238,7 @@ app.get(baseurl+'/server/api/products/:_id', function(req, res){
     });
     /**/
 
-    /*using json file*/
+    /*using json file*
     fs.readFile(path.join(__dirname, '..', 'client/json/products.json'), 'utf8', function (err, data) {
         var products;
         products = JSON.parse(data);
@@ -203,6 +246,16 @@ app.get(baseurl+'/server/api/products/:_id', function(req, res){
         res.json(product);
     });
     /**/
+});
+
+app.post(baseurl+'/server/api/products', function(req, res){
+    var product = req.body;
+    Product.create(product, function(err, product){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(product);
+    });
 });
 
 app.get(baseurl+'/server/api/brands', function(req, res){
@@ -252,6 +305,44 @@ app.post(baseurl+'/server/api/brands', function(req, res){
 
 app.get(baseurl+'/server/api/variations', function(req, res){
     var params = parseJSON(req.query);
+
+    var variations_find;
+    if(_.has(params, 'expectOne')){
+        variations_find = Variation.findOne(parseJSON(params.query));
+    }else{
+        variations_find = Variation.find(parseJSON(params.query));
+
+        if(_.has(params, 'query')){
+            var query = parseJSON(params.query);
+            variations_find.where(query);
+        }
+
+        variations_find.sort({'brand': -1});
+    }
+
+    if(_.has(params, 'populate')){
+        var populate = params.populate.split(" ");
+        if(populate.indexOf('brand') > -1){
+            variations_find.populate({
+                path: 'brand',
+                model: 'Brand'
+            });
+        }
+        if(populate.indexOf('product') > -1){
+            variations_find.populate({
+                path: 'product',
+                model: 'Product'
+            });
+        }
+    }
+
+    variations_find.exec(function(err, variations){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(variations);
+    });
+
     //res.json(params);
 
     //res.json(req.query.query);
@@ -265,11 +356,11 @@ app.get(baseurl+'/server/api/variations', function(req, res){
     var brand_query = query.brand
     res.json(brand_query);
     /**
-    Brand.find(function(err, brands){
+    Variation.find(function(err, variations){
         if(err){
             return res.send(500, err);
         }
-        res.json(brands);
+        res.json(variations);
     }).sort({'_id': 1});
     /**/
 
@@ -278,7 +369,7 @@ app.get(baseurl+'/server/api/variations', function(req, res){
 //        brands = JSON.parse(data);
 //    });
 
-    /*using json file*/
+    /*using json file*
     fs.readFile(path.join(__dirname, '..', 'client/json/variations.json'), 'utf8', function (err, data) {
         var variations;
         variations = JSON.parse(data);
@@ -346,7 +437,7 @@ app.get(baseurl+'/server/api/variations', function(req, res){
         });
         /**
         res.json(variations);
-        /**/
+        /**
     });
     /**/
 });
@@ -369,6 +460,16 @@ app.get(baseurl+'/server/api/variations/:_id', function(req, res){
         res.json(variation);
     });
     /**/
+});
+
+app.post(baseurl+'/server/api/variations', function(req, res){
+    var variation = req.body;
+    Variation.create(variation, function(err, variation){
+        if(err){
+            return res.send(500, err);
+        }
+        res.json(variation);
+    });
 });
 
 app.get(baseurl+'/server/api/careers', function(req, res){

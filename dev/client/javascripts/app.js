@@ -62,8 +62,13 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 				templateUrl: "templates/product.html"
 			})
 			.state('Brand Product Getting Started', {
-				url: "/{brand}/product/{sku}/{slug}/getting-started",
-				templateUrl: "templates/getting-started.html"
+				url: "/:brand/product/:sku/:slug/getting-started",
+				templateUrl: "templates/getting-started.html",
+                params: {
+                    brand: { value: null, squash: true },
+                    sku: { value: null, squash: true },
+                    slug: { value: null, squash: true },
+                }
 			})
 			.state('Brand Help', {
 				url: "/{brand}/help",

@@ -34,7 +34,7 @@
                 </section>
                 <section id="faqs" ng-show="faqs.list.length > 0" class="faqs">
                     <h2 ng-click="faqs.show = !faqs.show">FAQs</h2>
-                    <div ng-repeat="faq in faqs.list" ng-show="faqs.show" id="{{faq.menuTitle | anchorSafe}}" class="item"><i ng-class="{'glyphicon-chevron-right': !step.show, 'glyphicon-chevron-down': step.show}" ng-click="step.show = !step.show" class="glyphicon pull-left brandColor"></i>
+                    <div ng-repeat="faq in faqs.list" ng-show="faqs.show" id="{{faq.menuTitle | anchorSafe}}" class="item"><i ng-class="{'glyphicon-chevron-right': !faq.show, 'glyphicon-chevron-down': faq.show}" ng-click="faq.show = !faq.show" class="glyphicon pull-left brandColor"></i>
                         <h4 ng-click="faq.show = !faq.show">{{faq.question}}</h4>
                         <div text-angular="text-angular" ta-bind="ta-bind" ng-model="faq.answer" ng-show="faq.show" class="contents"></div>
                     </div>
@@ -43,7 +43,7 @@
                 <section ng-repeat="child in product.htmlGuideRootNode.children | orderBy: 'order'" id="{{child.menuTitle | anchorSafe}}">
                     <h2 ng-click="child.show = !child.show">{{child.title}}</h2>
                     <div text-angular="text-angular" ta-bind="ta-bind" ng-model="child.content" ng-show="child.show" class="contents"></div>
-                    <div ng-repeat="subchild in child.children | orderBy: 'order'" ng-show="child.show" ng-if="subchild.title" id="{{subchild.menuTitle | anchorSafe}}" class="item"> <i ng-class="{'glyphicon-chevron-right': !step.show, 'glyphicon-chevron-down': step.show}" ng-click="step.show = !step.show" class="glyphicon pull-left brandColor"></i>
+                    <div ng-repeat="subchild in child.children | orderBy: 'order'" ng-show="child.show" ng-if="subchild.title" id="{{subchild.menuTitle | anchorSafe}}" class="item"> <i ng-class="{'glyphicon-chevron-right': !subchild.show, 'glyphicon-chevron-down': subchild.show}" ng-click="subchild.show = !subchild.show" class="glyphicon pull-left brandColor"></i>
                         <h3 ng-click="subchild.show = !subchild.show">{{subchild.title | uppercase}}</h3>
                         <div text-angular="text-angular" ta-bind="ta-bind" ng-model="subchild.content" ng-show="subchild.show" class="contents"></div>
                     </div>

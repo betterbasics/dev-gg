@@ -1,58 +1,81 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-var productSchema = mongoose.Schema({
-    sku: {
-      type : String
+var productSchema = new mongoose.Schema({
+    amazonVideo: {
+      type: "string",
     },
-    name:{
-        type : String
+    brand: {
+      type: "string",
     },
-    subtitle:{
-        type : String
+    cardVideo: {
+      type: "string",
     },
-    description:{
-        type : String
+    displayGuide: {
+      type: "boolean",
     },
-    brand:{
-        type : String
+    frontman: {
+      type: "string",
     },
-    msrp:{
-        type : Number
+    gettingStartedPdf: {
+      type: "string",
     },
-    providers : {
-        amazon :  {price:Number, link:String},
-        bbb : {price:Number, link:String},
-        target : [{price:Number, link:String}]
-    },
-    image : {
-        type : String
-    },
-    gallery : {
-        type : [String]
-    },
-    product : {
-      variants : {
-          variable : {
-              type : [String]
+    gettingStartedSteps: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          _id: {
+            type: "string",
           },
-          values : {
-              type : [String]
+          description: {
+            type: "string",
+          },
+          name: {
+            type: "string",
           }
+        }
       }
     },
-    specs : {
-        title : {
-            type : String
+    groups: {
+      type: "array",
+    },
+    hideSale: {
+      type: "boolean",
+    },
+    htmlGuide: {
+      type: "string",
+    },
+    name: {
+      type: "string",
+    },
+    shownOn: {
+      type: "array",
+    },
+    videoPoster: {
+      type: "object",
+      properties: {
+        image: {
+          type: "string",
         },
-        description : {
-            type : String
+        thumbnail: {
+          type: "string",
         }
+      }
     },
-    featured : {
-        type : Boolean
+    video: {
+      type: "string",
     },
-    commingsoon : {
-        type : Boolean
+    webVideoPoster: {
+      type: "object",
+      properties: {
+        image: {
+          type: "string",
+        },
+        thumbnail: {
+          type: "string",
+        }
+      }
     }
 });
 
