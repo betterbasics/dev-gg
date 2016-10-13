@@ -1,4 +1,4 @@
-var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed', 'ngTouch', 'ui.bootstrap', 'textAngular', 'duScroll']).value("duScrollOffset", 80).value("duScrollDuration", 800);
+var app = angular.module('devggApp', ['ngRoute', 'ngResource', 'ui.router', 'angular-loading-bar', 'angularUtils.directives.dirPagination', 'ngSanitize', 'slugifier', 'angular-bind-html-compile', 'youtube-embed', 'ngTouch', 'ui.bootstrap', 'textAngular', 'duScroll', 'angularCSS']).value("duScrollOffset", 80).value("duScrollDuration", 800);
 
 //app.config(["$routeProvider", "$locationProvider", "$httpProvider", function(e, t, r) {
 //        return e.when = _.wrap(e.when, function(e, t, r) {
@@ -47,7 +47,8 @@ app.config(['$stateProvider','$urlRouterProvider','$locationProvider',
 			})
 			.state('Admin', {
 				url: "/admin",
-				templateUrl: "templates/admin.html"
+				templateUrl: "templates/admin.html",
+                css: "client/stylesheets/login.css"
 			})
 			.state('Brand', {
 				url: "/{brand}",

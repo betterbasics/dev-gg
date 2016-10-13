@@ -3,40 +3,63 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var _ = require('lodash');
+var favicon = require('serve-favicon');
+var cookieParser = require('cookie-parser');
+//var session = require('express-session');
+var passport = require('passport');
+
 
 //initialize mongoose schemas
 require('./models/books');
 require('./models/products');
 require('./models/brands');
 require('./models/variations');
+require('./models/users');
 var Book = mongoose.model('Book');
 var Product = mongoose.model('Product');
 var Brand = mongoose.model('Brand');
 var Variation = mongoose.model('Variation');
 
+
+var authenticate = require('./routes/authenticate')(passport);
+
 // Create the application.
 var app = express();
+
+//console.log(__dirname);
+app.use(favicon(__dirname + '/../client/assets/favicons/favicon.ico'));
+
 
 // Add Middleware necessary for REST API's
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(methodOverride('X-HTTP-Method-Override'));
+app.use(cookieParser());
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use('/auth', authenticate);
+
+
+//// Initialize Passport
+var initPassport = require('./passport-init');
+initPassport(passport);
+
 
 // CORS Support
 app.use(function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
 });
 
 // Connect to MongoDB
 //mongoose.connect('mongodb://localhost/devggapp');
 mongoose.connect('mongodb://localhost/books');
 mongoose.connection.once('open', function() {
-
-  console.log('Listening on port 3000...');
-  app.listen(process.env.PORT);
+    console.log('Listening on port 3000...');
+    app.listen(process.env.PORT);
 });
 
 var baseurl = '/dev';
@@ -563,4 +586,11 @@ app.get(baseurl+'/server/api/html-guide', function(req, res){
 
     res.json(htmlGuideNode);
     /**/
+});
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
 });
