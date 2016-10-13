@@ -4,42 +4,47 @@ This project is similar to [Greater Goods](https://greatergoods.com/) and it is 
 
 ## Overview of MEAN
 
-* MEAN is a collection of JavaScript-based technologies ([MongoDB](https://www.mongodb.com/), [Express.js](http://expressjs.com/), [AngularJS](https://angularjs.org/), and [Node.js](https://nodejs.org/en/)) used to develop web applications.
+* MEAN is a collection of JavaScript-based technologies ([**M**ongoDB](https://www.mongodb.com/)(Database), [**E**xpress.js](http://expressjs.com/)(Web Framework), [**A**ngularJS](https://angularjs.org/)(Front-end Framework), and [**N**ode.js](https://nodejs.org/en/)(Application Server)) used to develop web applications.
 * From the client and server sides to databases, MEAN is a full-stack development toolkit.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisities
+### Prerequisites
 
-* Internet Information Services (IIS)
-* MongoDB
+* [Internet Information Services (IIS)](https://www.iis.net)
+* [Git](https://git-scm.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Node.js®](https://nodejs.org/en/)
+
+#### Git
+
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. ([Source](https://git-scm.com/))
+
+We need to install IIS in order for us to manage changes to source code over time.
+* [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git/mac-os-x)
 
 #### Internet Information Services (IIS)
 
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks. ([Source](https://www.iis.net/))
 
 We need to install IIS in order to run the MEAN Stack in Windows® Server.
-
-```
-[Install IIS 7](https://www.iis.net/learn/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7)
-```
+* [Install IIS 7](https://www.iis.net/learn/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7)
 
 #### MongoDB
 
 MongoDB is an open source, document-oriented database designed with both scalability and developer agility in mind. Instead of storing your data in tables and rows as you would with a relational database, in MongoDB you store JSON-like documents with dynamic schemas. The goal of MongoDB is to bridge the gap between key-value stores (which are fast and scalable) and relational databases (which have rich functionality). ([Source](https://www.youtube.com/watch?v=CvIr-2lMLsk))
 
 Follow the link below to install MongoDB Community Edition on Windows systems.
+* [Install MongoDB Community Edition on Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
 
-```
-[Install MongoDB Community Edition on Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
-```
+#### Node.js®
 
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world. ([Source](https://nodejs.org/en/))
 
-
-
-
+Download the Node.js source code or a pre-built installer for your platform.
+* [How to Install Node.js® and NPM on Windows](http://blog.teamtreehouse.com/install-node-js-npm-windows)
 
 
 
