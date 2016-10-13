@@ -55,11 +55,11 @@ The required packages are:
 * **grunt-cli** - This is required so that we can run Grunt tasks from the CLI. See the [npm grunt-cli package](https://www.npmjs.com/package/grunt-cli) for more info. [Grunt](http://gruntjs.com/) is a JavaScript task runner that can be used to automate tasks such as deployment steps, unit testing, linting etc.
 
 Here are the commands to run in the terminal to get these packages:
-
-*Windows Users: You can run these commands via Node.js Command Prompt (comes with Node install), Powershell or if you have installed Git for Windows via the Git bash emulator.*
 ```
 npm install -g bower
 npm install -g grunt-cli
 ```
+*Windows Users: You can run these commands via Node.js Command Prompt (comes with Node install), Powershell or if you have installed Git for Windows via the Git bash emulator.*
+
 
 This is a developing instructions. Stay tune!
