@@ -1,6 +1,11 @@
 # Project Title
 
-One Paragraph of project description goes here
+This site is similar to [Greater Goods](https://greatergoods.com/) and it is developed using MEAN Stack.
+
+## Overview of MEAN
+
+* MEAN is a collection of JavaScript-based technologies (MongoDB, Express.js, AngularJS, and Node.js) used to develop web applications.
+* From the client and server sides to databases, MEAN is a full-stack development toolkit.
 
 ## Getting Started
 
