@@ -1,23 +1,51 @@
 # Project Title
 
-This site is similar to [Greater Goods](https://greatergoods.com/) and it is developed using MEAN Stack.
+This project is similar to [Greater Goods](https://greatergoods.com/) and it is developed using MEAN Stack.
 
 ## Overview of MEAN
 
-* MEAN is a collection of JavaScript-based technologies (MongoDB, Express.js, AngularJS, and Node.js) used to develop web applications.
+* MEAN is a collection of JavaScript-based technologies ([MongoDB](https://www.mongodb.com/), [Express.js](http://expressjs.com/), [AngularJS](https://angularjs.org/), and [Node.js](https://nodejs.org/en/)) used to develop web applications.
 * From the client and server sides to databases, MEAN is a full-stack development toolkit.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisities
 
-What things you need to install the software and how to install them
+* Internet Information Services (IIS)
+* MongoDB
+
+#### Internet Information Services (IIS)
+
+Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks. ([Source](https://www.iis.net/))
+
+We need to install IIS in order to run the MEAN Stack in Windows® Server.
 
 ```
-Give examples
+[Install IIS 7](https://www.iis.net/learn/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7)
 ```
+
+#### MongoDB
+
+MongoDB is an open source, document-oriented database designed with both scalability and developer agility in mind. Instead of storing your data in tables and rows as you would with a relational database, in MongoDB you store JSON-like documents with dynamic schemas. The goal of MongoDB is to bridge the gap between key-value stores (which are fast and scalable) and relational databases (which have rich functionality). ([Source](https://www.youtube.com/watch?v=CvIr-2lMLsk))
+
+Follow the link below to install MongoDB Community Edition on Windows systems.
+
+```
+[Install MongoDB Community Edition on Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+```
+
+
+
+
+
+
+
+
+
+
+
 
 ### Installing
 
