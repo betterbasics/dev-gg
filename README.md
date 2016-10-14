@@ -1,4 +1,4 @@
-# Better Basics - Replication of Greater Goods Development Website
+# [Better Basics - Replication of Greater Goods Development Website](http://betterbasics.com/dev/)
 
 This project is similar to [Greater Goods](https://greatergoods.com/) and it is developed using MEAN Stack.
 
