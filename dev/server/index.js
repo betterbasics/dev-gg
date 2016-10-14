@@ -56,7 +56,8 @@ app.use(function(req, res, next) {
 
 // Connect to MongoDB
 //mongoose.connect('mongodb://localhost/devggapp');
-mongoose.connect('mongodb://localhost/books');
+//mongoose.connect('mongodb://localhost/books');
+mongoose.connect('mongodb://localhost/goods');
 mongoose.connection.once('open', function() {
     console.log('Listening on port 3000...');
     app.listen(process.env.PORT);
