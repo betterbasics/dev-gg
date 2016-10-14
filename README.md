@@ -77,4 +77,17 @@ npm install -g grunt-cli
 ```
 *Windows Users: You can run these commands via Node.js Command Prompt (comes with Node install), Powershell or if you have installed Git for Windows via the Git bash emulator.*
 
-This is a developing instructions. Stay tune!
+### Restoring Database
+
+We need to import data to our mongo by simply using the **mongorestore** command. See the [mongorestore component](https://docs.mongodb.com/v2.6/reference/program/mongorestore/#bin.mongorestore) for more info.
+
+Run the Command Prompt and change the directory as to where the backup data is located. In this case,
+```
+dev/data/
+```
+
+Execute this command:
+```
+"c:\Program Files\MongoDB\Server\3.2\bin\mongorestore" -d goods .\goods
+```
+*Note: mongorestore directory differs from where it resides in your local pc.*
