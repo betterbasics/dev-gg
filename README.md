@@ -25,6 +25,9 @@ Internet Information Services (IIS) for Windows® Server is a flexible, secure a
 We need to install IIS in order to run the MEAN Stack in Windows® Server.
 * [Install IIS 7](https://www.iis.net/learn/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7)
 
+The project runs in [dev directory](https://github.com/betterbasics/dev-gg/tree/master/dev) (http://localhost/dev/) above. To have a sub directory running as your index page, we have to create a web application under the IIS Manager Default Website. Below is the guide on how to create a web application.
+* [Create a Web Application (IIS 7)](https://technet.microsoft.com/en-us/library/cc772042(v=ws.10).aspx)
+
 #### Git
 
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. ([Source](https://git-scm.com/))
