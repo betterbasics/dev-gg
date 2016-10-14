@@ -17,6 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 * [Git](https://git-scm.com/)
 * [MongoDB](https://www.mongodb.com/)
 * [Node.js®](https://nodejs.org/en/)
+* [IIS Node](https://hostek.com/blog/everything-you-need-to-run-node-js-applications-on-windows-iis/)
 
 #### Internet Information Services (IIS)
 
@@ -49,6 +50,18 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 Guide for a complete Node.js® installation.
 * [How to Install Node.js® and NPM on Windows](http://blog.teamtreehouse.com/install-node-js-npm-windows)
 
+#### IIS Node
+
+The [iisnode module](https://github.com/Azure/iisnode), from Tomasz Janczuk does all the heavy lifting. In short the module acts as the go between IIS and Node. This enables some really nice functionality that you won’t find by running node from the command prompt exclusively. ([Source](https://hostek.com/blog/everything-you-need-to-run-node-js-applications-on-windows-iis/))
+
+A few of these advantages are:
+* You can run a Node.js® app independently on port 80.
+* Your Node.js® apps can be managed as part of your other websites and apps.
+* Your letting IIS manage the Node.js® process.
+
+Follow the guide below to run Node.js® applications on Windows IIS.
+* [Hosting Node.js® Applications in IIS on Windows](https://github.com/Azure/iisnode)
+
 ### Required Packages
 
 Once Node.js and MongoDB are installed we need some packages via the [NPM Package Manager](https://www.npmjs.com/). NPM is a package manager like Nuget, Macports, Ruby Gems etc. It’s possible to search fir and download many 3rd party libraries to use via NPM. NPM will already be installed as part of Node.js. ([Source](http://www.bradoncode.com/tutorials/mean-stack-tutorial-part-1-setup/))
@@ -63,6 +76,5 @@ npm install -g bower
 npm install -g grunt-cli
 ```
 *Windows Users: You can run these commands via Node.js Command Prompt (comes with Node install), Powershell or if you have installed Git for Windows via the Git bash emulator.*
-
 
 This is a developing instructions. Stay tune!
