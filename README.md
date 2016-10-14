@@ -1,4 +1,4 @@
-# Project Title
+# Better Basics - Replication of Greater Goods Development Website
 
 This project is similar to [Greater Goods](https://greatergoods.com/) and it is developed using MEAN Stack.
 
@@ -18,19 +18,19 @@ These instructions will get you a copy of the project up and running on your loc
 * [MongoDB](https://www.mongodb.com/)
 * [Node.js®](https://nodejs.org/en/)
 
-#### Git
-
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. ([Source](https://git-scm.com/))
-
-Git ensures us to manage changes to source code over time.
-* [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git/mac-os-x)
-
 #### Internet Information Services (IIS)
 
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks. ([Source](https://www.iis.net/))
 
 We need to install IIS in order to run the MEAN Stack in Windows® Server.
 * [Install IIS 7](https://www.iis.net/learn/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7)
+
+#### Git
+
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. ([Source](https://git-scm.com/))
+
+Git ensures us to manage changes to source code over time.
+* [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git/mac-os-x)
 
 #### MongoDB
 
